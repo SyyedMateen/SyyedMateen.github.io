@@ -1,0 +1,628 @@
+/* =========================================================
+   CTA — WARM LUXURY CINEMATIC
+========================================================= */
+
+.cta {
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      65% 65% at 50% 8%,
+      rgba(133, 104, 171, 0.13),
+      transparent 68%
+    ),
+
+    radial-gradient(
+      50% 55% at 90% 78%,
+      rgba(191, 112, 79, 0.08),
+      transparent 72%
+    ),
+
+    radial-gradient(
+      40% 50% at 8% 82%,
+      rgba(102, 77, 126, 0.06),
+      transparent 72%
+    ),
+
+    linear-gradient(
+      145deg,
+      #09090a 0%,
+      #101012 52%,
+      #111012 100%
+    );
+
+  color: var(--ink);
+
+  isolation: isolate;
+}
+
+
+/* =========================================================
+   ATMOSPHERIC LIGHT
+========================================================= */
+
+.cta::before {
+  content: "";
+
+  position: absolute;
+
+  width: 700px;
+  height: 700px;
+
+  top: -410px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(152, 120, 191, 0.15) 0%,
+      rgba(152, 120, 191, 0.045) 32%,
+      transparent 70%
+    );
+
+  filter: blur(24px);
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+.cta::after {
+  content: "";
+
+  position: absolute;
+
+  width: 560px;
+  height: 560px;
+
+  right: -250px;
+  bottom: -300px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(192, 112, 79, 0.10) 0%,
+      rgba(192, 112, 79, 0.025) 36%,
+      transparent 72%
+    );
+
+  filter: blur(32px);
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+/* =========================================================
+   INNER
+========================================================= */
+
+.cta__inner {
+  position: relative;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.cta h2 {
+  margin: 0;
+
+  max-width: 14ch;
+
+  font-size:
+    clamp(3rem, 8vw, 7rem);
+
+  font-weight: 500;
+
+  line-height: 0.92;
+
+  letter-spacing: -0.055em;
+
+  text-wrap: balance;
+
+  color: #f4f0e9;
+
+  text-shadow:
+    0 0 45px rgba(177, 143, 210, 0.08);
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+.cta__body {
+  margin-top: 1.5rem;
+
+  max-width: 44ch;
+
+  font-size:
+    clamp(1rem, 1.5vw, 1.2rem);
+
+  line-height: 1.55;
+
+  color: #aaa6ad;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.cta__button {
+  margin-top: 2.75rem;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.9rem;
+
+  padding:
+    1.2rem
+    2.5rem;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.09);
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e47d5d 0%,
+      #c9674d 100%
+    );
+
+  color: #ffffff;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  letter-spacing: -0.01em;
+
+  box-shadow:
+    0 12px 35px rgba(194, 101, 72, 0.16),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+
+  transition:
+    transform 0.45s var(--ease),
+    background 0.45s var(--ease),
+    box-shadow 0.45s var(--ease);
+}
+
+
+.cta__button span {
+  display: inline-block;
+
+  font-size: 1.25rem;
+
+  transition:
+    transform 0.45s var(--ease);
+}
+
+
+.cta__button:hover {
+  transform:
+    translateY(-5px)
+    scale(1.025);
+
+  background:
+    linear-gradient(
+      135deg,
+      #ee8968 0%,
+      #d87556 100%
+    );
+
+  box-shadow:
+    0 20px 55px rgba(194, 101, 72, 0.22),
+    0 0 35px rgba(194, 101, 72, 0.09);
+}
+
+
+.cta__button:hover span {
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   CONTACTS
+========================================================= */
+
+.cta__contacts {
+  margin-top: 4.5rem;
+
+  list-style: none;
+
+  padding: 0;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap:
+    2rem
+    3.5rem;
+}
+
+
+.cta__contacts li {
+  min-width: 130px;
+}
+
+
+/* =========================================================
+   CONTACT LINK
+========================================================= */
+
+.cta__contacts a {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 0.5rem;
+
+  color: inherit;
+
+  transition:
+    transform 0.4s var(--ease);
+}
+
+
+.cta__contacts a:hover {
+  transform: translateY(-5px);
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.cta__contact-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.04);
+
+  color: #aaa5ae;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.085);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  animation:
+    contactFloat 3.5s ease-in-out infinite;
+
+  transition:
+    transform 0.45s var(--ease),
+    box-shadow 0.45s var(--ease),
+    background 0.45s var(--ease),
+    color 0.45s var(--ease),
+    border-color 0.45s var(--ease);
+}
+
+
+.cta__contact-icon svg {
+  width: 21px;
+  height: 21px;
+
+  display: block;
+
+  transition:
+    transform 0.45s var(--ease),
+    color 0.45s var(--ease),
+    fill 0.45s var(--ease),
+    stroke 0.45s var(--ease);
+}
+
+
+/* =========================================================
+   EMAIL
+========================================================= */
+
+.cta__contacts li:nth-child(1) a:hover .cta__contact-icon {
+  color: #f28a6c;
+
+  background:
+    rgba(234, 100, 72, 0.09);
+
+  border-color:
+    rgba(234, 100, 72, 0.27);
+
+  box-shadow:
+    0 15px 35px rgba(234, 100, 72, 0.13),
+    0 0 25px rgba(234, 100, 72, 0.06);
+}
+
+
+/* =========================================================
+   LINKEDIN
+========================================================= */
+
+.cta__contacts li:nth-child(2) a:hover .cta__contact-icon {
+  color: #a8a1db;
+
+  background:
+    rgba(127, 112, 190, 0.09);
+
+  border-color:
+    rgba(150, 135, 215, 0.25);
+
+  box-shadow:
+    0 15px 35px rgba(127, 112, 190, 0.13),
+    0 0 25px rgba(127, 112, 190, 0.06);
+}
+
+
+/* =========================================================
+   INSTAGRAM
+========================================================= */
+
+.cta__contacts li:nth-child(3) a:hover .cta__contact-icon {
+  color: #d994aa;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(205, 93, 130, 0.10),
+      rgba(119, 76, 158, 0.10)
+    );
+
+  border-color:
+    rgba(205, 93, 130, 0.25);
+
+  box-shadow:
+    0 15px 35px rgba(205, 93, 130, 0.12),
+    0 0 25px rgba(119, 76, 158, 0.07);
+}
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.cta__contacts li:nth-child(4) a:hover .cta__contact-icon {
+  color: #79c596;
+
+  background:
+    rgba(62, 170, 101, 0.08);
+
+  border-color:
+    rgba(62, 170, 101, 0.24);
+
+  box-shadow:
+    0 15px 35px rgba(62, 170, 101, 0.12),
+    0 0 25px rgba(62, 170, 101, 0.06);
+}
+
+
+/* =========================================================
+   UNIVERSAL ICON HOVER
+========================================================= */
+
+.cta__contacts a:hover .cta__contact-icon {
+  transform:
+    translateY(-4px)
+    scale(1.1);
+}
+
+
+.cta__contacts a:hover .cta__contact-icon svg {
+  transform: scale(1.08);
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.cta__contacts .font-mono {
+  font-size: 0.62rem;
+
+  color: #77727c;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+
+  transition:
+    color 0.3s var(--ease);
+}
+
+
+/* =========================================================
+   CONTACT VALUE
+========================================================= */
+
+.cta__contacts a span:last-child {
+  font-size: 0.98rem;
+
+  font-weight: 500;
+
+  color: #b6b1ba;
+
+  border-bottom:
+    1px solid transparent;
+
+  transition:
+    border-color 0.3s var(--ease),
+    color 0.3s var(--ease);
+}
+
+
+.cta__contacts a:hover span:last-child {
+  color: #f2eee8;
+
+  border-color:
+    rgba(255, 255, 255, 0.22);
+}
+
+
+/* =========================================================
+   FLOATING MOTION
+========================================================= */
+
+@keyframes contactFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+
+/* =========================================================
+   STAGGER
+========================================================= */
+
+.cta__contacts li:nth-child(1) .cta__contact-icon {
+  animation-delay: 0s;
+}
+
+.cta__contacts li:nth-child(2) .cta__contact-icon {
+  animation-delay: 0.35s;
+}
+
+.cta__contacts li:nth-child(3) .cta__contact-icon {
+  animation-delay: 0.7s;
+}
+
+.cta__contacts li:nth-child(4) .cta__contact-icon {
+  animation-delay: 1.05s;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .cta {
+    background:
+      radial-gradient(
+        90% 55% at 50% 0%,
+        rgba(133, 104, 171, 0.13),
+        transparent 70%
+      ),
+
+      radial-gradient(
+        70% 50% at 100% 90%,
+        rgba(191, 112, 79, 0.08),
+        transparent 70%
+      ),
+
+      linear-gradient(
+        145deg,
+        #09090a 0%,
+        #111012 100%
+      );
+  }
+
+
+  .cta h2 {
+    font-size:
+      clamp(3rem, 14vw, 5rem);
+
+    max-width: 10ch;
+  }
+
+
+  .cta__body {
+    font-size: 1rem;
+
+    max-width: 34ch;
+
+    color: #aaa6ad;
+  }
+
+
+  .cta__button {
+    margin-top: 2.25rem;
+
+    padding:
+      1.1rem
+      2rem;
+  }
+
+
+  .cta__contacts {
+    gap:
+      2rem
+      1.25rem;
+
+    width: 100%;
+  }
+
+
+  .cta__contacts li {
+    min-width: 100px;
+  }
+
+
+  .cta__contact-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+
+  .cta__contact-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .cta__contact-icon {
+    animation: none;
+  }
+
+  .cta__contacts a,
+  .cta__contact-icon,
+  .cta__contact-icon svg,
+  .cta__button,
+  .cta__button span {
+    transition: none;
+  }
+}

@@ -1,0 +1,733 @@
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=general-sans@400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
+
+
+/* =========================================================
+   ROOT — CINEMATIC PURPLE LUXURY
+========================================================= */
+
+:root {
+
+  /* =====================================================
+     CORE BACKGROUND
+  ===================================================== */
+
+  --bg: #06060b;
+  --bg-soft: #090912;
+
+  --surface: #0d0d16;
+  --surface-2: #11111c;
+  --surface-3: #171722;
+
+
+  /* =====================================================
+     LIGHT
+  ===================================================== */
+
+  --white: #ffffff;
+
+  --cream: #f7f4ee;
+  --cream-soft: #d8d3cd;
+
+
+  /* =====================================================
+     TEXT
+  ===================================================== */
+
+  --ink: #f5f3ff;
+
+  --ink-soft: #aaa7b8;
+
+  --gray: #777482;
+
+  --gray-light: #9d99a8;
+
+
+  /* =====================================================
+     DARK PURPLE BACKGROUNDS
+  ===================================================== */
+
+  --navy: #080811;
+  --navy-2: #0d0d1b;
+
+  --purple-black: #0a0913;
+  --purple-surface: #12101f;
+
+
+  /* =====================================================
+     PRIMARY PURPLE
+  ===================================================== */
+
+  --cobalt: #7357ff;
+
+  --violet: #9b84ff;
+
+  --violet-bright: #c2b7ff;
+
+  --violet-soft: #8571dd;
+
+
+  /* =====================================================
+     VERY SUBTLE WARM ACCENT
+  ===================================================== */
+
+  --sky: #dfe3ff;
+
+  --coral: #b98b78;
+
+  --orange: #cfa08b;
+
+
+  /* =====================================================
+     CINEMATIC GLOWS
+  ===================================================== */
+
+  --purple-glow:
+    rgba(115, 87, 255, 0.22);
+
+  --purple-soft:
+    rgba(115, 87, 255, 0.09);
+
+  --purple-faint:
+    rgba(115, 87, 255, 0.035);
+
+  --violet-glow:
+    rgba(155, 132, 255, 0.12);
+
+  --warm-glow:
+    rgba(185, 139, 120, 0.025);
+
+
+  /* =====================================================
+     BORDERS
+  ===================================================== */
+
+  --border:
+    rgba(255, 255, 255, 0.08);
+
+  --border-strong:
+    rgba(255, 255, 255, 0.15);
+
+  --border-light:
+    rgba(255, 255, 255, 0.12);
+
+
+  /* =====================================================
+     TYPOGRAPHY
+  ===================================================== */
+
+  --font-display:
+    "Clash Display",
+    "General Sans",
+    sans-serif;
+
+  --font-body:
+    "General Sans",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  --font-mono:
+    "JetBrains Mono",
+    monospace;
+
+
+  /* =====================================================
+     SPACING
+  ===================================================== */
+
+  --section-pad:
+    clamp(5rem, 10vw, 10rem);
+
+  --edge-pad:
+    clamp(1.1rem, 5vw, 5rem);
+
+
+  /* =====================================================
+     RADIUS
+  ===================================================== */
+
+  --radius-s: 12px;
+  --radius-m: 22px;
+  --radius-l: 34px;
+
+
+  /* =====================================================
+     MOTION
+  ===================================================== */
+
+  --ease:
+    cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
+
+  background: var(--bg);
+
+  color-scheme: dark;
+}
+
+
+body {
+  margin: 0;
+
+  min-width: 320px;
+
+  background:
+    radial-gradient(
+      circle at 12% 6%,
+      rgba(115, 87, 255, 0.045),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 88% 82%,
+      rgba(155, 132, 255, 0.025),
+      transparent 25%
+    ),
+    var(--bg);
+
+  color:
+    var(--ink);
+
+  font-family:
+    var(--font-body);
+
+  overflow-x: hidden;
+}
+
+
+#root {
+  position: relative;
+
+  min-height: 100vh;
+
+  overflow-x: clip;
+
+  isolation: isolate;
+
+  background: var(--bg);
+}
+
+
+/* =========================================================
+   GLOBAL CINEMATIC ATMOSPHERE
+========================================================= */
+
+#root::before {
+  content: "";
+
+  position: fixed;
+
+  width: 72vw;
+  height: 72vw;
+
+  max-width: 1000px;
+  max-height: 1000px;
+
+  top: -38vw;
+  left: -28vw;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(115, 87, 255, 0.14) 0%,
+      rgba(115, 87, 255, 0.055) 28%,
+      rgba(115, 87, 255, 0.018) 48%,
+      transparent 72%
+    );
+
+  filter: blur(38px);
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+#root::after {
+  content: "";
+
+  position: fixed;
+
+  width: 68vw;
+  height: 68vw;
+
+  max-width: 940px;
+  max-height: 940px;
+
+  right: -32vw;
+  bottom: -26vw;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(155, 132, 255, 0.08) 0%,
+      rgba(115, 87, 255, 0.035) 32%,
+      rgba(185, 139, 120, 0.012) 52%,
+      transparent 74%
+    );
+
+  filter: blur(44px);
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+/* =========================================================
+   GLOBAL SECTION CANVAS
+   IMPORTANT:
+   No blue/orange/purple full-page jumps.
+========================================================= */
+
+main,
+section,
+footer {
+  background-color: transparent;
+}
+
+
+/* =========================================================
+   BASIC ELEMENTS
+========================================================= */
+
+img {
+  max-width: 100%;
+
+  display: block;
+}
+
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+
+button {
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+
+
+.font-display {
+  font-family:
+    var(--font-display);
+}
+
+
+.font-mono {
+  font-family:
+    var(--font-mono);
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   GLOBAL LAYOUT
+========================================================= */
+
+.section {
+  position: relative;
+
+  padding:
+    var(--section-pad)
+    var(--edge-pad);
+}
+
+
+.container {
+  width: 100%;
+
+  max-width: 1380px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 0.65rem;
+
+  font-family:
+    var(--font-mono);
+
+  font-size: 0.65rem;
+
+  font-weight: 500;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  color:
+    var(--violet);
+}
+
+
+.eyebrow::before {
+  content: "";
+
+  width: 7px;
+  height: 7px;
+
+  flex: 0 0 7px;
+
+  border-radius: 50%;
+
+  background:
+    var(--cobalt);
+
+  box-shadow:
+    0 0 0 4px
+      rgba(115, 87, 255, 0.10),
+    0 0 18px
+      rgba(115, 87, 255, 0.72);
+}
+
+
+/* =========================================================
+   SELECTION
+========================================================= */
+
+::selection {
+  background:
+    var(--cobalt);
+
+  color:
+    var(--white);
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+
+  clip: rect(0 0 0 0);
+
+  white-space: nowrap;
+}
+
+
+a:focus-visible,
+button:focus-visible {
+  outline:
+    2px solid
+    var(--violet-bright);
+
+  outline-offset: 4px;
+
+  border-radius: 6px;
+}
+
+
+/* =========================================================
+   TEXT GRADIENT
+========================================================= */
+
+.text-gradient {
+  background:
+    linear-gradient(
+      110deg,
+      #ffffff 0%,
+      var(--violet-bright) 52%,
+      var(--sky) 100%
+    );
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  color: transparent;
+}
+
+
+/* =========================================================
+   GLOW TEXT
+========================================================= */
+
+.glow-text {
+  text-shadow:
+    0 0 30px
+      rgba(115, 87, 255, 0.20),
+    0 0 70px
+      rgba(115, 87, 255, 0.07);
+}
+
+
+/* =========================================================
+   GLOBAL SURFACE SYSTEM
+========================================================= */
+
+.glass,
+.card,
+.panel,
+.surface {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.045),
+      rgba(255, 255, 255, 0.015)
+    );
+
+  border:
+    1px solid
+    var(--border);
+}
+
+
+/* =========================================================
+   SECTION BACKGROUND CONSISTENCY
+========================================================= */
+
+/*
+  Every section stays on the same cinematic canvas.
+  Only the lighting changes slightly.
+*/
+
+.hero,
+.work,
+.services,
+.about,
+.capabilities,
+.experience,
+.insights,
+.personality,
+.process,
+.proof,
+.cinematic,
+.cta,
+.footer {
+  background-color: transparent !important;
+}
+
+
+/* =========================================================
+   HERO ATMOSPHERE
+========================================================= */
+
+.hero__field {
+  background:
+    radial-gradient(
+      60% 55% at 70% 30%,
+      rgba(115, 87, 255, 0.11) 0%,
+      rgba(115, 87, 255, 0.025) 45%,
+      transparent 72%
+    ),
+    radial-gradient(
+      45% 40% at 95% 75%,
+      rgba(155, 132, 255, 0.045) 0%,
+      rgba(155, 132, 255, 0) 72%
+    ) !important;
+}
+
+
+/* =========================================================
+   WORK ATMOSPHERE
+========================================================= */
+
+.work__glow--one {
+  background:
+    rgba(115, 87, 255, 0.07) !important;
+}
+
+.work__glow--two {
+  background:
+    rgba(155, 132, 255, 0.04) !important;
+}
+
+
+/* =========================================================
+   TOOLKIT ATMOSPHERE
+========================================================= */
+
+.capabilities {
+  background:
+    radial-gradient(
+      circle at 82% 20%,
+      rgba(115, 87, 255, 0.055),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 18% 82%,
+      rgba(155, 132, 255, 0.025),
+      transparent 25%
+    ),
+    transparent !important;
+}
+
+
+/* =========================================================
+   CTA ATMOSPHERE
+========================================================= */
+
+.cta {
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(115, 87, 255, 0.07),
+      transparent 38%
+    ),
+    transparent !important;
+}
+
+
+/* =========================================================
+   FOOTER ATMOSPHERE
+========================================================= */
+
+.footer {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10, 9, 17, 0.35),
+      rgba(6, 6, 11, 0.8)
+    ) !important;
+}
+
+
+/* =========================================================
+   PURPLE ACCENT CONSISTENCY
+========================================================= */
+
+.work-card__accent-line,
+.capabilities__progress-line i {
+  background:
+    var(--cobalt) !important;
+}
+
+
+.capabilities__signal-dot,
+.work__intro-dot {
+  background:
+    var(--violet) !important;
+
+  box-shadow:
+    0 0 0 4px
+      rgba(155, 132, 255, 0.08),
+    0 0 14px
+      rgba(155, 132, 255, 0.52) !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  :root {
+
+    --section-pad:
+      5rem;
+
+    --edge-pad:
+      1.15rem;
+  }
+
+
+  #root::before {
+
+    width: 115vw;
+    height: 115vw;
+
+    top: -38vw;
+    left: -48vw;
+
+    opacity: 0.82;
+
+    filter: blur(34px);
+  }
+
+
+  #root::after {
+
+    width: 105vw;
+    height: 105vw;
+
+    right: -52vw;
+    bottom: 8vh;
+
+    opacity: 0.62;
+
+    filter: blur(38px);
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+
+  *,
+  *::before,
+  *::after {
+
+    animation-duration:
+      0.001ms !important;
+
+    animation-iteration-count:
+      1 !important;
+
+    transition-duration:
+      0.001ms !important;
+
+    scroll-behavior:
+      auto !important;
+  }
+}

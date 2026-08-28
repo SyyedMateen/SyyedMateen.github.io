@@ -1,0 +1,1067 @@
+/* =========================================================
+   WORK — EDITORIAL SYSTEMS
+========================================================= */
+
+.work {
+  --work-image-scale: 1;
+
+  position: relative;
+  overflow: hidden;
+
+  background: #090909;
+  color: #f2efe8;
+
+  padding-top: clamp(7rem, 13vw, 13rem);
+  padding-bottom: clamp(7rem, 13vw, 13rem);
+}
+
+
+/* =========================================================
+   BACKGROUND
+========================================================= */
+
+.work__glow {
+  position: absolute;
+
+  width: 55vw;
+  height: 55vw;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  filter: blur(120px);
+
+  opacity: 0.22;
+}
+
+.work__glow--one {
+  top: -25%;
+  left: -25%;
+
+  background: rgba(155, 124, 255, 0.16);
+}
+
+.work__glow--two {
+  right: -30%;
+  bottom: 15%;
+
+  background: rgba(155, 124, 255, 0.08);
+}
+
+.work__grid-bg {
+  display: none;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.work__intro {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(240px, 280px);
+
+  align-items: end;
+
+  gap: clamp(2.5rem, 6vw, 5rem);
+
+  margin-bottom: clamp(6rem, 12vw, 12rem);
+}
+
+.work__eyebrow-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.8rem;
+
+  margin-bottom: 1.8rem;
+}
+
+.work__eyebrow-line {
+  width: 34px;
+  height: 1px;
+
+  flex: 0 0 auto;
+
+  background: rgba(155, 124, 255, 0.8);
+}
+
+.work__eyebrow-row .eyebrow {
+  margin: 0;
+  color: #8d8a84;
+}
+
+.work__heading {
+  max-width: 9ch;
+
+  margin: 0;
+
+  font-size: clamp(4.5rem, 10vw, 10rem);
+
+  line-height: 0.78;
+
+  font-weight: 500;
+
+  letter-spacing: -0.085em;
+
+  color: #f2efe8;
+}
+
+.work__heading span {
+  display: block;
+  color: #f2efe8;
+}
+
+.work__heading em {
+  display: block;
+
+  font-style: normal;
+
+  color: #9b7cff;
+
+  background: none;
+
+  -webkit-text-fill-color: initial;
+}
+
+.work__intro-copy {
+  max-width: 30ch;
+
+  margin: 0;
+
+  font-size: 0.95rem;
+
+  line-height: 1.7;
+
+  color: #8d8a84;
+}
+
+.work__intro-status {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.6rem;
+
+  margin-top: 2rem;
+
+  font-size: 0.5rem;
+
+  letter-spacing: 0.14em;
+
+  color: #66635e;
+}
+
+.work__intro-dot {
+  width: 5px;
+  height: 5px;
+
+  flex: 0 0 auto;
+
+  border-radius: 50%;
+
+  background: #9b7cff;
+
+  box-shadow:
+    0 0 12px rgba(155, 124, 255, 0.7);
+}
+
+
+/* =========================================================
+   PROJECT LIST
+========================================================= */
+
+.work__list {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: clamp(8rem, 15vw, 16rem);
+}
+
+.work-card,
+.work-card--large,
+.work-card--offset,
+.work-card--wide {
+  width: 100%;
+  margin-top: 0;
+}
+
+.work-card--large,
+.work-card--offset,
+.work-card--wide {
+  grid-column: auto;
+}
+
+
+/* =========================================================
+   FRAME
+========================================================= */
+
+.work-card__frame {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  background: #111110;
+
+  border:
+    1px solid rgba(242, 239, 232, 0.1);
+
+  border-radius: 0;
+
+  box-shadow: none;
+
+  isolation: isolate;
+
+  transition:
+    transform 0.8s var(--ease),
+    border-color 0.6s var(--ease);
+}
+
+.work-card:hover .work-card__frame {
+  border-color:
+    rgba(155, 124, 255, 0.35);
+}
+
+
+/* =========================================================
+   IMAGE WRAPPER
+========================================================= */
+
+/*
+   IMPORTANT:
+
+   Framer Motion wrapper par:
+   - NO scale
+   - NO width animation
+   - NO height animation
+
+   Sirf y-parallax aur clipPath animate hota hai.
+*/
+
+.work-card__image-wrap {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  transform-origin: center center;
+
+  will-change: transform;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.work-card__image-wrap img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  /*
+     CONTAIN = image poori visible.
+
+     Isko cover mat karna agar robot/image crop
+     nahi karni.
+  */
+  object-fit: contain;
+
+  object-position: center center;
+
+  background: #000;
+
+  /*
+     Image size control.
+     Default = 100%.
+  */
+  transform: scale(var(--work-image-scale));
+
+  transform-origin: center center;
+
+  filter:
+    brightness(0.94)
+    saturate(0.90);
+
+  transition:
+    filter 0.8s var(--ease);
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.work-card:hover
+.work-card__image-wrap img {
+  /*
+     NO ZOOM.
+  */
+
+  transform: scale(var(--work-image-scale));
+
+  filter:
+    brightness(1)
+    saturate(0.98);
+}
+
+
+/* =========================================================
+   IMAGE FALLBACK
+========================================================= */
+
+.work-card__image-fallback {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+
+  place-items: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(155, 124, 255, 0.16),
+      transparent 40%
+    ),
+    #111110;
+
+  color:
+    rgba(242, 239, 232, 0.45);
+
+  font-size: 0.7rem;
+
+  letter-spacing: 0.12em;
+}
+
+
+/* =========================================================
+   AMBIENT
+========================================================= */
+
+.work-card__ambient,
+.work-card__grain {
+  display: none;
+}
+
+
+/* =========================================================
+   SCRIM
+========================================================= */
+
+.work-card__scrim {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.04) 0%,
+      rgba(0, 0, 0, 0.08) 42%,
+      rgba(0, 0, 0, 0.82) 100%
+    );
+
+  opacity: 1;
+
+  transition:
+    opacity 0.6s var(--ease);
+}
+
+.work-card:hover .work-card__scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.02) 0%,
+      rgba(0, 0, 0, 0.04) 48%,
+      rgba(0, 0, 0, 0.72) 100%
+    );
+}
+
+
+/* =========================================================
+   TOP INFORMATION
+========================================================= */
+
+.work-card__top {
+  position: absolute;
+
+  z-index: 5;
+
+  top: 1.4rem;
+
+  left: 1.4rem;
+  right: 1.4rem;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  pointer-events: none;
+}
+
+.work-card__status {
+  padding: 0;
+
+  border: 0;
+
+  background: none;
+
+  backdrop-filter: none;
+
+  font-size: 0.5rem;
+
+  letter-spacing: 0.13em;
+
+  color:
+    rgba(242, 239, 232, 0.7);
+}
+
+.work-card__status-dot {
+  display: none;
+}
+
+.work-card__number {
+  font-size: 0.55rem;
+
+  letter-spacing: 0.12em;
+
+  color:
+    rgba(242, 239, 232, 0.5);
+}
+
+
+/* =========================================================
+   CASE STUDY
+========================================================= */
+
+.work-card__marker {
+  position: absolute;
+
+  z-index: 5;
+
+  top: 4rem;
+
+  right: 1.4rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  font-size: 0.45rem;
+
+  letter-spacing: 0.14em;
+
+  color:
+    rgba(242, 239, 232, 0.4);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   PROJECT TITLE
+========================================================= */
+
+.work-card__overlay-content {
+  position: absolute;
+
+  z-index: 5;
+
+  left: clamp(1.5rem, 3vw, 3rem);
+
+  right: clamp(1.5rem, 3vw, 3rem);
+
+  bottom: clamp(1.5rem, 3vw, 3rem);
+}
+
+.work-card__overlay-category {
+  margin: 0 0 0.7rem;
+
+  font-size: 0.5rem;
+
+  letter-spacing: 0.14em;
+
+  color:
+    rgba(242, 239, 232, 0.55);
+}
+
+.work-card__overlay-heading {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 2rem;
+}
+
+.work-card__overlay-heading h3 {
+  max-width: 10ch;
+
+  margin: 0;
+
+  font-size: clamp(3rem, 6.5vw, 7rem);
+
+  line-height: 0.82;
+
+  font-weight: 500;
+
+  letter-spacing: -0.07em;
+
+  color: #f2efe8;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.work-card__overlay-arrow {
+  flex: 0 0 auto;
+
+  width: 3.2rem;
+  height: 3.2rem;
+
+  display: grid;
+
+  place-items: center;
+
+  border:
+    1px solid rgba(242, 239, 232, 0.2);
+
+  border-radius: 50%;
+
+  background:
+    rgba(0, 0, 0, 0.25);
+
+  color: #f2efe8;
+
+  transition:
+    transform 0.5s var(--ease),
+    background 0.5s var(--ease),
+    border-color 0.5s var(--ease);
+}
+
+.work-card:hover .work-card__overlay-arrow {
+  transform:
+    translate(5px, -5px);
+
+  background: #9b7cff;
+
+  border-color: #9b7cff;
+}
+
+
+/* =========================================================
+   ACCENT
+========================================================= */
+
+.work-card__accent-line {
+  position: absolute;
+
+  z-index: 6;
+
+  left: 0;
+
+  bottom: 0;
+
+  width: 0;
+
+  height: 2px;
+
+  background: #9b7cff;
+
+  transition:
+    width 0.8s var(--ease);
+}
+
+.work-card:hover
+.work-card__accent-line {
+  width: 25%;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.work-card__meta {
+  display: grid;
+
+  grid-template-columns:
+    180px
+    minmax(0, 1fr);
+
+  gap: 3rem;
+
+  padding-top: 1.5rem;
+}
+
+.work-card__meta-left {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+
+.work-card__meta-left span {
+  font-size: 0.5rem;
+
+  letter-spacing: 0.11em;
+
+  color: #66635e;
+}
+
+.work-card__description {
+  max-width: 60ch;
+
+  margin: 0;
+
+  font-size: 0.95rem;
+
+  line-height: 1.7;
+
+  color: #8d8a84;
+}
+
+.work-card__meta-bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  padding-top: 1rem;
+
+  border-top:
+    1px solid rgba(242, 239, 232, 0.1);
+}
+
+.work-card__tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.4rem;
+}
+
+.work-card__tag {
+  padding:
+    0.4rem 0.65rem;
+
+  border:
+    1px solid rgba(242, 239, 232, 0.1);
+
+  border-radius: 999px;
+
+  background: transparent;
+
+  font-size: 0.46rem;
+
+  letter-spacing: 0.08em;
+
+  color: #77746e;
+}
+
+.work-card__view {
+  font-size: 0.48rem;
+
+  letter-spacing: 0.1em;
+
+  color: #77746e;
+
+  transition:
+    color 0.4s var(--ease),
+    transform 0.4s var(--ease);
+}
+
+.work-card:hover .work-card__view {
+  color: #9b7cff;
+
+  transform:
+    translateX(4px);
+}
+
+
+/* =========================================================
+   END
+========================================================= */
+
+.work__end {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    auto
+    1fr
+    auto;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  margin-top: clamp(7rem, 12vw, 12rem);
+
+  font-size: 0.48rem;
+
+  letter-spacing: 0.13em;
+
+  color: #55524e;
+}
+
+.work__end-line {
+  height: 1px;
+
+  background:
+    rgba(242, 239, 232, 0.1);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .work__intro {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(200px, 250px);
+
+    gap: 3rem;
+  }
+
+  .work__heading {
+    font-size:
+      clamp(4.2rem, 10vw, 8rem);
+  }
+
+  .work__list {
+    gap:
+      clamp(6rem, 12vw, 10rem);
+  }
+
+  .work-card__meta {
+    grid-template-columns:
+      140px
+      minmax(0, 1fr);
+
+    gap: 2rem;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+  .work {
+    --work-image-scale: 1;
+
+    padding-top: 5rem;
+
+    padding-bottom: 6rem;
+  }
+
+  .work__intro {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+
+    margin-bottom: 5rem;
+  }
+
+  .work__heading {
+    max-width: 8.5ch;
+
+    font-size:
+      clamp(3.7rem, 15vw, 6rem);
+
+    line-height: 0.8;
+  }
+
+  .work__intro-copy {
+    max-width: 34ch;
+
+    font-size: 0.88rem;
+  }
+
+  .work__intro-status {
+    margin-top: 1.5rem;
+  }
+
+  .work__list {
+    gap: 6rem;
+  }
+
+  /*
+     MOBILE CARD
+  */
+
+  .work-card__frame {
+    aspect-ratio: 4 / 4.6;
+
+    min-height: 0;
+  }
+
+  /*
+     IMPORTANT:
+     Image wrapper full frame.
+  */
+
+  .work-card__image-wrap {
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+  }
+
+  /*
+     CONTAIN ON MOBILE TOO.
+  */
+
+  .work-card__image-wrap img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center center;
+
+    transform: scale(var(--work-image-scale));
+  }
+
+  .work-card:hover
+  .work-card__image-wrap img {
+    transform: scale(var(--work-image-scale));
+  }
+
+  .work-card__top {
+    top: 1rem;
+
+    left: 1rem;
+    right: 1rem;
+  }
+
+  .work-card__marker {
+    top: 3.2rem;
+
+    right: 1rem;
+  }
+
+  .work-card__overlay-content {
+    left: 1rem;
+    right: 1rem;
+
+    bottom: 1.2rem;
+  }
+
+  .work-card__overlay-heading {
+    gap: 1rem;
+  }
+
+  .work-card__overlay-heading h3 {
+    max-width: 8ch;
+
+    font-size:
+      clamp(2.5rem, 11vw, 4.4rem);
+  }
+
+  .work-card__overlay-arrow {
+    width: 2.7rem;
+    height: 2.7rem;
+
+    font-size: 0.85rem;
+  }
+
+  .work-card__meta {
+    grid-template-columns: 1fr;
+
+    gap: 1rem;
+
+    padding-top: 1.2rem;
+  }
+
+  .work-card__description {
+    max-width: 38ch;
+
+    font-size: 0.82rem;
+
+    line-height: 1.65;
+  }
+
+  .work-card__meta-bottom {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 1rem;
+  }
+
+  .work__end {
+    grid-template-columns:
+      auto
+      1fr
+      auto;
+
+    margin-top: 5rem;
+
+    font-size: 0.4rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+  .work {
+    --work-image-scale: 1;
+
+    padding-top: 4.5rem;
+
+    padding-bottom: 5rem;
+  }
+
+  .work__intro {
+    gap: 1.6rem;
+
+    margin-bottom: 4.5rem;
+  }
+
+  .work__eyebrow-row {
+    margin-bottom: 1.25rem;
+  }
+
+  .work__heading {
+    font-size:
+      clamp(3.3rem, 15vw, 4.8rem);
+
+    letter-spacing: -0.075em;
+  }
+
+  .work__intro-copy {
+    font-size: 0.82rem;
+
+    line-height: 1.65;
+  }
+
+  .work__list {
+    gap: 5rem;
+  }
+
+  .work-card__frame {
+    aspect-ratio: 4 / 4.8;
+  }
+
+  .work-card__status,
+  .work-card__number {
+    font-size: 0.42rem;
+  }
+
+  .work-card__marker {
+    font-size: 0.38rem;
+  }
+
+  .work-card__overlay-category {
+    margin-bottom: 0.5rem;
+
+    font-size: 0.42rem;
+  }
+
+  .work-card__overlay-heading h3 {
+    font-size:
+      clamp(2.25rem, 11vw, 3.7rem);
+  }
+
+  .work-card__overlay-arrow {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .work-card__meta {
+    padding-top: 1rem;
+  }
+
+  .work-card__meta-left span {
+    font-size: 0.42rem;
+  }
+
+  .work-card__description {
+    font-size: 0.78rem;
+  }
+
+  .work-card__tag {
+    padding:
+      0.32rem 0.55rem;
+
+    font-size: 0.4rem;
+  }
+
+  .work-card__view {
+    font-size: 0.42rem;
+  }
+
+  .work__end {
+    margin-top: 4rem;
+
+    font-size: 0.34rem;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .work-card__frame,
+  .work-card__image-wrap,
+  .work-card__image-wrap img,
+  .work-card__overlay-arrow,
+  .work-card__accent-line,
+  .work-card__view {
+    transition: none !important;
+  }
+}

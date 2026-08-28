@@ -1,0 +1,1147 @@
+/* =========================================================
+   SERVICES — DARK PREMIUM / EDITORIAL SYSTEM
+   Palette: BLACK / CREAM / PURPLE
+========================================================= */
+
+.services {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      42rem 34rem at 86% 8%,
+      rgba(139, 92, 246, 0.075),
+      transparent 72%
+    ),
+    radial-gradient(
+      32rem 28rem at 5% 88%,
+      rgba(243, 239, 231, 0.018),
+      transparent 72%
+    ),
+    #08090b;
+
+  color: #f3efe7;
+
+  padding-top: clamp(6rem, 11vw, 10rem);
+  padding-bottom: clamp(6rem, 11vw, 10rem);
+
+  isolation: isolate;
+}
+
+
+/* =========================================================
+   AMBIENT PURPLE LIGHT
+========================================================= */
+
+.services::before {
+  content: "";
+
+  position: absolute;
+
+  width: 44rem;
+  height: 44rem;
+
+  top: -22rem;
+  right: -14rem;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(139, 92, 246, 0.14) 0%,
+      rgba(139, 92, 246, 0.045) 34%,
+      transparent 72%
+    );
+
+  filter: blur(30px);
+
+  pointer-events: none;
+
+  z-index: -1;
+
+  animation:
+    servicesAmbient 14s ease-in-out infinite alternate;
+}
+
+
+/* =========================================================
+   SUBTLE GRAIN
+========================================================= */
+
+.services::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  opacity: 0.13;
+
+  background-image:
+    radial-gradient(
+      rgba(255, 255, 255, 0.15) 0.5px,
+      transparent 0.5px
+    );
+
+  background-size: 9px 9px;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      transparent 86%
+    );
+
+  z-index: -1;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.services .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.services__intro {
+  display: grid;
+
+  grid-template-columns:
+    minmax(9rem, 0.55fr)
+    minmax(0, 1.7fr);
+
+  gap: clamp(2rem, 5vw, 6rem);
+
+  align-items: start;
+
+  margin-bottom:
+    clamp(4rem, 8vw, 7.5rem);
+}
+
+.services__intro-label {
+  padding-top: 0.55rem;
+}
+
+.services__intro .eyebrow {
+  margin: 0;
+
+  color:
+    rgba(243, 239, 231, 0.38);
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.services__heading {
+  max-width: 9ch;
+
+  margin: 0;
+
+  color: #f3efe7;
+
+  font-size:
+    clamp(3.6rem, 7vw, 7rem);
+
+  line-height: 0.86;
+
+  letter-spacing: -0.065em;
+
+  font-weight: 500;
+}
+
+.services__heading span {
+  display: block;
+
+  color:
+    #a78bfaaf;
+}
+
+
+/* =========================================================
+   INTRO COPY
+========================================================= */
+
+.services__intro-copy {
+  max-width: 43ch;
+
+  margin:
+    clamp(1.5rem, 2.5vw, 2rem)
+    0
+    0;
+
+  color:
+    rgba(243, 239, 231, 0.52);
+
+  font-size:
+    clamp(0.92rem, 1.1vw, 1.02rem);
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   MAIN SYSTEM
+========================================================= */
+
+.services__layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 0.72fr)
+    minmax(0, 1.45fr);
+
+  gap:
+    clamp(3rem, 7vw, 8rem);
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   SERVICE NAV
+========================================================= */
+
+.services__list {
+  border-top:
+    1px solid
+    rgba(243, 239, 231, 0.13);
+}
+
+.services__item {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 92px;
+
+  display: grid;
+
+  grid-template-columns:
+    2.5rem
+    minmax(0, 1fr)
+    10px;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  padding:
+    1rem
+    0;
+
+  color:
+    rgba(243, 239, 231, 0.34);
+
+  background: transparent;
+
+  border: 0;
+
+  border-bottom:
+    1px solid
+    rgba(243, 239, 231, 0.085);
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    color 0.4s var(--ease),
+    padding 0.4s var(--ease),
+    transform 0.4s var(--ease);
+}
+
+
+/* =========================================================
+   PURPLE ACTIVE LINE
+========================================================= */
+
+.services__item::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 2px;
+  height: 100%;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      #8b5cf6 25%,
+      #8b5cf6 75%,
+      transparent
+    );
+
+  transform:
+    scaleY(0);
+
+  transform-origin: center;
+
+  opacity: 0;
+
+  transition:
+    transform 0.45s var(--ease),
+    opacity 0.45s var(--ease);
+}
+
+
+/* =========================================================
+   ACTIVE / HOVER
+========================================================= */
+
+.services__item:hover,
+.services__item.is-active {
+  color: #f3efe7;
+
+  padding-left: 0.75rem;
+}
+
+.services__item:hover::before,
+.services__item.is-active::before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+
+/* =========================================================
+   INDEX
+========================================================= */
+
+.services__index {
+  font-size: 0.56rem;
+
+  letter-spacing: 0.12em;
+
+  color: inherit;
+
+  opacity: 0.48;
+
+  transition:
+    color 0.35s var(--ease),
+    opacity 0.35s var(--ease);
+}
+
+.services__item:hover .services__index,
+.services__item.is-active .services__index {
+  color: #a78bfa;
+  opacity: 0.9;
+}
+
+
+/* =========================================================
+   SERVICE TITLE
+========================================================= */
+
+.services__item-title {
+  min-width: 0;
+
+  font-size:
+    clamp(1.25rem, 2.15vw, 1.85rem);
+
+  line-height: 1;
+
+  letter-spacing: -0.04em;
+
+  font-weight: 500;
+
+  transition:
+    transform 0.4s var(--ease);
+}
+
+.services__item:hover .services__item-title,
+.services__item.is-active .services__item-title {
+  transform: translateX(2px);
+}
+
+
+/* =========================================================
+   DOT
+========================================================= */
+
+.services__item-dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: currentColor;
+
+  opacity: 0.18;
+
+  transition:
+    transform 0.35s var(--ease),
+    opacity 0.35s var(--ease),
+    background 0.35s var(--ease),
+    box-shadow 0.35s var(--ease);
+}
+
+.services__item:hover .services__item-dot,
+.services__item.is-active .services__item-dot {
+  opacity: 1;
+
+  background: #8b5cf6;
+
+  transform: scale(1.5);
+
+  box-shadow:
+    0 0 0 4px rgba(139, 92, 246, 0.08),
+    0 0 18px rgba(139, 92, 246, 0.55);
+}
+
+
+/* =========================================================
+   ACTIVE PANEL
+========================================================= */
+
+.services__panel {
+  position: relative;
+
+  min-height: 560px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding:
+    clamp(1.5rem, 3vw, 2.8rem);
+
+  border-radius:
+    clamp(1.25rem, 2vw, 1.75rem);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(27, 28, 32, 0.9),
+      rgba(9, 10, 12, 0.97)
+    );
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.085);
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.06),
+
+    inset 0 0 80px
+      rgba(139, 92, 246, 0.018),
+
+    0 30px 80px
+      rgba(0, 0, 0, 0.48);
+
+  overflow: hidden;
+
+  isolation: isolate;
+}
+
+
+/* =========================================================
+   PANEL PURPLE LIGHT
+========================================================= */
+
+.services__panel::before {
+  content: "";
+
+  position: absolute;
+
+  width: 26rem;
+  height: 26rem;
+
+  top: -14rem;
+  right: -9rem;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(139, 92, 246, 0.17),
+      rgba(139, 92, 246, 0.045) 36%,
+      transparent 72%
+    );
+
+  filter: blur(22px);
+
+  pointer-events: none;
+
+  z-index: -1;
+
+  animation:
+    panelGlow 8s ease-in-out infinite alternate;
+}
+
+
+/* =========================================================
+   PANEL GLASS HIGHLIGHT
+========================================================= */
+
+.services__panel::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      125deg,
+      rgba(255, 255, 255, 0.035) 0%,
+      transparent 24%,
+      transparent 62%,
+      rgba(139, 92, 246, 0.018) 100%
+    );
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+/* =========================================================
+   PANEL HEADER
+========================================================= */
+
+.services__panel-top {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-bottom: 1rem;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+
+  color:
+    rgba(243, 239, 231, 0.36);
+}
+
+.services__panel-number,
+.services__panel-label {
+  font-size: 0.56rem;
+
+  letter-spacing: 0.13em;
+}
+
+.services__panel-number {
+  color: #a78bfa;
+}
+
+
+/* =========================================================
+   PANEL CONTENT
+========================================================= */
+
+.services__panel-content {
+  position: relative;
+
+  z-index: 2;
+
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding:
+    clamp(3rem, 5vw, 5rem)
+    0
+    2rem;
+}
+
+
+/* =========================================================
+   KICKER
+========================================================= */
+
+.services__panel-kicker {
+  margin:
+    0
+    0
+    1rem;
+
+  color:
+    rgba(243, 239, 231, 0.32);
+
+  font-size: 0.48rem;
+
+  letter-spacing: 0.14em;
+}
+
+
+/* =========================================================
+   PANEL TITLE
+========================================================= */
+
+.services__panel-title {
+  max-width: 8ch;
+
+  margin: 0;
+
+  color: #f3efe7;
+
+  font-size:
+    clamp(3rem, 5.2vw, 5.3rem);
+
+  line-height: 0.86;
+
+  letter-spacing: -0.065em;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   COPY
+========================================================= */
+
+.services__copy {
+  max-width: 44ch;
+
+  margin:
+    1.5rem
+    0
+    0;
+
+  color:
+    rgba(243, 239, 231, 0.56);
+
+  font-size:
+    clamp(0.9rem, 1vw, 1rem);
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.services__tags {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 0.65rem;
+
+  margin:
+    2.2rem
+    0
+    0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.services__tags li {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.75rem;
+
+  min-height: 46px;
+
+  padding:
+    0.7rem
+    0.85rem;
+
+  border-radius: 0.7rem;
+
+  background:
+    rgba(255, 255, 255, 0.032);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.075);
+
+  color:
+    rgba(243, 239, 231, 0.68);
+
+  font-size: 0.82rem;
+
+  overflow: hidden;
+
+  transition:
+    background 0.35s var(--ease),
+    border-color 0.35s var(--ease),
+    transform 0.35s var(--ease),
+    box-shadow 0.35s var(--ease);
+}
+
+
+/* tiny purple sweep */
+
+.services__tags li::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #8b5cf6,
+      transparent
+    );
+
+  transition:
+    width 0.45s var(--ease);
+}
+
+.services__tags li:hover::before {
+  width: 100%;
+}
+
+.services__tags li:hover {
+  transform: translateY(-3px);
+
+  background:
+    rgba(255, 255, 255, 0.052);
+
+  border-color:
+    rgba(139, 92, 246, 0.25);
+
+  box-shadow:
+    0 12px 28px
+    rgba(0, 0, 0, 0.24);
+}
+
+
+/* =========================================================
+   TAG NUMBER
+========================================================= */
+
+.services__tag-number {
+  flex: 0 0 auto;
+
+  color:
+    rgba(243, 239, 231, 0.26);
+
+  font-size: 0.5rem;
+
+  letter-spacing: 0.08em;
+
+  transition:
+    color 0.35s var(--ease);
+}
+
+.services__tags li:hover .services__tag-number {
+  color: #a78bfa;
+}
+
+
+/* =========================================================
+   PANEL FOOTER
+========================================================= */
+
+.services__panel-foot {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: auto;
+
+  padding-top: 1rem;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+
+  color:
+    rgba(243, 239, 231, 0.3);
+
+  font-family: var(--font-mono);
+
+  font-size: 0.53rem;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+.services__panel-foot span:last-child {
+  color: #a78bfa;
+
+  font-family: inherit;
+
+  font-size: 1rem;
+
+  letter-spacing: 0;
+
+  transition:
+    transform 0.35s var(--ease);
+}
+
+.services__panel:hover
+.services__panel-foot span:last-child {
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .services__intro {
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+  }
+
+  .services__intro-label {
+    padding-top: 0;
+  }
+
+  .services__heading {
+    max-width: 10ch;
+  }
+
+  .services__layout {
+    grid-template-columns:
+      minmax(240px, 0.7fr)
+      minmax(0, 1.3fr);
+
+    gap: 2.5rem;
+  }
+
+  .services__panel {
+    min-height: 520px;
+  }
+
+  .services__panel-title {
+    font-size:
+      clamp(2.8rem, 5vw, 4.5rem);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .services {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+
+  /* INTRO */
+
+  .services__intro {
+    margin-bottom: 3.5rem;
+
+    gap: 1.25rem;
+  }
+
+  .services__heading {
+    max-width: 9ch;
+
+    font-size:
+      clamp(3rem, 13vw, 4.3rem);
+
+    line-height: 0.87;
+
+    letter-spacing: -0.065em;
+  }
+
+  .services__heading span {
+    color:
+      rgba(243, 239, 231, 0.24);
+  }
+
+  .services__intro-copy {
+    max-width: 34ch;
+
+    margin-top: 1.25rem;
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+  }
+
+
+  /* LAYOUT */
+
+  .services__layout {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2rem;
+  }
+
+
+  /* LIST */
+
+  .services__list {
+    width: 100%;
+  }
+
+  .services__item {
+    min-height: 72px;
+
+    grid-template-columns:
+      2rem
+      minmax(0, 1fr)
+      8px;
+
+    gap: 0.8rem;
+
+    padding: 0.8rem 0;
+  }
+
+  .services__item:hover,
+  .services__item.is-active {
+    padding-left: 0.4rem;
+  }
+
+  .services__item-title {
+    font-size: 1.3rem;
+
+    letter-spacing: -0.035em;
+  }
+
+  .services__index {
+    font-size: 0.5rem;
+  }
+
+  .services__item-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+
+  /* PANEL */
+
+  .services__panel {
+    width: 100%;
+
+    min-height: 500px;
+
+    padding: 1.25rem;
+
+    border-radius: 1.2rem;
+  }
+
+  .services__panel-top {
+    padding-bottom: 0.85rem;
+  }
+
+  .services__panel-number,
+  .services__panel-label {
+    font-size: 0.5rem;
+  }
+
+
+  /* CONTENT */
+
+  .services__panel-content {
+    justify-content: flex-start;
+
+    padding:
+      3.5rem
+      0
+      1.5rem;
+  }
+
+  .services__panel-kicker {
+    margin-bottom: 0.8rem;
+
+    font-size: 0.42rem;
+  }
+
+  .services__panel-title {
+    max-width: 8ch;
+
+    font-size:
+      clamp(2.7rem, 12vw, 4rem);
+
+    line-height: 0.86;
+  }
+
+  .services__copy {
+    max-width: 35ch;
+
+    margin-top: 1.2rem;
+
+    font-size: 0.88rem;
+
+    line-height: 1.6;
+  }
+
+
+  /* TAGS */
+
+  .services__tags {
+    grid-template-columns: 1fr;
+
+    gap: 0.5rem;
+
+    margin-top: 1.7rem;
+  }
+
+  .services__tags li {
+    min-height: 42px;
+
+    padding:
+      0.65rem
+      0.75rem;
+
+    font-size: 0.77rem;
+  }
+
+
+  /* FOOTER */
+
+  .services__panel-foot {
+    margin-top: auto;
+
+    padding-top: 0.85rem;
+
+    font-size: 0.45rem;
+  }
+
+  .services__panel-foot span:last-child {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 420px) {
+  .services {
+    padding-top: 4.5rem;
+
+    padding-bottom: 4.5rem;
+  }
+
+  .services__heading {
+    font-size:
+      clamp(2.7rem, 13vw, 3.7rem);
+  }
+
+  .services__intro-copy {
+    font-size: 0.86rem;
+  }
+
+  .services__item {
+    min-height: 68px;
+  }
+
+  .services__item-title {
+    font-size: 1.18rem;
+  }
+
+  .services__panel {
+    min-height: 470px;
+
+    padding: 1rem;
+  }
+
+  .services__panel-content {
+    padding-top: 3rem;
+  }
+
+  .services__panel-title {
+    font-size:
+      clamp(2.5rem, 12vw, 3.5rem);
+  }
+
+  .services__copy {
+    font-size: 0.84rem;
+  }
+}
+
+
+/* =========================================================
+   AMBIENT ANIMATIONS
+========================================================= */
+
+@keyframes servicesAmbient {
+  0% {
+    transform:
+      translate3d(0, 0, 0)
+      scale(1);
+  }
+
+  100% {
+    transform:
+      translate3d(-24px, 18px, 0)
+      scale(1.08);
+  }
+}
+
+
+@keyframes panelGlow {
+  0% {
+    transform: scale(0.96);
+    opacity: 0.72;
+  }
+
+  100% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .services::before,
+  .services__panel::before {
+    animation: none;
+  }
+
+  .services__item,
+  .services__item-dot,
+  .services__item-title,
+  .services__tags li,
+  .services__panel-foot span:last-child {
+    transition: none;
+  }
+}

@@ -1,0 +1,437 @@
+/* =========================================================
+   INSIGHTS — CINEMATIC DARK / EDITORIAL SECTION
+   ========================================================= */
+
+.insights {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      65% 80% at 8% 8%,
+      rgba(104, 83, 255, 0.22),
+      transparent 68%
+    ),
+    radial-gradient(
+      55% 70% at 92% 92%,
+      rgba(126, 92, 255, 0.16),
+      transparent 70%
+    ),
+    radial-gradient(
+      45% 55% at 50% 45%,
+      rgba(255, 255, 255, 0.025),
+      transparent 72%
+    ),
+    linear-gradient(
+      145deg,
+      #070813 0%,
+      #090a17 48%,
+      #0c0d1b 100%
+    );
+
+  color: #f7f5ff;
+  isolation: isolate;
+}
+
+
+/* =========================================================
+   AMBIENT LIGHT — TOP LEFT
+   ========================================================= */
+
+.insights::before {
+  content: "";
+
+  position: absolute;
+
+  width: 55vw;
+  height: 55vw;
+
+  max-width: 850px;
+  max-height: 850px;
+
+  top: -30vw;
+  left: -20vw;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(115, 87, 255, 0.20) 0%,
+      rgba(115, 87, 255, 0.075) 35%,
+      transparent 72%
+    );
+
+  filter: blur(30px);
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+/* =========================================================
+   AMBIENT LIGHT — BOTTOM RIGHT
+   ========================================================= */
+
+.insights::after {
+  content: "";
+
+  position: absolute;
+
+  width: 50vw;
+  height: 50vw;
+
+  max-width: 760px;
+  max-height: 760px;
+
+  right: -22vw;
+  bottom: -28vw;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(115, 87, 255, 0.17) 0%,
+      rgba(115, 87, 255, 0.055) 38%,
+      transparent 72%
+    );
+
+  filter: blur(38px);
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.insights .eyebrow {
+  color: #b7a9ff;
+}
+
+.insights .eyebrow::before {
+  background: #8068ff;
+
+  box-shadow:
+    0 0 0 4px rgba(128, 104, 255, 0.11),
+    0 0 18px rgba(128, 104, 255, 0.85);
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.insights__heading {
+  margin-top: 1.25rem;
+
+  font-size: clamp(
+    2.2rem,
+    5vw,
+    4.5rem
+  );
+
+  font-weight: 500;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.045em;
+
+  max-width: 15ch;
+
+  color: #f8f7ff;
+
+  text-wrap: balance;
+
+  text-shadow:
+    0 0 40px rgba(115, 87, 255, 0.10);
+}
+
+
+/* =========================================================
+   LIST
+   ========================================================= */
+
+.insights__list {
+  list-style: none;
+
+  margin:
+    clamp(3rem, 7vw, 5.5rem)
+    0
+    0;
+
+  padding: 0;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+/* =========================================================
+   LIST ITEM
+   ========================================================= */
+
+.insights__list li {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 2rem;
+
+  padding:
+    1.55rem
+    0;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.075);
+
+  transition:
+    padding-left 0.45s var(--ease),
+    border-color 0.35s var(--ease),
+    background 0.35s var(--ease);
+}
+
+
+/* subtle violet hover atmosphere */
+
+.insights__list li::before {
+  content: "";
+
+  position: absolute;
+
+  left: -1rem;
+  right: -1rem;
+
+  top: 0;
+  bottom: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(115, 87, 255, 0.075),
+      transparent 55%
+    );
+
+  opacity: 0;
+
+  transition:
+    opacity 0.4s var(--ease);
+
+  pointer-events: none;
+}
+
+
+.insights__list li:hover {
+  padding-left: 0.85rem;
+
+  border-bottom-color:
+    rgba(167, 139, 250, 0.22);
+}
+
+
+.insights__list li:hover::before {
+  opacity: 1;
+}
+
+
+/* =========================================================
+   "COMING SOON"
+   ========================================================= */
+
+.insights__tag {
+  position: relative;
+  z-index: 1;
+
+  min-width: 7.5rem;
+
+  font-size: 0.62rem;
+
+  font-weight: 500;
+
+  letter-spacing: 0.13em;
+
+  color: #9187b5;
+
+  opacity: 0.9;
+
+  white-space: nowrap;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TOPIC TITLE
+   ========================================================= */
+
+.insights__title {
+  position: relative;
+  z-index: 1;
+
+  font-size: clamp(
+    1.15rem,
+    2.2vw,
+    1.55rem
+  );
+
+  font-weight: 500;
+
+  line-height: 1.25;
+
+  letter-spacing: -0.02em;
+
+  color: #e9e6f5;
+
+  transition:
+    color 0.35s var(--ease),
+    transform 0.35s var(--ease);
+}
+
+
+.insights__list li:hover .insights__title {
+  color: #ffffff;
+
+  transform: translateX(0.15rem);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .insights {
+    background:
+      radial-gradient(
+        90% 60% at 0% 0%,
+        rgba(104, 83, 255, 0.20),
+        transparent 70%
+      ),
+      radial-gradient(
+        80% 60% at 100% 100%,
+        rgba(126, 92, 255, 0.13),
+        transparent 72%
+      ),
+      linear-gradient(
+        150deg,
+        #070813 0%,
+        #090a17 55%,
+        #0b0c19 100%
+      );
+  }
+
+
+  .insights::before {
+    width: 110vw;
+    height: 110vw;
+
+    top: -48vw;
+    left: -55vw;
+
+    opacity: 0.8;
+  }
+
+
+  .insights::after {
+    width: 100vw;
+    height: 100vw;
+
+    right: -55vw;
+    bottom: -35vw;
+
+    opacity: 0.7;
+  }
+
+
+  .insights__heading {
+    font-size: clamp(
+      2.2rem,
+      11vw,
+      3.5rem
+    );
+
+    max-width: 12ch;
+  }
+
+
+  .insights__list {
+    margin-top: 3rem;
+  }
+
+
+  .insights__list li {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 0.55rem;
+
+    padding:
+      1.35rem
+      0;
+  }
+
+
+  .insights__list li:hover {
+    padding-left: 0.45rem;
+  }
+
+
+  .insights__tag {
+    min-width: auto;
+
+    font-size: 0.58rem;
+  }
+
+
+  .insights__title {
+    font-size: 1.15rem;
+
+    line-height: 1.3;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .insights__heading {
+    font-size: 2.15rem;
+  }
+
+  .insights__list {
+    margin-top: 2.5rem;
+  }
+
+  .insights__list li {
+    padding: 1.15rem 0;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .insights::before,
+  .insights::after {
+    filter: none;
+  }
+
+  .insights__list li,
+  .insights__list li::before,
+  .insights__title {
+    transition: none;
+  }
+}

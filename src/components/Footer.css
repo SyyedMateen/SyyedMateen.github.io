@@ -1,0 +1,282 @@
+/* =========================================================
+   FOOTER — CINEMATIC DARK ANCHOR
+   ========================================================= */
+
+.footer {
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      65% 100% at 8% 100%,
+      rgba(115, 87, 255, 0.14),
+      transparent 62%
+    ),
+    radial-gradient(
+      50% 80% at 92% 0%,
+      rgba(255, 118, 82, 0.07),
+      transparent 65%
+    ),
+    linear-gradient(
+      145deg,
+      #050506 0%,
+      #080811 55%,
+      #0b0912 100%
+    );
+
+  color: var(--cream);
+
+  padding:
+    3rem
+    clamp(1.25rem, 5vw, 4.5rem)
+    2.25rem;
+}
+
+
+/* =========================================================
+   TOP ATMOSPHERE
+   ========================================================= */
+
+.footer::before {
+  content: "";
+
+  position: absolute;
+
+  width: min(50vw, 700px);
+  height: min(50vw, 700px);
+
+  left: -20%;
+  bottom: -55%;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(115, 87, 255, 0.16),
+      transparent 68%
+    );
+
+  filter: blur(30px);
+
+  pointer-events: none;
+}
+
+.footer::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(115, 87, 255, 0.7) 25%,
+      rgba(167, 139, 250, 0.35) 50%,
+      rgba(255, 118, 82, 0.45) 75%,
+      transparent
+    );
+
+  opacity: 0.8;
+}
+
+
+/* =========================================================
+   INNER
+   ========================================================= */
+
+.footer__inner {
+  position: relative;
+
+  z-index: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+
+  gap: 1.5rem;
+
+  border-top:
+    1px solid
+    rgba(167, 139, 250, 0.18);
+
+  padding-top: 2rem;
+}
+
+
+/* =========================================================
+   NAME
+   ========================================================= */
+
+.footer__name {
+  font-size: 1.15rem;
+
+  font-weight: 600;
+
+  color: #ffffff;
+
+  letter-spacing: -0.02em;
+}
+
+
+/* =========================================================
+   TAGLINE
+   ========================================================= */
+
+.footer__tagline {
+  margin-top: 0.35rem;
+
+  font-size: 0.85rem;
+
+  color:
+    rgba(167, 139, 250, 0.72);
+
+  transition:
+    color 0.3s var(--ease);
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.footer__links {
+  list-style: none;
+
+  display: flex;
+
+  gap: 1.5rem;
+
+  padding: 0;
+
+  margin: 0;
+
+  font-size: 0.85rem;
+}
+
+.footer__links a {
+  position: relative;
+
+  color:
+    rgba(244, 240, 232, 0.58);
+
+  transition:
+    color 0.3s var(--ease);
+}
+
+.footer__links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -4px;
+
+  height: 1px;
+
+  transform:
+    scaleX(0);
+
+  transform-origin: left;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--violet),
+      var(--coral)
+    );
+
+  transition:
+    transform 0.4s var(--ease);
+}
+
+.footer__links a:hover {
+  color: #ffffff;
+}
+
+.footer__links a:hover::after {
+  transform: scaleX(1);
+}
+
+
+/* =========================================================
+   COPYRIGHT
+   ========================================================= */
+
+.footer__copy {
+  font-size: 0.78rem;
+
+  color:
+    rgba(167, 139, 250, 0.55);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+  .footer {
+    padding:
+      2.5rem
+      1.15rem
+      1.75rem;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 1.35rem;
+
+    padding-top: 1.5rem;
+  }
+
+  .footer__links {
+    gap: 1rem;
+
+    flex-wrap: wrap;
+
+    font-size: 0.78rem;
+  }
+
+  .footer__name {
+    font-size: 1.05rem;
+  }
+
+  .footer__tagline {
+    font-size: 0.76rem;
+  }
+
+  .footer__copy {
+    font-size: 0.68rem;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .footer__links a,
+  .footer__links a::after,
+  .footer__tagline {
+    transition: none;
+  }
+}

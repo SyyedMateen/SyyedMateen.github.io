@@ -1,0 +1,747 @@
+/* =========================================================
+   PROCESS — LUXURY CINEMATIC SYSTEM
+========================================================= */
+
+.process {
+  position: relative;
+  overflow: clip;
+  height: 468vh;
+
+  background:
+    radial-gradient(
+      65% 55% at 18% 18%,
+      rgba(108, 88, 165, 0.12),
+      transparent 68%
+    ),
+    radial-gradient(
+      55% 55% at 82% 72%,
+      rgba(182, 112, 78, 0.055),
+      transparent 72%
+    ),
+    linear-gradient(
+      145deg,
+      #080809 0%,
+      #0d0d10 48%,
+      #111014 100%
+    );
+
+  color: var(--ink);
+}
+
+
+/* =========================================================
+   ATMOSPHERIC FIELD
+========================================================= */
+
+.process__field {
+  position: absolute;
+  inset: -35% -25%;
+  z-index: 0;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      32% 34% at 18% 20%,
+      rgba(137, 111, 210, 0.20) 0%,
+      rgba(137, 111, 210, 0.055) 38%,
+      transparent 72%
+    ),
+
+    radial-gradient(
+      28% 34% at 82% 70%,
+      rgba(189, 119, 91, 0.075) 0%,
+      rgba(189, 119, 91, 0.02) 38%,
+      transparent 72%
+    ),
+
+    radial-gradient(
+      20% 25% at 52% 42%,
+      rgba(255, 255, 255, 0.035),
+      transparent 72%
+    );
+
+  filter: blur(10px);
+}
+
+
+/* =========================================================
+   STICKY VIEWPORT
+========================================================= */
+
+.process__sticky {
+  position: sticky;
+  top: 0;
+
+  width: 100%;
+  height: 100svh;
+  min-height: 620px;
+
+  display: flex;
+  align-items: center;
+
+  padding:
+    var(--section-pad)
+    var(--edge-pad);
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   INNER
+========================================================= */
+
+.process__inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+.process__body {
+  margin-top: 3.5rem;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr)
+    minmax(0, 1.05fr);
+
+  gap: clamp(3rem, 7vw, 8rem);
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   LEFT — STEP LIST
+========================================================= */
+
+.process__list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.25rem;
+}
+
+
+.process__step {
+  display: flex;
+  align-items: baseline;
+
+  gap: 1rem;
+
+  padding: 0.7rem 0;
+
+  opacity: 0.16;
+
+  transform: translateX(0);
+
+  color: var(--ink);
+
+  transition:
+    opacity 0.55s var(--ease),
+    transform 0.7s var(--ease);
+}
+
+
+.process__step.is-past {
+  opacity: 0.38;
+}
+
+
+.process__step.is-active {
+  opacity: 1;
+  transform: translateX(1rem);
+}
+
+
+/* =========================================================
+   STEP INDEX
+========================================================= */
+
+.process__step-index {
+  width: 2.4rem;
+  flex: 0 0 2.4rem;
+
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+
+  color: #c59b83;
+
+  opacity: 0.9;
+}
+
+
+/* =========================================================
+   STEP TITLE
+========================================================= */
+
+.process__step-title {
+  color: #f2eee8;
+
+  font-size: clamp(2rem, 4vw, 4rem);
+
+  font-weight: 500;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.045em;
+
+  transition:
+    color 0.5s ease,
+    text-shadow 0.5s ease;
+}
+
+
+.process__step.is-active .process__step-title {
+  color: #ffffff;
+
+  text-shadow:
+    0 0 35px rgba(255, 255, 255, 0.07),
+    0 0 70px rgba(155, 125, 205, 0.08);
+}
+
+
+/* =========================================================
+   RIGHT — DETAIL
+========================================================= */
+
+.process__detail {
+  position: relative;
+
+  min-width: 0;
+
+  border-left:
+    1px solid rgba(255, 255, 255, 0.09);
+
+  padding-left:
+    clamp(2rem, 4vw, 4rem);
+}
+
+
+/* =========================================================
+   GRAPH
+========================================================= */
+
+.process__visual-wrap {
+  width: 100%;
+  max-width: 520px;
+
+  margin-bottom: 2rem;
+
+  opacity: 1;
+}
+
+
+.process-visual {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  overflow: visible;
+}
+
+
+/* =========================================================
+   GRAPH GRID
+========================================================= */
+
+.process-visual__grid {
+  stroke: rgba(255, 255, 255, 0.055);
+  stroke-width: 1;
+}
+
+
+/* =========================================================
+   GRAPH LINE
+========================================================= */
+
+.process-visual__line {
+  stroke: #b49cff;
+
+  stroke-width: 2.5;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  filter:
+    drop-shadow(0 0 7px rgba(180, 156, 255, 0.55))
+    drop-shadow(0 0 24px rgba(180, 156, 255, 0.18));
+}
+
+
+/* =========================================================
+   GRAPH POINTS
+========================================================= */
+
+.process-visual__point {
+  fill: rgba(180, 156, 255, 0.25);
+
+  transform-box: fill-box;
+  transform-origin: center;
+
+  transition:
+    fill 0.4s ease,
+    opacity 0.4s ease,
+    transform 0.5s var(--ease),
+    filter 0.5s ease;
+}
+
+
+.process-visual__point.is-past {
+  fill: #a995e8;
+}
+
+
+.process-visual__point.is-active {
+  fill: #fffdf8;
+
+  filter:
+    drop-shadow(0 0 5px #ffffff)
+    drop-shadow(0 0 14px rgba(180, 156, 255, 0.75))
+    drop-shadow(0 0 36px rgba(180, 156, 255, 0.30));
+
+  transform: scale(1.35);
+}
+
+
+/* =========================================================
+   GRAPH GLOW
+========================================================= */
+
+.process-visual__glow {
+  fill: rgba(181, 153, 255, 0.34);
+
+  filter: blur(8px);
+
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+
+/* =========================================================
+   GRAPH LABELS
+========================================================= */
+
+.process-visual__label {
+  fill: rgba(244, 239, 231, 0.23);
+
+  font-family: var(--font-mono);
+
+  font-size: 8px;
+
+  text-anchor: middle;
+
+  transition:
+    fill 0.4s ease;
+}
+
+
+.process-visual__label.is-active {
+  fill: rgba(255, 252, 246, 0.88);
+}
+
+
+/* =========================================================
+   DETAIL INDEX
+========================================================= */
+
+.process__detail-index {
+  display: block;
+
+  font-size: 0.68rem;
+
+  letter-spacing: 0.08em;
+
+  color: rgba(238, 232, 224, 0.42);
+}
+
+
+/* =========================================================
+   DETAIL COPY
+========================================================= */
+
+.process__detail-copy {
+  margin-top: 1.1rem;
+
+  max-width: 30ch;
+
+  font-size:
+    clamp(1.15rem, 2vw, 1.55rem);
+
+  line-height: 1.45;
+
+  letter-spacing: -0.015em;
+
+  color: #b8b1c3;
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.process__progress {
+  margin-top: 3rem;
+
+  display: flex;
+
+  gap: 0.45rem;
+
+  width: 100%;
+
+  max-width: 620px;
+}
+
+
+.process__progress span {
+  height: 3px;
+
+  flex: 1;
+
+  background:
+    rgba(255, 255, 255, 0.10);
+
+  border-radius: 999px;
+
+  transition:
+    background 0.45s var(--ease),
+    transform 0.45s var(--ease),
+    box-shadow 0.45s ease;
+}
+
+
+.process__progress span.is-filled {
+  background:
+    linear-gradient(
+      90deg,
+      #9f8ae1,
+      #d0b6ff
+    );
+
+  transform: scaleY(1.35);
+
+  box-shadow:
+    0 0 12px rgba(174, 145, 239, 0.30);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) and (min-width: 801px) {
+
+  .process__body {
+    gap: 3rem;
+  }
+
+  .process__step-title {
+    font-size:
+      clamp(1.7rem, 4vw, 3rem);
+  }
+
+  .process__detail {
+    padding-left: 2rem;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .process {
+    width: 100%;
+    min-width: 0;
+
+    overflow: clip;
+
+    height: 468vh;
+  }
+
+
+  .process__sticky {
+    width: 100%;
+
+    height: 100svh;
+
+    min-height: 680px;
+
+    box-sizing: border-box;
+
+    padding:
+      5.5rem
+      1.25rem
+      1.5rem;
+
+    align-items: flex-start;
+
+    overflow: hidden;
+  }
+
+
+  .process__inner {
+    width: 100%;
+
+    max-width: 100%;
+    min-width: 0;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .process__body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    margin-top: 1.75rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+    flex: 1;
+    min-height: 0;
+  }
+
+
+  .process__list {
+    width: 100%;
+
+    gap: 0.04rem;
+
+    flex-shrink: 0;
+  }
+
+
+  .process__step {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 0.34rem 0;
+
+    gap: 0.6rem;
+
+    opacity: 0.17;
+
+    transform: none;
+  }
+
+
+  .process__step.is-past {
+    opacity: 0.4;
+  }
+
+
+  .process__step.is-active {
+    opacity: 1;
+
+    transform: translateX(0.3rem);
+  }
+
+
+  .process__step-index {
+    width: 1.7rem;
+    min-width: 1.7rem;
+    flex: 0 0 1.7rem;
+
+    font-size: 0.6rem;
+  }
+
+
+  .process__step-title {
+    font-size:
+      clamp(1.5rem, 7vw, 2rem);
+
+    line-height: 1.02;
+
+    letter-spacing: -0.04em;
+
+    white-space: normal;
+  }
+
+
+  .process__detail {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    border-left: none;
+
+    border-top:
+      1px solid rgba(255, 255, 255, 0.10);
+
+    padding:
+      1rem
+      0
+      0;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    min-height: 0;
+  }
+
+
+  .process__visual-wrap {
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    margin:
+      0
+      0
+      0.7rem;
+
+    flex-shrink: 0;
+  }
+
+
+  .process-visual {
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    min-height: 150px;
+
+    display: block;
+  }
+
+
+  .process__detail-index {
+    font-size: 0.64rem;
+  }
+
+
+  .process__detail-copy {
+    margin-top: 0.55rem;
+
+    max-width: 30ch;
+
+    font-size: 1rem;
+
+    line-height: 1.45;
+  }
+
+
+  .process__progress {
+    width: 100%;
+    max-width: 100%;
+
+    margin-top: auto;
+
+    padding-top: 1rem;
+
+    gap: 0.25rem;
+  }
+
+
+  .process__progress span {
+    min-width: 0;
+    height: 3px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .process__sticky {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    padding-top: 5.2rem;
+  }
+
+
+  .process__body {
+    margin-top: 1.25rem;
+    gap: 0.8rem;
+  }
+
+
+  .process__step {
+    padding: 0.27rem 0;
+    gap: 0.55rem;
+  }
+
+
+  .process__step-index {
+    width: 1.55rem;
+    min-width: 1.55rem;
+    flex-basis: 1.55rem;
+
+    font-size: 0.58rem;
+  }
+
+
+  .process__step-title {
+    font-size: 1.48rem;
+  }
+
+
+  .process__detail {
+    padding-top: 0.85rem;
+  }
+
+
+  .process__visual-wrap {
+    margin-bottom: 0.55rem;
+  }
+
+
+  .process-visual {
+    min-height: 135px;
+  }
+
+
+  .process__detail-copy {
+    font-size: 0.95rem;
+  }
+
+
+  .process__progress {
+    padding-top: 0.75rem;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .process__step,
+  .process-visual__point,
+  .process__progress span {
+    transition: none;
+  }
+}
