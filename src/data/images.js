@@ -16,7 +16,7 @@ const seed = (name, w, h) =>
 
 export const images = {
   heroPortrait: {
-  url: "/Images/rebot.gif",
+  url: "/Images/SyyedMateen.jpg",
   alt: "Editorial portrait of Syed Mateen",
   },
 
