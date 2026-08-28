@@ -39,7 +39,7 @@ export default function Nav() {
           }}
         >
           <a
-            href="#Syyedmateen"
+            href="#top"
             className="nav__brand"
             aria-label={`${nav.name} home`}
           >
