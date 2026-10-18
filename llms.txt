@@ -1,0 +1,30 @@
+# Syed Mateen
+
+> Syed Mateen builds AI agents and automations for businesses (voice and chat agents, booking and onboarding workflows and content pipelines built with n8n, ElevenLabs and Claude/ChatGPT models), makes CGI product ads with AI video tools, and runs Meta Ads and Google Ads campaigns. He works with Lenaar Digital on AI automation and social media marketing for US clients and studies computer science at the University of Karachi. Works remotely with clients worldwide.
+
+Key facts:
+- Role: AI Automation & Social Media Marketing, Lenaar Digital (part-time, remote, US clients), since June 2026
+- Also: Call Centre Agent on a US DME campaign (customer communication, CRM tracking, lead generation), since August 2026
+- Education: BS Computer Science, University of Karachi (in progress); Intermediate in Computer Science, Boys Degree College
+- Certifications: Google Ads Measurement (Google Skillshop, Oct 2026); HubSpot Sales Hub Software (HubSpot, Oct 2026)
+- Tools: n8n, ElevenLabs, ChatGPT, Claude, Google Calendar, Google Sheets, Gmail, Klap, Telegram, Slack, HubSpot, Meta Ads, Google Ads, Google Flow, CapCut, Shopify, Figma
+- Contact: syyedmaten@gmail.com · LinkedIn https://www.linkedin.com/in/syyedmateen · Instagram @syyed_mateen · X @Syyedmateen
+
+## Work
+
+- [Clinic voice booking agent](https://www.syyedmateen.com/work/clinic-voice-booking-agent): ElevenLabs voice agent plus an n8n workflow that checks clinic hours and Google Calendar, books or offers the nearest free slot, prevents double bookings, logs patients in Google Sheets and emails confirmations.
+- [YouTube to Shorts agent](https://www.syyedmateen.com/work/youtube-to-shorts-agent): Turns a YouTube URL into captioned Shorts through Klap, schedules and publishes them, and sends a Telegram summary.
+- [Pond's Hydra Miracle spec ad](https://www.syyedmateen.com/work/ponds-hydra-miracle-spec-ad): A vertical CGI spec ad made with AI video tools, with no on-screen copy. Not affiliated with Unilever or Pond's.
+- [AI receptionist](https://www.syyedmateen.com/#work): A voice and chat receptionist that answers inbound calls and messages and captures leads.
+- [Onboarding agent](https://www.syyedmateen.com/#work): An n8n workflow where an AI agent provisions a new user across company tools and Slack channels.
+
+## Services
+
+- [AI agents and automation](https://www.syyedmateen.com/ai-agents.html): voice and chat agents that answer, book and follow up; n8n workflows that connect business tools.
+- [CGI ads](https://www.syyedmateen.com/cgi-ads.html): product ads made with AI video tools (skincare, hair care, food, med spa), for Reels, Shorts and TikTok.
+- [Marketing](https://www.syyedmateen.com/marketing.html): Meta Ads and Google Ads campaigns, social content, SEO and AI search visibility, lead follow-up.
+
+## Optional
+
+- [About](https://www.syyedmateen.com/#about)
+- [FAQ](https://www.syyedmateen.com/#faq)
