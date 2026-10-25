@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="fonts.css"></head><body>
+<canvas id="stage" width="1280" height="720" style="width:1280px;height:720px"></canvas>
+<canvas id="out" width="1280" height="720"></canvas>
+<script>window.SCENE_RENDER=true;window.SCENE_W=1280;window.SCENE_H=720;window.SCENE_ACCENT=(location.hash.slice(1)||'blue');</script>
+<script src="../../static/assets/models/robot.js"></script>
+<script src="../../dist/assets/models/ads.js"></script><!-- run npm run build first: the build writes the phone ads -->
+<script src="../../static/assets/js/scene.js"></script>
+<script>
+window.sceneReady=Promise.all([window.sceneReady,document.fonts.load('600 46px "Instrument Sans"'),document.fonts.load('500 15px "JetBrains Mono"')]);
+var ACC={blue:'#7cc4ff',purple:'#d4c4ff',orange:'#ffc08a',green:'#a6ffd6'}[window.SCENE_ACCENT];
+var CAP=[["SYED MATEEN","AI agents, ads","& automation.","L"],["01 · AI AGENTS","Answers, books","and follows up.","L"],["02 · CGI ADS","No studio.","No shoot.","L"],["03 · GROWTH","Ads that bring","real leads.","L"],["04 · AUTOMATION","Your tools,","working together.","L"],["SYEDMATEEN.COM","Let's build","something.","C"]];
+window.compose=function(st,al,t){
+ var o=document.getElementById('out'),g=o.getContext('2d');g.drawImage(document.getElementById('stage'),0,0);
+ g.font='500 13px "JetBrains Mono"';g.fillStyle='rgba(238,241,247,0.6)';g.textAlign='left';g.fillText('SYED MATEEN · REEL',64,56);
+ if(al<=0||st<0)return o.toDataURL('image/jpeg',0.92);
+ var c=CAP[st],x=c[3]=='L'?72:640,a=c[3]=='L'?'left':'center',y=c[3]=='C'?640:604;
+ g.save();g.globalAlpha=al;g.textAlign=a;var dy=(1-al)*16;
+ g.font='500 14px "JetBrains Mono"';g.fillStyle=ACC;g.fillText(c[0],x,y-104+dy);
+ g.font='600 46px "Instrument Sans"';g.fillStyle='#eef1f7';g.shadowColor='rgba(0,0,0,0.8)';g.shadowBlur=20;g.fillText(c[1],x,y-50+dy);g.fillText(c[2],x,y+2+dy);
+ g.restore();return o.toDataURL('image/jpeg',0.92);};
+</script></body></html>

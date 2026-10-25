@@ -1,0 +1,19 @@
+{
+  "name": "syed-mateen",
+  "version": "5.0.0",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "render-videos": "python3 tools/render/record.py",
+    "dev": "node src/build.mjs && npx serve dist"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.5",
+    "lenis": "^1.1.13",
+    "three": "^0.160.0"
+  },
+  "private": true,
+  "type": "module",
+  "optionalDependencies": {
+    "ffmpeg-static": "^5.2.0"
+  }
+}

@@ -1,0 +1,9 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="fonts.css"></head><body>
+<canvas id="c"></canvas><script src="motion.js"></script>
+<script>
+var c=document.getElementById('c'),g=c.getContext('2d'),IMG=null;
+window.setup=function(w,h){c.width=w;c.height=h;
+ var f=['400 20px "Instrument Sans"','500 20px "Instrument Sans"','600 20px "Instrument Sans"','400 20px "JetBrains Mono"','500 20px "JetBrains Mono"'];
+ return Promise.all(f.map(function(x){return document.fonts.load(x)})).then(function(){return new Promise(function(r){IMG=new Image();IMG.onload=r;IMG.onerror=r;IMG.src='../../static/assets/img/hero-desk.jpg';})});};
+window.drawAt=function(n,t){g.setTransform(1,0,0,1,0,0);MOTION[n].draw(g,t,c.width,c.height,IMG);return c.toDataURL('image/jpeg',0.93);};
+</script></body></html>
