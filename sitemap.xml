@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://syyedmateen.com/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://syyedmateen.com/assets/img/og-image.jpg</image:loc></image:image>
+    <image:image><image:loc>https://syyedmateen.com/assets/img/syed-mateen-portrait.jpg</image:loc></image:image>
+    <image:image><image:loc>https://syyedmateen.com/assets/media/certificates/hubspot-sales-hub-software.jpg</image:loc></image:image>
+    <image:image><image:loc>https://syyedmateen.com/assets/media/certificates/google-ads-measurement.jpg</image:loc></image:image>
+    <image:image><image:loc>https://syyedmateen.com/assets/media/certificates/targeted-ad-with-facebook.jpg</image:loc></image:image>
+    <image:image><image:loc>https://syyedmateen.com/assets/media/certificates/business-presence-with-facebook-marketing.jpg</image:loc></image:image>
+    <image:image><image:loc>https://syyedmateen.com/assets/media/certificates/google-ads-for-beginners.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://syyedmateen.com/ai-agents.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://syyedmateen.com/assets/img/og/ai-agents.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/img/clinic-poster.jpg</video:thumbnail_loc>
+      <video:title>Clinic voice agent</video:title>
+      <video:description>Answers the phone, checks the calendar, offers the nearest free slot and never double books</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/video/clinic.mp4</video:content_loc>
+      <video:duration>14</video:duration>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/img/robot-poster.jpg</video:thumbnail_loc>
+      <video:title>AI receptionist</video:title>
+      <video:description>Answers calls and messages on its own so no lead is left waiting</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/video/robot-receptionist.mp4</video:content_loc>
+      <video:duration>8</video:duration>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/img/shorts-poster.jpg</video:thumbnail_loc>
+      <video:title>YouTube to Shorts</video:title>
+      <video:description>One YouTube link in and captioned, scheduled Shorts out</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/video/shorts.mp4</video:content_loc>
+      <video:duration>12</video:duration>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/img/onboarding-poster.jpg</video:thumbnail_loc>
+      <video:title>Onboarding agent</video:title>
+      <video:description>A new user form starts it and the agent sets the person up in every tool and the right Slack channels</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/video/onboarding-agent.mp4</video:content_loc>
+      <video:duration>8</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://syyedmateen.com/cgi-ads.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://syyedmateen.com/assets/img/og/cgi-ads.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/media/ads/ponds-hydra-miracle-ad-poster.jpg</video:thumbnail_loc>
+      <video:title>Pond's Hydra Miracle ad</video:title>
+      <video:description>A CGI spec ad that sells hydration without a single word on screen. Not affiliated with Unilever</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/media/ads/ponds-hydra-miracle-ad.mp4</video:content_loc>
+      <video:duration>18</video:duration>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/media/ads/lumora-serum-ad-poster.jpg</video:thumbnail_loc>
+      <video:title>Lumora serum ad</video:title>
+      <video:description>A clean skincare ad built around a single drop that ends on the bottle</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/media/ads/lumora-serum-ad.mp4</video:content_loc>
+      <video:duration>10</video:duration>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/media/ads/jabeens-hair-oil-ad-poster.jpg</video:thumbnail_loc>
+      <video:title>Jabeen's hair oil ad</video:title>
+      <video:description>Golden oil and slow pours that land on the bottle and the brand</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/media/ads/jabeens-hair-oil-ad.mp4</video:content_loc>
+      <video:duration>20</video:duration>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/media/ads/burger-fries-ad-poster.jpg</video:thumbnail_loc>
+      <video:title>Burger &amp; fries ad</video:title>
+      <video:description>Exploding layers and flying fries made for the first second of a Reel</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/media/ads/burger-fries-ad.mp4</video:content_loc>
+      <video:duration>8</video:duration>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/media/ads/sukoon-spa-ad-poster.jpg</video:thumbnail_loc>
+      <video:title>Sukoon Spa ad</video:title>
+      <video:description>A med spa visit told in order from the welcome desk to the treatment room</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/media/ads/sukoon-spa-ad.mp4</video:content_loc>
+      <video:duration>44</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://syyedmateen.com/marketing.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://syyedmateen.com/assets/img/og/marketing.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://syyedmateen.com/ads/ponds-hydra-miracle-ad.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://syyedmateen.com/assets/media/ads/ponds-hydra-miracle-ad-poster.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/media/ads/ponds-hydra-miracle-ad-poster.jpg</video:thumbnail_loc>
+      <video:title>Pond's Hydra Miracle CGI ad by Syed Mateen</video:title>
+      <video:description>A CGI spec ad that sells hydration without a single word on screen. Not affiliated with Unilever</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/media/ads/ponds-hydra-miracle-ad.mp4</video:content_loc>
+      <video:duration>18</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://syyedmateen.com/ads/lumora-serum-ad.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://syyedmateen.com/assets/media/ads/lumora-serum-ad-poster.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/media/ads/lumora-serum-ad-poster.jpg</video:thumbnail_loc>
+      <video:title>Lumora serum CGI ad by Syed Mateen</video:title>
+      <video:description>A clean skincare ad built around a single drop that ends on the bottle</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/media/ads/lumora-serum-ad.mp4</video:content_loc>
+      <video:duration>10</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://syyedmateen.com/ads/jabeens-hair-oil-ad.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://syyedmateen.com/assets/media/ads/jabeens-hair-oil-ad-poster.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/media/ads/jabeens-hair-oil-ad-poster.jpg</video:thumbnail_loc>
+      <video:title>Jabeen's hair oil CGI ad by Syed Mateen</video:title>
+      <video:description>Golden oil and slow pours that land on the bottle and the brand</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/media/ads/jabeens-hair-oil-ad.mp4</video:content_loc>
+      <video:duration>20</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://syyedmateen.com/ads/burger-fries-ad.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://syyedmateen.com/assets/media/ads/burger-fries-ad-poster.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/media/ads/burger-fries-ad-poster.jpg</video:thumbnail_loc>
+      <video:title>Burger &amp; fries CGI ad by Syed Mateen</video:title>
+      <video:description>Exploding layers and flying fries made for the first second of a Reel</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/media/ads/burger-fries-ad.mp4</video:content_loc>
+      <video:duration>8</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://syyedmateen.com/ads/sukoon-spa-ad.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://syyedmateen.com/assets/media/ads/sukoon-spa-ad-poster.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/media/ads/sukoon-spa-ad-poster.jpg</video:thumbnail_loc>
+      <video:title>Sukoon Spa CGI ad by Syed Mateen</video:title>
+      <video:description>A med spa visit told in order from the welcome desk to the treatment room</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/media/ads/sukoon-spa-ad.mp4</video:content_loc>
+      <video:duration>44</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://syyedmateen.com/work/clinic-voice-booking-agent.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://syyedmateen.com/assets/img/clinic-poster.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/img/clinic-poster.jpg</video:thumbnail_loc>
+      <video:title>Clinic voice booking agent: workflow logic</video:title>
+      <video:description>A motion explainer of how the clinic voice agent checks a request, finds the nearest free slot, locks it against a second caller and confirms the booking.</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/video/clinic.mp4</video:content_loc>
+      <video:duration>14</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://syyedmateen.com/work/youtube-to-shorts-agent.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://syyedmateen.com/assets/img/shorts-poster.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/img/shorts-poster.jpg</video:thumbnail_loc>
+      <video:title>YouTube to Shorts agent: pipeline</video:title>
+      <video:description>A motion explainer of the pipeline: input, clip finding, captions, scheduling, publishing and the Telegram summary.</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/video/shorts.mp4</video:content_loc>
+      <video:duration>12</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://syyedmateen.com/work/ponds-hydra-miracle-spec-ad.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://syyedmateen.com/assets/img/ponds-poster.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://syyedmateen.com/assets/img/ponds-poster.jpg</video:thumbnail_loc>
+      <video:title>Pond's Hydra Miracle spec ad</video:title>
+      <video:description>A vertical CGI spec ad for Pond's Hydra Miracle serum.</video:description>
+      <video:content_loc>https://syyedmateen.com/assets/media/ads/ponds-hydra-miracle-ad.mp4</video:content_loc>
+      <video:duration>18</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://syyedmateen.com/terms.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://syyedmateen.com/privacy-policy.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.2</priority>
+  </url>
+</urlset>

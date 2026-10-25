@@ -1,0 +1,20 @@
+{
+  "name": "Syed Mateen",
+  "short_name": "Mateen",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#040507",
+  "theme_color": "#040507",
+  "icons": [
+    {
+      "src": "/assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

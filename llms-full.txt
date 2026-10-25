@@ -1,0 +1,242 @@
+# Syed Mateen: full site text
+
+Source: https://syyedmateen.com/ (updated 2026-10-25)
+
+> Syed Mateen (also written Syyed Mateen, full name Syed Abdul Mateen) is an AI automation and digital marketing specialist. His main focus is AI automation: AI voice agents, chat agents and n8n workflows that answer calls, book appointments, qualify leads and update CRMs. He also runs Meta Ads and Google Ads campaigns for lead generation and creates CGI product ads and video edits for Reels, Shorts and TikTok. He works with Lenaar Digital on AI automation and social media marketing for US clients and studies computer science at the University of Karachi. Works remotely with clients worldwide.
+
+Key facts:
+- Name: Syed Mateen. Also searched as Syyed Mateen, Syed Abdul Mateen and syyedmateen
+- Headline: Digital Marketing + AI Automation (Meta Ads, Lead Generation, n8n, Voice Agents)
+- Skills in order of focus: AI automation (main focus), paid ads (Meta and Google), content creation (CGI ads) and video editing
+- Role: AI Automation & Social Media Marketing, Lenaar Digital (part-time, remote, US clients), since June 2026
+- Also: Call Centre Agent on a US DME campaign (customer communication, CRM tracking, lead generation), since August 2026
+- Education: BS Computer Science, University of Karachi (in progress); Intermediate in Computer Science, Boys Degree College
+- Certifications: HubSpot Sales Hub Software (HubSpot Academy, Oct 2026); Google Ads Measurement Certification (Google Skillshop, Oct 2026); Targeted Ads With Facebook Audience Insights (Coursera, Oct 2026); Building a Business Presence With Facebook Marketing (Coursera, Sep 2026); Google Ads for Beginners (Coursera, Sep 2026)
+- Tools: n8n, ElevenLabs, HubSpot, Google Calendar, Google Sheets, Gmail, Slack, Telegram, Meta Ads Manager, Google Ads, CapCut, Shopify, Figma
+- Contact: syyedmaten@gmail.com, LinkedIn https://www.linkedin.com/in/syyedmateen, Instagram @syyed_mateen, X @Syyedmateen
+
+## Services
+
+- [AI Automation](https://syyedmateen.com/ai-agents.html): Syed Mateen builds AI voice agents, chat agents and n8n workflow automations for businesses. They answer calls and messages, book appointments into Google Calendar, qualify leads and keep CRMs and sheets up to date around the clock.
+- [Paid Ads](https://syyedmateen.com/marketing.html): Syed Mateen runs Meta (Facebook and Instagram) and Google ad campaigns for lead generation. He sets up the pixel and conversion tracking, builds and tests the creative and connects every lead to a CRM with an instant follow up.
+- [CGI Ads](https://syyedmateen.com/cgi-ads.html): Syed Mateen creates CGI product ads and edits short videos for Reels, Shorts and TikTok. Each ad is built shot by shot around the product and finished with editing, sound design and captions. No studio and no film shoot.
+
+## Certifications
+
+- HubSpot Sales Hub Software, HubSpot Academy, issued Oct 2026 (verify: https://app-na2.hubspot.com/academy/achievements/bv5y3ybh/en/1/syed-abdul-mateen/hubspot-sales-hub-software-certified)
+- Google Ads Measurement Certification, Google Skillshop, issued Oct 2026 (verify: https://skillshop.credential.net/4643ee77-23bf-4799-8523-27c3cdc6d6e3)
+- Targeted Ads With Facebook Audience Insights, Coursera, issued Oct 2026 (verify: https://www.coursera.org/account/accomplishments/records/PX0Y028WRY27)
+- Building a Business Presence With Facebook Marketing, Coursera, issued Sep 2026 (verify: https://www.coursera.org/account/accomplishments/verify/9FI4O8Y0MZDK)
+- Google Ads for Beginners, Coursera, issued Sep 2026 (verify: https://www.coursera.org/account/accomplishments/records/J26OOPLXDUS0)
+
+## Case studies
+
+- [Clinic voice booking agent](https://syyedmateen.com/work/clinic-voice-booking-agent.html): How Syed Mateen built an AI voice agent that books clinic appointments, checks Google Calendar, offers the nearest free slot and blocks double bookings.
+- [YouTube to Shorts agent](https://syyedmateen.com/work/youtube-to-shorts-agent.html): An AI agent by Syed Mateen that turns one YouTube video into captioned, scheduled Shorts, publishes them to connected platforms and reports back on Telegram.
+- [Pond's spec ad](https://syyedmateen.com/work/ponds-hydra-miracle-spec-ad.html): Syed Mateen's CGI spec ad for Pond's Hydra Miracle: how one colour, water and a corridor of bottles sell hydration without saying the word.
+
+## CGI ads
+
+- [Pond's Hydra Miracle](https://syyedmateen.com/ads/ponds-hydra-miracle-ad.html): A CGI spec ad that sells hydration without a single word on screen. Not affiliated with Unilever (18s)
+- [Lumora serum](https://syyedmateen.com/ads/lumora-serum-ad.html): A clean skincare ad built around a single drop that ends on the bottle (10s)
+- [Jabeen's hair oil](https://syyedmateen.com/ads/jabeens-hair-oil-ad.html): Golden oil and slow pours that land on the bottle and the brand (20s)
+- [Burger & fries](https://syyedmateen.com/ads/burger-fries-ad.html): Exploding layers and flying fries made for the first second of a Reel (8s)
+- [Sukoon Spa](https://syyedmateen.com/ads/sukoon-spa-ad.html): A med spa visit told in order from the welcome desk to the treatment room (44s)
+
+
+## Frequently asked questions
+
+### Who is Syed Mateen?
+Syed Mateen, also written Syyed Mateen (full name Syed Abdul Mateen), is an AI automation and digital marketing specialist from Pakistan. He builds AI voice agents and n8n workflows, runs Meta and Google ad campaigns and creates CGI product ads and video edits for businesses in the US and worldwide.
+
+### What services does Syed Mateen offer?
+Three things. AI automation is the main one: voice agents, chat agents and n8n workflows that answer, book and follow up. Then paid ads on Meta and Google built around leads. And CGI product ads with video editing for Reels, Shorts and TikTok.
+
+### What is an AI voice booking agent?
+A phone agent that answers calls, collects the caller's details and books the appointment. Syed's clinic version checks opening hours and Google Calendar, offers the nearest free slot, blocks double bookings, logs the patient in Google Sheets and emails a confirmation.
+
+### Can you make a product ad without a film shoot?
+Yes. The scenes are created digitally around your product, then edited, scored and captioned for Reels, Shorts and TikTok. Clear photos of the product are enough to start.
+
+### Which tools do you work with?
+n8n, ElevenLabs, HubSpot, Google Calendar, Sheets and Gmail, Slack, Telegram, Meta Ads Manager, Google Ads and CapCut.
+
+### Do you work with clients outside Pakistan?
+Yes. Most of the work is remote, with businesses in the United States and worldwide.
+
+### How long does it take to build an AI agent?
+A focused agent such as a booking line or a lead follow up flow usually takes one to two weeks, including testing with your real calendar, CRM and inbox.
+
+### How do I hire Syed Mateen?
+Email syyedmaten@gmail.com or message Syed on LinkedIn with the problem you want solved. The first call is free.
+
+## AI Automation (https://syyedmateen.com/ai-agents.html)
+
+Syed Mateen builds AI voice agents, chat agents and n8n workflow automations for businesses. They answer calls and messages, book appointments into Google Calendar, qualify leads and keep CRMs and sheets up to date around the clock.
+
+### What can an AI agent do for a small business?
+Answer calls and messages, book appointments into your calendar, qualify leads, send follow ups and keep your CRM or Google Sheets up to date day and night.
+
+### Which tools do you build with?
+n8n for the workflows and ElevenLabs for voice, connected to Google Calendar, Sheets, Gmail, Slack, Telegram and HubSpot.
+
+### How long does a build take?
+A focused agent such as a booking line usually takes one to two weeks including testing with your real tools.
+
+## Paid Ads (https://syyedmateen.com/marketing.html)
+
+Syed Mateen runs Meta (Facebook and Instagram) and Google ad campaigns for lead generation. He sets up the pixel and conversion tracking, builds and tests the creative and connects every lead to a CRM with an instant follow up.
+
+### Do you run Meta and Google ads?
+Yes. Campaign setup, audiences, creative testing and conversion tracking on Meta (Facebook and Instagram) and Google (Search and YouTube).
+
+### Can you make the ad creative too?
+Yes. CGI product ads and short videos are made in house so the creative and the campaign are planned together.
+
+### How do you measure results?
+By cost per lead and booked calls. Conversion tracking goes in before the first dollar is spent.
+
+## CGI Ads (https://syyedmateen.com/cgi-ads.html)
+
+Syed Mateen creates CGI product ads and edits short videos for Reels, Shorts and TikTok. Each ad is built shot by shot around the product and finished with editing, sound design and captions. No studio and no film shoot.
+
+### What is a CGI ad?
+A product ad created digitally instead of filmed on set. Think liquids, splashes, exploding layers and camera moves that would cost a full studio day to shoot.
+
+### Do I need to send the product?
+No. Clear photos of the product and its label are enough to build the shots around it.
+
+### Do you also edit videos?
+Yes. Reels, Shorts and TikTok edits with captions, sound and hooks, from your own footage or from scratch.
+
+## Case study: Clinic voice booking agent (https://syyedmateen.com/work/clinic-voice-booking-agent.html)
+
+An AI voice agent built with ElevenLabs answers a clinic's booking calls and passes the caller's details to an n8n workflow. The workflow checks the request against clinic hours, weekends, past dates and missing details, checks Google Calendar, then books the slot, offers the nearest free one, or offers another day or a callback. It re-checks the slot before confirming so two callers can't take the same time, logs the patient in Google Sheets and sends a confirmation from Gmail.
+
+### The problem
+When a patient calls to book, a receptionist normally works through every step by hand:
+
+- Answer the call
+- Collect the patient's details
+- Check the calendar
+- Confirm availability
+- Book the appointment
+- Record the details
+- Send a confirmation
+None of it is hard. All of it is repetitive, and it happens while other patients wait at the desk.
+
+### How it works
+- The voice agent answersElevenLabs handles the conversation and collects the name, contact details and requested time.
+- The details go to n8nThe logic lives in one workflow you can read and change.
+- The request is checkedClinic hours, weekends and past dates, and anything missing.
+- The calendar is checkedGoogle Calendar is the source of truth for what's free.
+- The booking is confirmedCalendar updated, patient logged in Google Sheets, confirmation sent from Gmail, and the status goes back to the voice agent.
+
+### Every situation
+SituationWhat the agent does
+        Slot availableBooks the appointment.
+        Slot unavailableFinds the nearest free slot and offers it.
+        No suitable slotOffers another day or a callback.
+        Slot taken mid-callBlocks the duplicate and offers another time.
+        Closed or past dateExplains why and asks for a different time.
+        Missing detailsAsks for what's missing first.
+
+### What I learned
+The interesting part wasn't connecting the tools. It was building the logic and guardrails around them. You have to decide what happens when details are incomplete, the clinic is closed, or two callers want the same slot at the same moment. That's where automation stops being a demo and becomes a business system.
+
+## Case study: YouTube to Shorts agent (https://syyedmateen.com/work/youtube-to-shorts-agent.html)
+
+You send the agent a YouTube URL and the number of Shorts you want. It extracts the strongest clips, adds captions, renders the Shorts through Klap, checks the processing, calculates publishing times, uploads to the connected platforms and sends a summary on Telegram.
+
+### The problem
+Turning one long video into Shorts by hand means downloading it, finding timestamps, writing every caption and uploading to each platform one by one.
+
+### How it works
+- Send the inputA YouTube URL and the number of Shorts.
+- Clips are extractedThe agent picks the important moments.
+- Captions are added
+- Shorts are rendered through KlapProcessing is checked before anything moves on.
+- Publishing times are calculated
+- Content is uploadedTo each connected platform.
+- A Telegram summary comes back
+
+### Why it matters
+The interesting part isn't making Shorts. It's automating the whole workflow around them. Send the video, and the agent handles the rest.
+
+- Klap
+- Telegram
+- Scheduling
+- Multi-platform publishing
+
+## Case study: Pond's spec ad (https://syyedmateen.com/work/ponds-hydra-miracle-spec-ad.html)
+
+A vertical CGI spec ad for Pond's Hydra Miracle. The whole frame stays in the bottle's pale blue, water tells the story, lab glassware signals science, and a corridor of bottles narrows to one.
+
+### The brief
+A self-initiated spec ad. Pond's and Hydra Miracle are trademarks of Unilever.
+The brief: sell hydration without saying "hydration." No voiceover, no on-screen copy, built for Reels and Shorts.
+
+### The decisions
+One colour, start to finish
+Everything lives in the brand's pale blue, so the product never fights for attention.
+Water does the talking
+Drops, ripples and a bottle sinking into water make the connection before anyone reads the label.
+Lab shots for trust
+Beakers in the background say "formulated," not "decorated."
+Repetition, then focus
+A corridor of bottles shows scale, then the camera narrows to one.
+The first second decides
+On Reels, people decide in about a second. The opening shot has to earn the rest.
+
+### The takeaway
+Most beauty ads try to say five things. This one tries to make you feel one.
+
+- CGI
+- Art direction
+- Editing
+- Reels & Shorts
+
+## CGI ad: Pond's Hydra Miracle (https://syyedmateen.com/ads/ponds-hydra-miracle-ad.html)
+
+The whole frame stays in the bottle's pale blue, water tells the story, lab glassware signals science, and a corridor of bottles narrows down to one. No voiceover and no on-screen copy.
+
+Why it works:
+- One colour from start to finish, so the product never fights for attention.
+- Water does the talking before anyone reads the label.
+- Repetition, then focus: many bottles, then one.
+
+## CGI ad: Lumora serum (https://syyedmateen.com/ads/lumora-serum-ad.html)
+
+One drop, one face, one bottle. The ad keeps to a cool, clean palette and a single message, then lands on the product and its line: “One Drop. A Fresh Perspective.”
+
+Why it works:
+- One idea per ad: a single drop, never a list of claims.
+- A calm, clinical palette that says skincare before any words appear.
+- It ends on the bottle, so the last thing people see is what to buy.
+
+## CGI ad: Jabeen's hair oil (https://syyedmateen.com/ads/jabeens-hair-oil-ad.html)
+
+Warm gold light, leaves and slow pours of oil suggest richness and nourishment before the bottle appears. The ad finishes on the bottle and the Jabeen's name.
+
+Why it works:
+- Slow liquid motion makes the oil feel thick and premium.
+- Natural props (leaves, warm light) carry the herbal message without text.
+- Brand and bottle get the final, longest shot.
+
+## CGI ad: Burger & fries (https://syyedmateen.com/ads/burger-fries-ad.html)
+
+The burger comes apart layer by layer in mid-air so every ingredient is on show, with fries flying around it. Motion starts in the very first frame, because on Reels people decide in about a second.
+
+Why it works:
+- Movement from frame one, made for the scroll.
+- Every ingredient visible: the ad shows the product instead of describing it.
+- Eight seconds, short enough to loop and replay.
+
+## CGI ad: Sukoon Spa (https://syyedmateen.com/ads/sukoon-spa-ad.html)
+
+Longer than the product ads, this one tells a story: a client is welcomed at reception, has a consultation and goes into treatment, so viewers know exactly what a visit feels like before they book.
+
+Why it works:
+- A visit told in order: welcome, consultation, treatment.
+- A calm pace that matches the spa's name (sukoon means peace).
+- Shows people and service, which a med spa sells more than a product.
