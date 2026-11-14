@@ -1,25 +1,55 @@
 # Syed Mateen: full site text
 
-Source: https://syyedmateen.com/ (updated 2026-10-25)
+Source: https://syyedmateen.com/ (updated 2026-11-14)
 
-> Syed Mateen (also written Syyed Mateen, full name Syed Abdul Mateen) is an AI automation and digital marketing specialist. His main focus is AI automation: AI voice agents, chat agents and n8n workflows that answer calls, book appointments, qualify leads and update CRMs. He also runs Meta Ads and Google Ads campaigns for lead generation and creates CGI product ads and video edits for Reels, Shorts and TikTok. He works with Lenaar Digital on AI automation and social media marketing for US clients and studies computer science at the University of Karachi. Works remotely with clients worldwide.
+> Syed Mateen (also written Syyed Mateen, full name Syed Abdul Mateen) is an AI automation and digital marketing specialist. His main focus is AI automation: AI voice agents, chat agents and n8n workflows that answer calls, book appointments, qualify leads and update CRMs. He also runs Meta Ads and Google Ads campaigns for lead generation and creates CGI product ads and video edits for Reels, Shorts and TikTok. He works with Lenaar Digital on AI automation and social media marketing for US clients and studies computer science. Works remotely with businesses across the United States.
 
 Key facts:
-- Name: Syed Mateen. Also searched as Syyed Mateen, Syed Abdul Mateen and syyedmateen
+- Name: Syed Mateen. Also known as Abdul Mateen. Also searched as Syyed Mateen, Syed Abdul Mateen and syyedmateen
 - Headline: Digital Marketing + AI Automation (Meta Ads, Lead Generation, n8n, Voice Agents)
 - Skills in order of focus: AI automation (main focus), paid ads (Meta and Google), content creation (CGI ads) and video editing
 - Role: AI Automation & Social Media Marketing, Lenaar Digital (part-time, remote, US clients), since June 2026
 - Also: Call Centre Agent on a US DME campaign (customer communication, CRM tracking, lead generation), since August 2026
-- Education: BS Computer Science, University of Karachi (in progress); Intermediate in Computer Science, Boys Degree College
+- Education: BS Computer Science (in progress); Intermediate in Computer Science
 - Certifications: HubSpot Sales Hub Software (HubSpot Academy, Oct 2026); Google Ads Measurement Certification (Google Skillshop, Oct 2026); Targeted Ads With Facebook Audience Insights (Coursera, Oct 2026); Building a Business Presence With Facebook Marketing (Coursera, Sep 2026); Google Ads for Beginners (Coursera, Sep 2026)
 - Tools: n8n, ElevenLabs, HubSpot, Google Calendar, Google Sheets, Gmail, Slack, Telegram, Meta Ads Manager, Google Ads, CapCut, Shopify, Figma
+- Clients: US businesses, served remotely, with calls scheduled in the client's time zone
 - Contact: syyedmaten@gmail.com, LinkedIn https://www.linkedin.com/in/syyedmateen, Instagram @syyed_mateen, X @Syyedmateen
+
+## What Syed Mateen delivers
+
+- AI receptionist / AI voice agent: a working phone agent built with ElevenLabs and n8n. It answers every call, books into Google Calendar, blocks double bookings, logs the caller in Google Sheets or the CRM, emails a confirmation and alerts the team about urgent calls. Usually built and tested in one to two weeks.
+- AI chat agents: website chat and WhatsApp agents that answer from the business's own information, qualify leads, book calls and send every lead to HubSpot or Google Sheets.
+- n8n workflows: lead follow-up and speed-to-lead flows, missed call text back, appointment reminders, HubSpot and CRM sync, team onboarding, and a pipeline that turns one YouTube video into captioned, scheduled Shorts.
+- Paid ads: Meta (Facebook and Instagram) and Google Ads campaigns for lead generation, with the Meta pixel, Conversions API and Google Ads conversion tracking set up first, weekly creative testing and results judged on cost per lead and booked calls.
+- CGI product ads: vertical 9:16 ads for Instagram Reels, TikTok and YouTube Shorts, built from clear product photos with no studio shoot. Skincare, beauty, hair care, food, fashion, bags and electronics.
+- UGC ads and short-form video editing: creator footage edited into ads with hooks, captions and sound, plus Reels, TikTok and Shorts edits.
+
+## How he works
+
+1. A free first call about the problem and the tools already in use.
+2. The build: the agent, workflow, campaign or ad is made and tested with the client's real tools and data.
+3. Launch and improvement: it goes live and is improved based on real calls, leads and results.
+
+## Good fit for
+
+- A US small business that misses phone calls and wants an AI receptionist or AI answering service that books appointments.
+- Dental offices, med spas, clinics, salons and home service companies (HVAC, plumbing) that book by phone.
+- Anyone looking to hire an n8n expert or freelance n8n developer for AI agents, ElevenLabs voice agents or HubSpot automation.
+- Businesses that want an AI chatbot for their website or a WhatsApp chatbot that books calls.
+- Brands that need CGI product ads, UGC ads or short-form video editing for Reels, TikTok and Shorts without a photoshoot.
+- Businesses that want Meta and Google ads connected to instant AI follow-up, so every lead gets a reply in minutes.
 
 ## Services
 
-- [AI Automation](https://syyedmateen.com/ai-agents.html): Syed Mateen builds AI voice agents, chat agents and n8n workflow automations for businesses. They answer calls and messages, book appointments into Google Calendar, qualify leads and keep CRMs and sheets up to date around the clock.
-- [Paid Ads](https://syyedmateen.com/marketing.html): Syed Mateen runs Meta (Facebook and Instagram) and Google ad campaigns for lead generation. He sets up the pixel and conversion tracking, builds and tests the creative and connects every lead to a CRM with an instant follow up.
-- [CGI Ads](https://syyedmateen.com/cgi-ads.html): Syed Mateen creates CGI product ads and edits short videos for Reels, Shorts and TikTok. Each ad is built shot by shot around the product and finished with editing, sound design and captions. No studio and no film shoot.
+- [AI Automation](https://syyedmateen.com/ai-agents): Syed Mateen is an AI automation expert and AI agent developer. He builds AI voice agents, chat agents and n8n workflow automations that answer calls and messages, book appointments into Google Calendar, qualify leads and keep CRMs and sheets up to date around the clock, for small businesses across the United States.
+- [Paid Ads](https://syyedmateen.com/marketing): Syed Mateen is a paid ads specialist: a Meta ads expert and freelance Google Ads specialist. He runs Meta (Facebook and Instagram) and Google ad campaigns for lead generation for small business. He sets up the pixel and conversion tracking, builds and tests the creative and connects every lead to a CRM with an instant follow up.
+- [CGI Ads](https://syyedmateen.com/cgi-ads): Syed Mateen creates CGI product ads (CGI advertising made without a studio shoot), working as a one-person CGI ad agency, and does short form video editing for Reels, Shorts and TikTok. Each ad is built shot by shot around the product and finished with editing, sound design and captions. No studio and no film shoot.
+- [AI Receptionist](https://syyedmateen.com/ai-receptionist): An AI receptionist, also called an AI phone receptionist, AI virtual receptionist or AI answering service, is a voice agent that answers your business phone, talks to callers in natural speech, books appointments into your calendar and sends confirmations. It's an AI phone answering system and AI booking bot in one. Syed Mateen builds custom ones with ElevenLabs and n8n, connected to Google Calendar, Sheets, Gmail, HubSpot and Slack, so every call ends with something done.
+- [Dental Offices](https://syyedmateen.com/ai-receptionist-dental): An AI receptionist for a dental office, or dental AI receptionist, is a voice agent that answers the practice phone, books new patient visits, cleanings and checkups, handles reschedules and cancellations, and passes anything clinical or urgent to the team. Syed Mateen builds them with ElevenLabs and n8n around your hours and booking rules.
+- [Med Spas & Clinics](https://syyedmateen.com/ai-receptionist-med-spa): A med spa AI receptionist is a voice agent that answers calls, explains treatments using the descriptions you approve, books consultations into your calendar and follows up leads from Facebook and Instagram ads. Syed Mateen builds them with ElevenLabs and n8n, and can also run the ads and make the ad creative.
+- [AI Chatbots](https://syyedmateen.com/ai-chatbot): An AI chatbot for your website, or a WhatsApp chatbot for business, replies to visitors straight away, answers questions from the information you give it, asks qualifying questions, books calls into your calendar and sends every lead to your CRM. Syed Mateen builds them with n8n so they connect to the tools you already use.
+- [n8n Expert](https://syyedmateen.com/n8n-expert): Syed Mateen is an n8n expert and freelance n8n developer who builds production n8n workflow automation and AI agents: voice booking agents with ElevenLabs, lead follow-up flows, CRM syncs with HubSpot, onboarding automations with Slack and pipelines that turn YouTube videos into Shorts. Each workflow is tested against real data and edge cases before it goes live.
 
 ## Certifications
 
@@ -31,23 +61,26 @@ Key facts:
 
 ## Case studies
 
-- [Clinic voice booking agent](https://syyedmateen.com/work/clinic-voice-booking-agent.html): How Syed Mateen built an AI voice agent that books clinic appointments, checks Google Calendar, offers the nearest free slot and blocks double bookings.
-- [YouTube to Shorts agent](https://syyedmateen.com/work/youtube-to-shorts-agent.html): An AI agent by Syed Mateen that turns one YouTube video into captioned, scheduled Shorts, publishes them to connected platforms and reports back on Telegram.
-- [Pond's spec ad](https://syyedmateen.com/work/ponds-hydra-miracle-spec-ad.html): Syed Mateen's CGI spec ad for Pond's Hydra Miracle: how one colour, water and a corridor of bottles sell hydration without saying the word.
+- [Clinic voice booking agent](https://syyedmateen.com/work/clinic-voice-booking-agent): How Syed Mateen built an AI voice agent that books clinic appointments, checks Google Calendar, offers the nearest free slot and blocks double bookings.
+- [YouTube to Shorts agent](https://syyedmateen.com/work/youtube-to-shorts-agent): An AI agent by Syed Mateen that turns one YouTube video into captioned, scheduled Shorts, publishes them to connected platforms and reports back on Telegram.
+- [Pond's spec ad](https://syyedmateen.com/work/ponds-hydra-miracle-spec-ad): Syed Mateen's CGI spec ad for Pond's Hydra Miracle: how one colour, water and a corridor of bottles sell hydration without saying the word.
 
 ## CGI ads
 
-- [Pond's Hydra Miracle](https://syyedmateen.com/ads/ponds-hydra-miracle-ad.html): A CGI spec ad that sells hydration without a single word on screen. Not affiliated with Unilever (18s)
-- [Lumora serum](https://syyedmateen.com/ads/lumora-serum-ad.html): A clean skincare ad built around a single drop that ends on the bottle (10s)
-- [Jabeen's hair oil](https://syyedmateen.com/ads/jabeens-hair-oil-ad.html): Golden oil and slow pours that land on the bottle and the brand (20s)
-- [Burger & fries](https://syyedmateen.com/ads/burger-fries-ad.html): Exploding layers and flying fries made for the first second of a Reel (8s)
-- [Sukoon Spa](https://syyedmateen.com/ads/sukoon-spa-ad.html): A med spa visit told in order from the welcome desk to the treatment room (44s)
+- [Prada Bag](https://syyedmateen.com/ads/prada-bag): A short vertical product ad made for Reels, Shorts and TikTok (8s)
+- [Med Spa](https://syyedmateen.com/ads/med-spa): A short vertical product ad made for Reels, Shorts and TikTok (17s)
+- [Mouse Marketing](https://syyedmateen.com/ads/mouse-marketing): A short vertical product ad made for Reels, Shorts and TikTok (10s)
+- [Earbud](https://syyedmateen.com/ads/earbud): A short vertical product ad made for Reels, Shorts and TikTok (10s)
+- [Pond's Hydra Miracle](https://syyedmateen.com/ads/ponds-hydra-miracle-ad): A CGI spec ad that sells hydration without a single word on screen. Not affiliated with Unilever (18s)
+- [Lumora serum](https://syyedmateen.com/ads/lumora-serum-ad): A clean skincare ad built around a single drop that ends on the bottle (10s)
+- [Jabeen's hair oil](https://syyedmateen.com/ads/jabeens-hair-oil-ad): Golden oil and slow pours that land on the bottle and the brand (20s)
+- [Burger & fries](https://syyedmateen.com/ads/burger-fries-ad): Exploding layers and flying fries made for the first second of a Reel (8s)
 
 
 ## Frequently asked questions
 
 ### Who is Syed Mateen?
-Syed Mateen, also written Syyed Mateen (full name Syed Abdul Mateen), is an AI automation and digital marketing specialist from Pakistan. He builds AI voice agents and n8n workflows, runs Meta and Google ad campaigns and creates CGI product ads and video edits for businesses in the US and worldwide.
+Syed Mateen, also known as Abdul Mateen and written Syyed Mateen (full name Syed Abdul Mateen), is an AI automation and digital marketing specialist working with US businesses. He builds AI voice agents and n8n workflows, runs Meta and Google ad campaigns and creates CGI product ads, UGC ads and video edits for businesses across the United States. syyedmateen.com is the Syyed Mateen portfolio of his AI agents, ads and campaigns.
 
 ### What services does Syed Mateen offer?
 Three things. AI automation is the main one: voice agents, chat agents and n8n workflows that answer, book and follow up. Then paid ads on Meta and Google built around leads. And CGI product ads with video editing for Reels, Shorts and TikTok.
@@ -61,8 +94,14 @@ Yes. The scenes are created digitally around your product, then edited, scored a
 ### Which tools do you work with?
 n8n, ElevenLabs, HubSpot, Google Calendar, Sheets and Gmail, Slack, Telegram, Meta Ads Manager, Google Ads and CapCut.
 
-### Do you work with clients outside Pakistan?
-Yes. Most of the work is remote, with businesses in the United States and worldwide.
+### Do you work with US businesses?
+Yes. The work is done remotely for businesses across the United States, with calls scheduled in your time zone, whether that's Eastern, Central, Mountain or Pacific.
+
+### Is Syed Mateen a freelancer or an agency?
+Both, depending on the job. Syed works as a freelance digital marketer and AI automation specialist, so you deal with him directly. Bigger projects run through Lenaar Digital, a small AI marketing agency for US clients. Unlike big AI marketing companies, you always know who is doing the work.
+
+### Do you build AI receptionists for dental offices and med spas?
+Yes. Syed builds custom AI receptionists for dental offices, med spas, clinics and other appointment-based businesses. They answer every call, book into the calendar, handle reschedules and pass anything clinical or urgent to the team. See the AI Receptionist page for details.
 
 ### How long does it take to build an AI agent?
 A focused agent such as a booking line or a lead follow up flow usually takes one to two weeks, including testing with your real calendar, CRM and inbox.
@@ -70,9 +109,15 @@ A focused agent such as a booking line or a lead follow up flow usually takes on
 ### How do I hire Syed Mateen?
 Email syyedmaten@gmail.com or message Syed on LinkedIn with the problem you want solved. The first call is free.
 
-## AI Automation (https://syyedmateen.com/ai-agents.html)
+## AI Automation (https://syyedmateen.com/ai-agents)
 
-Syed Mateen builds AI voice agents, chat agents and n8n workflow automations for businesses. They answer calls and messages, book appointments into Google Calendar, qualify leads and keep CRMs and sheets up to date around the clock.
+Syed Mateen is an AI automation expert and AI agent developer. He builds AI voice agents, chat agents and n8n workflow automations that answer calls and messages, book appointments into Google Calendar, qualify leads and keep CRMs and sheets up to date around the clock, for small businesses across the United States.
+
+### What does an AI automation agency do?
+An AI automation agency, or artificial intelligence automation agency, builds AI agents and workflows that take repetitive work off a business: answering calls, replying to leads, booking appointments and moving data between tools. Good AI automation services start with the process, then pick the tools, then test against real data before anything goes live.
+
+### Are you an AI automation agency or a freelancer?
+An AI automation specialist rather than a big agency. Compared with most AI automation agencies in the USA, the difference is direct contact. You work directly with the person who builds your agent, not an account manager. Larger projects run through Lenaar Digital, which works with US businesses.
 
 ### What can an AI agent do for a small business?
 Answer calls and messages, book appointments into your calendar, qualify leads, send follow ups and keep your CRM or Google Sheets up to date day and night.
@@ -83,9 +128,24 @@ n8n for the workflows and ElevenLabs for voice, connected to Google Calendar, Sh
 ### How long does a build take?
 A focused agent such as a booking line usually takes one to two weeks including testing with your real tools.
 
-## Paid Ads (https://syyedmateen.com/marketing.html)
+### Can an AI agent hand a call or chat to a person?
+Yes. When a request is urgent, unusual or simply needs a human, the agent takes the details and sends your team a summary by email, Slack or Telegram so someone can pick it up straight away.
 
-Syed Mateen runs Meta (Facebook and Instagram) and Google ad campaigns for lead generation. He sets up the pixel and conversion tracking, builds and tests the creative and connects every lead to a CRM with an instant follow up.
+### What is speed to lead automation?
+It contacts every new lead within a minute or two of them filling in a form, by text, email or an AI voice call, so they hear from you before they hear from a competitor. Related flows include missed call text back, which texts anyone whose call you missed, and no show reduction automation: appointment reminders that cut no-shows.
+
+### Do you work as an AI automation consultant?
+Yes. Every project starts with AI automation consulting: we map the process, find what's worth automating and agree what the agent should do. Unlike general AI consulting services, the consultation ends with a working build, not a slide deck.
+
+### Can I hire an AI automation expert remotely?
+Yes. All the work is remote, with calls in your time zone. Syed works as an AI automation expert for US businesses, from local service companies to clinics and ecommerce brands.
+
+### Do you work with businesses in the US?
+Yes. US businesses are the focus. The work is done remotely, with calls scheduled in your time zone.
+
+## Paid Ads (https://syyedmateen.com/marketing)
+
+Syed Mateen is a paid ads specialist: a Meta ads expert and freelance Google Ads specialist. He runs Meta (Facebook and Instagram) and Google ad campaigns for lead generation for small business. He sets up the pixel and conversion tracking, builds and tests the creative and connects every lead to a CRM with an instant follow up.
 
 ### Do you run Meta and Google ads?
 Yes. Campaign setup, audiences, creative testing and conversion tracking on Meta (Facebook and Instagram) and Google (Search and YouTube).
@@ -96,9 +156,33 @@ Yes. CGI product ads and short videos are made in house so the creative and the 
 ### How do you measure results?
 By cost per lead and booked calls. Conversion tracking goes in before the first dollar is spent.
 
-## CGI Ads (https://syyedmateen.com/cgi-ads.html)
+### Why hire a Facebook ads expert instead of running ads yourself?
+Whether you call it an FB ads specialist or a Meta ads expert, the job is the same. Most self-run accounts lose money in the same places: broken tracking, broad audiences and one creative running for months. A Facebook ads specialist fixes those first, then tests new creative every week and judges everything on cost per lead.
 
-Syed Mateen creates CGI product ads and edits short videos for Reels, Shorts and TikTok. Each ad is built shot by shot around the product and finished with editing, sound design and captions. No studio and no film shoot.
+### How do you lower cost per lead on Facebook ads?
+Fix tracking first so Meta optimises for real leads, then test new hooks and creative every week, tighten the offer and the form, and follow up every lead within minutes. That last step often lowers the cost per booked call more than any targeting change.
+
+### How do you set up conversion tracking in Google Ads?
+Each lead action, like a form submit, call or booking, gets its own conversion action, fired by Google tag or Google Tag Manager and checked against real leads in your CRM. Google Ads conversion tracking goes in before any money is spent.
+
+### Do you run Facebook ads for med spas and dentists?
+Yes. Med spa marketing and dental practices are a strong fit: Facebook ads for med spas and dentists bring in consultation requests, Google ads for dentists capture people searching right now, and an AI receptionist books them.
+
+### Are you a lead generation agency?
+Not a big lead generation agency. You work with one PPC specialist who runs the ads, makes the creative and connects the follow up, which is often a better fit for lead generation for small business. Facebook lead ads, Google Search and YouTube are the main channels.
+
+### Should I hire a Google Ads consultant or an agency?
+A consultant suits a small or medium account that needs one person who knows it inside out and answers quickly. An agency suits big budgets spread over many channels and markets. If your goal is leads from Meta and Google with fast follow up, one specialist usually moves faster.
+
+### Do you handle Meta Conversions API setup and Facebook pixel setup?
+Yes. The Meta pixel and the Conversions API (Meta CAPI) are set up together as a server side tracking setup so leads are still counted when browsers block tracking, and Google Ads gets its own conversion tags. Results are checked against your CRM so the numbers match real leads.
+
+### What happens to a lead after it comes in?
+It goes straight into your CRM or Google Sheet, gets an instant reply and, if you want, a call from an AI voice agent within minutes. Fast follow up is often the cheapest way to lower cost per booked call.
+
+## CGI Ads (https://syyedmateen.com/cgi-ads)
+
+Syed Mateen creates CGI product ads (CGI advertising made without a studio shoot), working as a one-person CGI ad agency, and does short form video editing for Reels, Shorts and TikTok. Each ad is built shot by shot around the product and finished with editing, sound design and captions. No studio and no film shoot.
 
 ### What is a CGI ad?
 A product ad created digitally instead of filmed on set. Think liquids, splashes, exploding layers and camera moves that would cost a full studio day to shoot.
@@ -106,10 +190,171 @@ A product ad created digitally instead of filmed on set. Think liquids, splashes
 ### Do I need to send the product?
 No. Clear photos of the product and its label are enough to build the shots around it.
 
-### Do you also edit videos?
-Yes. Reels, Shorts and TikTok edits with captions, sound and hooks, from your own footage or from scratch.
+### Do you make UGC ads?
+Yes. UGC ads are edited from creator footage into scroll-stopping ads with a hook in the first second, captions, sound and a clear call to action. UGC video ads and UGC-style ads work best next to CGI ads: UGC builds trust, CGI makes the product look premium.
 
-## Case study: Clinic voice booking agent (https://syyedmateen.com/work/clinic-voice-booking-agent.html)
+### Do you also edit videos?
+Yes. Think of it as hiring a short form video editor and a freelance video editor for ads in one. Short form video editing for Reels, Shorts and TikTok, with captions, sound and hooks, from your own footage or from scratch. That includes a reels editing service, TikTok video editing service, YouTube Shorts editing and video ad editing for UGC ads.
+
+### Which brands are CGI ads good for?
+Any product with a clear shape: a CGI skincare ad, CGI beauty ads and CGI cosmetics ads are the most common, followed by CGI hair care ads, CGI food ads, CGI fashion ads and CGI luxury product ads for bags and accessories. They work especially well as CGI ads for ecommerce and CGI ads for Shopify brands.
+
+### CGI ads vs UGC ads: which should I use?
+Use both. UGC ads build trust with a real person talking. CGI ads make the product itself look premium and stop the scroll. Many brands run a CGI product video as the hook and UGC as the follow-up. Both can be edited here.
+
+### What is FOOH?
+FOOH means fake out of home: a CGI ad that shows a product appearing in a real street scene, like a giant bottle on a building. FOOH advertising is a style of CGI marketing made for social media. If you want a FOOH ad, mention it on the first call.
+
+### Can CGI ads run on Instagram Reels and TikTok?
+Yes. These are CGI ads for Instagram Reels and CGI ads for TikTok first, in vertical 9:16. They also work as Meta ads for skincare brands and other ecommerce products.
+
+### Can you make a product ad without a photoshoot?
+Yes. That's the point of a CGI product ad. The scenes are created digitally around clear photos of your product, so there's no studio, no crew and no shipping samples.
+
+### What kinds of products work best?
+Products with a clear shape and label: skincare and serums, hair care, cosmetics, bags and accessories, food and drinks, and small electronics like earbuds. The collection above shows each of these.
+
+### Which formats do I get?
+Vertical 9:16 for Instagram Reels, YouTube Shorts and TikTok as standard, plus square or wide versions if your ads or website need them.
+
+### Can the same ad run as a paid ad?
+Yes. The ads are made to work with the sound off and to earn attention in the first second, which is what paid placements on Meta and TikTok need. If you want, the campaign can be run too. See Paid Ads.
+
+## AI Receptionist (https://syyedmateen.com/ai-receptionist)
+
+An AI receptionist, also called an AI phone receptionist, AI virtual receptionist or AI answering service, is a voice agent that answers your business phone, talks to callers in natural speech, books appointments into your calendar and sends confirmations. It's an AI phone answering system and AI booking bot in one. Syed Mateen builds custom ones with ElevenLabs and n8n, connected to Google Calendar, Sheets, Gmail, HubSpot and Slack, so every call ends with something done.
+
+### What is the difference between an AI receptionist and an answering service?
+An answering service takes a message. An AI receptionist finishes the job while the caller is still on the line: it books the appointment, sends the confirmation and updates your records. That makes it a better AI answering service for small business than a message-taking line.
+
+### AI receptionist vs human receptionist: which is better?
+They do different jobs. An AI receptionist is best at routine calls, after-hours calls and busy moments when two people ring at once. A human receptionist is best with patients and customers in the room and with sensitive conversations. Most businesses use the AI to take the routine load off the person.
+
+### What is the best AI receptionist for a small business?
+The one that fits how you book. If you only need calls answered and messages taken, a subscription app is enough. If you have real booking rules, several tools to keep in sync or calls that need different handling, a custom AI receptionist for small business is the better fit.
+
+### Can it work as an AI appointment setter?
+Yes. As well as answering inbound calls, it can work as an AI calling agent that phones new leads back, qualifies them and books the appointment, so AI appointment scheduling happens without anyone on your team dialling.
+
+### Can it book appointments into my calendar?
+Yes. It checks Google Calendar for free slots, books the time, offers the nearest free slot when the one asked for is taken and blocks double bookings. If you use other booking software, we check on the first call whether it can connect directly.
+
+### What happens when it can't answer a question?
+It takes the caller's name, number and question, tells them someone will call back and sends your team a summary by email, Slack or Telegram.
+
+### Does it work after hours and on weekends?
+Yes. It answers around the clock and follows the rules you set for when appointments can be booked.
+
+### Will callers know they're talking to AI?
+You decide how it introduces itself. Being upfront that it's the business's virtual assistant usually goes down better than pretending.
+
+### How long does setup take?
+A focused receptionist usually takes one to two weeks, including testing with your real calendar, inbox and CRM.
+
+## Dental Offices (https://syyedmateen.com/ai-receptionist-dental)
+
+An AI receptionist for a dental office, or dental AI receptionist, is a voice agent that answers the practice phone, books new patient visits, cleanings and checkups, handles reschedules and cancellations, and passes anything clinical or urgent to the team. Syed Mateen builds them with ElevenLabs and n8n around your hours and booking rules.
+
+### Is an AI receptionist HIPAA compliant?
+That depends on the whole setup, not on one tool. Every service that handles patient information has to support HIPAA and sign a Business Associate Agreement, and data has to be stored the right way. We go through what your practice needs on the first call, and anything that can't meet it isn't used for patient data.
+
+### Can it book into Dentrix, Open Dental or Eaglesoft?
+It depends on what your version of the software allows. Some practice software offers a booking connection and some doesn't. We check yours on the first call. If a direct connection isn't possible, the agent books into a calendar your team confirms from.
+
+### What if a patient calls with tooth pain or an emergency?
+The agent never gives clinical advice. It takes the details, tells the patient the team will call back as a priority and alerts your staff straight away. For after-hours emergencies it can read out the emergency number you give it.
+
+### Can it answer insurance questions?
+It can tell callers which plans you accept, using the list you provide. Anything about coverage or costs for a specific treatment goes to your team.
+
+### What is the best AI receptionist for dental offices?
+One that books the way your practice books, never gives clinical advice and hands urgent calls to your team fast. Off-the-shelf apps cover basic answering. A custom build fits better when you have specific appointment types, insurance questions or practice software to work around.
+
+### Will it replace my front desk?
+No. It takes the routine calls off their plate so they can look after the patients in the office. Anything that needs a person still reaches a person.
+
+### How long does it take to set up?
+Usually one to two weeks, including testing with your real schedule and the questions your patients actually ask.
+
+## Med Spas & Clinics (https://syyedmateen.com/ai-receptionist-med-spa)
+
+A med spa AI receptionist is a voice agent that answers calls, explains treatments using the descriptions you approve, books consultations into your calendar and follows up leads from Facebook and Instagram ads. Syed Mateen builds them with ElevenLabs and n8n, and can also run the ads and make the ad creative.
+
+### Can it explain our treatments?
+Yes, using the treatment descriptions and prices you approve. Anything medical, like whether a treatment is right for someone, goes to your provider.
+
+### Can it follow up leads from Facebook and Instagram ads?
+Yes. When someone fills in your lead form, the details go to n8n, they get a text or email straight away and the voice agent can call them to book the consultation.
+
+### Does it work for other clinics?
+Yes. The same setup works as an AI receptionist for a medical practice, an AI receptionist for chiropractors or physical therapy, and an AI receptionist for salons and wellness clinics. Anything that runs on booked appointments.
+
+### Is an AI receptionist for a med spa worth it?
+If evening calls and ad leads go unanswered, usually yes. An AI receptionist for med spa front desks answers those right away and books the consultation, which is where most lost bookings happen.
+
+### Is an AI receptionist HIPAA compliant?
+It depends on the full setup: every service that touches patient information has to support it and sign a Business Associate Agreement. We check what your clinic needs on the first call and set it up to match.
+
+### How long does it take to set up?
+Usually one to two weeks, including testing with your real calendar and treatment list.
+
+## AI Chatbots (https://syyedmateen.com/ai-chatbot)
+
+An AI chatbot for your website, or a WhatsApp chatbot for business, replies to visitors straight away, answers questions from the information you give it, asks qualifying questions, books calls into your calendar and sends every lead to your CRM. Syed Mateen builds them with n8n so they connect to the tools you already use.
+
+### Do you build a custom chatbot or use a plugin?
+Custom chatbot development. As a chatbot developer working in n8n, Syed builds the agent around your information, your booking rules and your CRM, instead of a generic website chatbot plugin that can only answer FAQs.
+
+### Is an AI chatbot worth it for a small business?
+Yes, if people message you outside working hours or ask the same questions every day. An AI chatbot for small business answers instantly, captures the lead and books the call, so nothing waits until morning.
+
+### Will the chatbot make things up?
+It answers from the information you give it: your services, prices, policies and FAQs. When it doesn't know, it says so and passes the question to your team.
+
+### Do I need the WhatsApp Business API?
+Yes. An automated WhatsApp agent runs on the WhatsApp Business Platform, which is different from the free WhatsApp Business app. Setting it up is part of the build.
+
+### Can it book calls or appointments?
+Yes. It checks your calendar, offers free times and books the one the visitor picks, then sends a confirmation.
+
+### Where do the leads go?
+Into your CRM, such as HubSpot, or a Google Sheet, with the full conversation attached. Your team can also get a Slack or Telegram alert for hot leads.
+
+### Should a US business use website chat or WhatsApp?
+Start with website chat, because most US customers find you on your site first. Add a WhatsApp business chatbot if your customers already message you there, which is common with Hispanic and international customers. Both can feed the same CRM.
+
+## n8n Expert (https://syyedmateen.com/n8n-expert)
+
+Syed Mateen is an n8n expert and freelance n8n developer who builds production n8n workflow automation and AI agents: voice booking agents with ElevenLabs, lead follow-up flows, CRM syncs with HubSpot, onboarding automations with Slack and pipelines that turn YouTube videos into Shorts. Each workflow is tested against real data and edge cases before it goes live.
+
+### n8n vs Zapier vs Make: which is better for AI agents?
+For AI agents and anything with branching logic, n8n is usually the better fit. It handles complex flows, code steps and self-hosting, and it costs less as volume grows. Zapier is quicker for simple two-app connections, and Make sits in between with a visual builder but less control over AI steps.
+
+### Why hire an n8n freelancer instead of an n8n agency?
+You talk to the person who builds the workflow, changes happen faster and you don't pay for layers of management. Hire an n8n developer as an n8n consultant for one workflow, or ongoing for a set of n8n automation projects.
+
+### How do you build an n8n voice agent with ElevenLabs?
+ElevenLabs runs the conversation and n8n does the work. The ElevenLabs voice agent collects what the caller needs, then calls an n8n webhook that checks Google Calendar, books the appointment, logs it and sends the confirmation. Most of the effort goes into the ElevenLabs conversational AI setup and the rules for what happens when a request doesn't fit.
+
+### Do you do HubSpot automation?
+Yes. n8n HubSpot integration keeps contacts, deals and notes in sync with your forms, calls and calendar. It also covers HubSpot workflow automation and CRM automation that HubSpot can't do on its own.
+
+### n8n Cloud or self-hosted?
+Either works. n8n Cloud is quicker to start. Self-hosting gives you full control of your data and costs. We pick based on your data, your budget and who will maintain it.
+
+### Can you fix or extend a workflow I already have?
+Yes. Send the workflow and what it should do, and on the first call you'll hear what's wrong and what it takes to fix.
+
+### Which tools do you connect?
+ElevenLabs, Google Calendar, Sheets and Gmail, HubSpot, Slack, Telegram, WhatsApp, Klap and anything else with an API or a webhook.
+
+### How long does a workflow take?
+A focused workflow or agent usually takes one to two weeks, including testing. Small fixes are often done in a few days.
+
+### Do you work with US businesses?
+Yes. The work is done remotely for businesses across the United States, with calls scheduled in your time zone.
+
+## Case study: Clinic voice booking agent (https://syyedmateen.com/work/clinic-voice-booking-agent)
 
 An AI voice agent built with ElevenLabs answers a clinic's booking calls and passes the caller's details to an n8n workflow. The workflow checks the request against clinic hours, weekends, past dates and missing details, checks Google Calendar, then books the slot, offers the nearest free one, or offers another day or a callback. It re-checks the slot before confirming so two callers can't take the same time, logs the patient in Google Sheets and sends a confirmation from Gmail.
 
@@ -144,9 +389,9 @@ SituationWhat the agent does
 ### What I learned
 The interesting part wasn't connecting the tools. It was building the logic and guardrails around them. You have to decide what happens when details are incomplete, the clinic is closed, or two callers want the same slot at the same moment. That's where automation stops being a demo and becomes a business system.
 
-## Case study: YouTube to Shorts agent (https://syyedmateen.com/work/youtube-to-shorts-agent.html)
+## Case study: YouTube to Shorts agent (https://syyedmateen.com/work/youtube-to-shorts-agent)
 
-You send the agent a YouTube URL and the number of Shorts you want. It extracts the strongest clips, adds captions, renders the Shorts through Klap, checks the processing, calculates publishing times, uploads to the connected platforms and sends a summary on Telegram.
+This is AI video clipping automation: a way to automatically turn YouTube videos into Shorts. You send the agent a YouTube URL and the number of Shorts you want. It extracts the strongest clips, adds captions, renders the Shorts through Klap, checks the processing, calculates publishing times, uploads to the connected platforms and sends a summary on Telegram.
 
 ### The problem
 Turning one long video into Shorts by hand means downloading it, finding timestamps, writing every caption and uploading to each platform one by one.
@@ -168,7 +413,7 @@ The interesting part isn't making Shorts. It's automating the whole workflow aro
 - Scheduling
 - Multi-platform publishing
 
-## Case study: Pond's spec ad (https://syyedmateen.com/work/ponds-hydra-miracle-spec-ad.html)
+## Case study: Pond's spec ad (https://syyedmateen.com/work/ponds-hydra-miracle-spec-ad)
 
 A vertical CGI spec ad for Pond's Hydra Miracle. The whole frame stays in the bottle's pale blue, water tells the story, lab glassware signals science, and a corridor of bottles narrows to one.
 
@@ -196,7 +441,23 @@ Most beauty ads try to say five things. This one tries to make you feel one.
 - Editing
 - Reels & Shorts
 
-## CGI ad: Pond's Hydra Miracle (https://syyedmateen.com/ads/ponds-hydra-miracle-ad.html)
+## CGI ad: Prada Bag (https://syyedmateen.com/ads/prada-bag)
+
+A short vertical product ad made for Reels, Shorts and TikTok
+
+## CGI ad: Med Spa (https://syyedmateen.com/ads/med-spa)
+
+A short vertical product ad made for Reels, Shorts and TikTok
+
+## CGI ad: Mouse Marketing (https://syyedmateen.com/ads/mouse-marketing)
+
+A short vertical product ad made for Reels, Shorts and TikTok
+
+## CGI ad: Earbud (https://syyedmateen.com/ads/earbud)
+
+A short vertical product ad made for Reels, Shorts and TikTok
+
+## CGI ad: Pond's Hydra Miracle (https://syyedmateen.com/ads/ponds-hydra-miracle-ad)
 
 The whole frame stays in the bottle's pale blue, water tells the story, lab glassware signals science, and a corridor of bottles narrows down to one. No voiceover and no on-screen copy.
 
@@ -205,7 +466,7 @@ Why it works:
 - Water does the talking before anyone reads the label.
 - Repetition, then focus: many bottles, then one.
 
-## CGI ad: Lumora serum (https://syyedmateen.com/ads/lumora-serum-ad.html)
+## CGI ad: Lumora serum (https://syyedmateen.com/ads/lumora-serum-ad)
 
 One drop, one face, one bottle. The ad keeps to a cool, clean palette and a single message, then lands on the product and its line: “One Drop. A Fresh Perspective.”
 
@@ -214,7 +475,7 @@ Why it works:
 - A calm, clinical palette that says skincare before any words appear.
 - It ends on the bottle, so the last thing people see is what to buy.
 
-## CGI ad: Jabeen's hair oil (https://syyedmateen.com/ads/jabeens-hair-oil-ad.html)
+## CGI ad: Jabeen's hair oil (https://syyedmateen.com/ads/jabeens-hair-oil-ad)
 
 Warm gold light, leaves and slow pours of oil suggest richness and nourishment before the bottle appears. The ad finishes on the bottle and the Jabeen's name.
 
@@ -223,7 +484,7 @@ Why it works:
 - Natural props (leaves, warm light) carry the herbal message without text.
 - Brand and bottle get the final, longest shot.
 
-## CGI ad: Burger & fries (https://syyedmateen.com/ads/burger-fries-ad.html)
+## CGI ad: Burger & fries (https://syyedmateen.com/ads/burger-fries-ad)
 
 The burger comes apart layer by layer in mid-air so every ingredient is on show, with fries flying around it. Motion starts in the very first frame, because on Reels people decide in about a second.
 
@@ -231,12 +492,3 @@ Why it works:
 - Movement from frame one, made for the scroll.
 - Every ingredient visible: the ad shows the product instead of describing it.
 - Eight seconds, short enough to loop and replay.
-
-## CGI ad: Sukoon Spa (https://syyedmateen.com/ads/sukoon-spa-ad.html)
-
-Longer than the product ads, this one tells a story: a client is welcomed at reception, has a consultation and goes into treatment, so viewers know exactly what a visit feels like before they book.
-
-Why it works:
-- A visit told in order: welcome, consultation, treatment.
-- A calm pace that matches the spa's name (sukoon means peace).
-- Shows people and service, which a med spa sells more than a product.

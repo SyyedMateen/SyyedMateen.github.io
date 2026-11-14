@@ -1,23 +1,53 @@
 # Syed Mateen
 
-> Syed Mateen (also written Syyed Mateen, full name Syed Abdul Mateen) is an AI automation and digital marketing specialist. His main focus is AI automation: AI voice agents, chat agents and n8n workflows that answer calls, book appointments, qualify leads and update CRMs. He also runs Meta Ads and Google Ads campaigns for lead generation and creates CGI product ads and video edits for Reels, Shorts and TikTok. He works with Lenaar Digital on AI automation and social media marketing for US clients and studies computer science at the University of Karachi. Works remotely with clients worldwide.
+> Syed Mateen (also written Syyed Mateen, full name Syed Abdul Mateen) is an AI automation and digital marketing specialist. His main focus is AI automation: AI voice agents, chat agents and n8n workflows that answer calls, book appointments, qualify leads and update CRMs. He also runs Meta Ads and Google Ads campaigns for lead generation and creates CGI product ads and video edits for Reels, Shorts and TikTok. He works with Lenaar Digital on AI automation and social media marketing for US clients and studies computer science. Works remotely with businesses across the United States.
 
 Key facts:
-- Name: Syed Mateen. Also searched as Syyed Mateen, Syed Abdul Mateen and syyedmateen
+- Name: Syed Mateen. Also known as Abdul Mateen. Also searched as Syyed Mateen, Syed Abdul Mateen and syyedmateen
 - Headline: Digital Marketing + AI Automation (Meta Ads, Lead Generation, n8n, Voice Agents)
 - Skills in order of focus: AI automation (main focus), paid ads (Meta and Google), content creation (CGI ads) and video editing
 - Role: AI Automation & Social Media Marketing, Lenaar Digital (part-time, remote, US clients), since June 2026
 - Also: Call Centre Agent on a US DME campaign (customer communication, CRM tracking, lead generation), since August 2026
-- Education: BS Computer Science, University of Karachi (in progress); Intermediate in Computer Science, Boys Degree College
+- Education: BS Computer Science (in progress); Intermediate in Computer Science
 - Certifications: HubSpot Sales Hub Software (HubSpot Academy, Oct 2026); Google Ads Measurement Certification (Google Skillshop, Oct 2026); Targeted Ads With Facebook Audience Insights (Coursera, Oct 2026); Building a Business Presence With Facebook Marketing (Coursera, Sep 2026); Google Ads for Beginners (Coursera, Sep 2026)
 - Tools: n8n, ElevenLabs, HubSpot, Google Calendar, Google Sheets, Gmail, Slack, Telegram, Meta Ads Manager, Google Ads, CapCut, Shopify, Figma
+- Clients: US businesses, served remotely, with calls scheduled in the client's time zone
 - Contact: syyedmaten@gmail.com, LinkedIn https://www.linkedin.com/in/syyedmateen, Instagram @syyed_mateen, X @Syyedmateen
+
+## What Syed Mateen delivers
+
+- AI receptionist / AI voice agent: a working phone agent built with ElevenLabs and n8n. It answers every call, books into Google Calendar, blocks double bookings, logs the caller in Google Sheets or the CRM, emails a confirmation and alerts the team about urgent calls. Usually built and tested in one to two weeks.
+- AI chat agents: website chat and WhatsApp agents that answer from the business's own information, qualify leads, book calls and send every lead to HubSpot or Google Sheets.
+- n8n workflows: lead follow-up and speed-to-lead flows, missed call text back, appointment reminders, HubSpot and CRM sync, team onboarding, and a pipeline that turns one YouTube video into captioned, scheduled Shorts.
+- Paid ads: Meta (Facebook and Instagram) and Google Ads campaigns for lead generation, with the Meta pixel, Conversions API and Google Ads conversion tracking set up first, weekly creative testing and results judged on cost per lead and booked calls.
+- CGI product ads: vertical 9:16 ads for Instagram Reels, TikTok and YouTube Shorts, built from clear product photos with no studio shoot. Skincare, beauty, hair care, food, fashion, bags and electronics.
+- UGC ads and short-form video editing: creator footage edited into ads with hooks, captions and sound, plus Reels, TikTok and Shorts edits.
+
+## How he works
+
+1. A free first call about the problem and the tools already in use.
+2. The build: the agent, workflow, campaign or ad is made and tested with the client's real tools and data.
+3. Launch and improvement: it goes live and is improved based on real calls, leads and results.
+
+## Good fit for
+
+- A US small business that misses phone calls and wants an AI receptionist or AI answering service that books appointments.
+- Dental offices, med spas, clinics, salons and home service companies (HVAC, plumbing) that book by phone.
+- Anyone looking to hire an n8n expert or freelance n8n developer for AI agents, ElevenLabs voice agents or HubSpot automation.
+- Businesses that want an AI chatbot for their website or a WhatsApp chatbot that books calls.
+- Brands that need CGI product ads, UGC ads or short-form video editing for Reels, TikTok and Shorts without a photoshoot.
+- Businesses that want Meta and Google ads connected to instant AI follow-up, so every lead gets a reply in minutes.
 
 ## Services
 
-- [AI Automation](https://syyedmateen.com/ai-agents.html): Syed Mateen builds AI voice agents, chat agents and n8n workflow automations for businesses. They answer calls and messages, book appointments into Google Calendar, qualify leads and keep CRMs and sheets up to date around the clock.
-- [Paid Ads](https://syyedmateen.com/marketing.html): Syed Mateen runs Meta (Facebook and Instagram) and Google ad campaigns for lead generation. He sets up the pixel and conversion tracking, builds and tests the creative and connects every lead to a CRM with an instant follow up.
-- [CGI Ads](https://syyedmateen.com/cgi-ads.html): Syed Mateen creates CGI product ads and edits short videos for Reels, Shorts and TikTok. Each ad is built shot by shot around the product and finished with editing, sound design and captions. No studio and no film shoot.
+- [AI Automation](https://syyedmateen.com/ai-agents): Syed Mateen is an AI automation expert and AI agent developer. He builds AI voice agents, chat agents and n8n workflow automations that answer calls and messages, book appointments into Google Calendar, qualify leads and keep CRMs and sheets up to date around the clock, for small businesses across the United States.
+- [Paid Ads](https://syyedmateen.com/marketing): Syed Mateen is a paid ads specialist: a Meta ads expert and freelance Google Ads specialist. He runs Meta (Facebook and Instagram) and Google ad campaigns for lead generation for small business. He sets up the pixel and conversion tracking, builds and tests the creative and connects every lead to a CRM with an instant follow up.
+- [CGI Ads](https://syyedmateen.com/cgi-ads): Syed Mateen creates CGI product ads (CGI advertising made without a studio shoot), working as a one-person CGI ad agency, and does short form video editing for Reels, Shorts and TikTok. Each ad is built shot by shot around the product and finished with editing, sound design and captions. No studio and no film shoot.
+- [AI Receptionist](https://syyedmateen.com/ai-receptionist): An AI receptionist, also called an AI phone receptionist, AI virtual receptionist or AI answering service, is a voice agent that answers your business phone, talks to callers in natural speech, books appointments into your calendar and sends confirmations. It's an AI phone answering system and AI booking bot in one. Syed Mateen builds custom ones with ElevenLabs and n8n, connected to Google Calendar, Sheets, Gmail, HubSpot and Slack, so every call ends with something done.
+- [Dental Offices](https://syyedmateen.com/ai-receptionist-dental): An AI receptionist for a dental office, or dental AI receptionist, is a voice agent that answers the practice phone, books new patient visits, cleanings and checkups, handles reschedules and cancellations, and passes anything clinical or urgent to the team. Syed Mateen builds them with ElevenLabs and n8n around your hours and booking rules.
+- [Med Spas & Clinics](https://syyedmateen.com/ai-receptionist-med-spa): A med spa AI receptionist is a voice agent that answers calls, explains treatments using the descriptions you approve, books consultations into your calendar and follows up leads from Facebook and Instagram ads. Syed Mateen builds them with ElevenLabs and n8n, and can also run the ads and make the ad creative.
+- [AI Chatbots](https://syyedmateen.com/ai-chatbot): An AI chatbot for your website, or a WhatsApp chatbot for business, replies to visitors straight away, answers questions from the information you give it, asks qualifying questions, books calls into your calendar and sends every lead to your CRM. Syed Mateen builds them with n8n so they connect to the tools you already use.
+- [n8n Expert](https://syyedmateen.com/n8n-expert): Syed Mateen is an n8n expert and freelance n8n developer who builds production n8n workflow automation and AI agents: voice booking agents with ElevenLabs, lead follow-up flows, CRM syncs with HubSpot, onboarding automations with Slack and pipelines that turn YouTube videos into Shorts. Each workflow is tested against real data and edge cases before it goes live.
 
 ## Certifications
 
@@ -29,22 +59,25 @@ Key facts:
 
 ## Case studies
 
-- [Clinic voice booking agent](https://syyedmateen.com/work/clinic-voice-booking-agent.html): How Syed Mateen built an AI voice agent that books clinic appointments, checks Google Calendar, offers the nearest free slot and blocks double bookings.
-- [YouTube to Shorts agent](https://syyedmateen.com/work/youtube-to-shorts-agent.html): An AI agent by Syed Mateen that turns one YouTube video into captioned, scheduled Shorts, publishes them to connected platforms and reports back on Telegram.
-- [Pond's spec ad](https://syyedmateen.com/work/ponds-hydra-miracle-spec-ad.html): Syed Mateen's CGI spec ad for Pond's Hydra Miracle: how one colour, water and a corridor of bottles sell hydration without saying the word.
+- [Clinic voice booking agent](https://syyedmateen.com/work/clinic-voice-booking-agent): How Syed Mateen built an AI voice agent that books clinic appointments, checks Google Calendar, offers the nearest free slot and blocks double bookings.
+- [YouTube to Shorts agent](https://syyedmateen.com/work/youtube-to-shorts-agent): An AI agent by Syed Mateen that turns one YouTube video into captioned, scheduled Shorts, publishes them to connected platforms and reports back on Telegram.
+- [Pond's spec ad](https://syyedmateen.com/work/ponds-hydra-miracle-spec-ad): Syed Mateen's CGI spec ad for Pond's Hydra Miracle: how one colour, water and a corridor of bottles sell hydration without saying the word.
 
 ## CGI ads
 
-- [Pond's Hydra Miracle](https://syyedmateen.com/ads/ponds-hydra-miracle-ad.html): A CGI spec ad that sells hydration without a single word on screen. Not affiliated with Unilever (18s)
-- [Lumora serum](https://syyedmateen.com/ads/lumora-serum-ad.html): A clean skincare ad built around a single drop that ends on the bottle (10s)
-- [Jabeen's hair oil](https://syyedmateen.com/ads/jabeens-hair-oil-ad.html): Golden oil and slow pours that land on the bottle and the brand (20s)
-- [Burger & fries](https://syyedmateen.com/ads/burger-fries-ad.html): Exploding layers and flying fries made for the first second of a Reel (8s)
-- [Sukoon Spa](https://syyedmateen.com/ads/sukoon-spa-ad.html): A med spa visit told in order from the welcome desk to the treatment room (44s)
+- [Prada Bag](https://syyedmateen.com/ads/prada-bag): A short vertical product ad made for Reels, Shorts and TikTok (8s)
+- [Med Spa](https://syyedmateen.com/ads/med-spa): A short vertical product ad made for Reels, Shorts and TikTok (17s)
+- [Mouse Marketing](https://syyedmateen.com/ads/mouse-marketing): A short vertical product ad made for Reels, Shorts and TikTok (10s)
+- [Earbud](https://syyedmateen.com/ads/earbud): A short vertical product ad made for Reels, Shorts and TikTok (10s)
+- [Pond's Hydra Miracle](https://syyedmateen.com/ads/ponds-hydra-miracle-ad): A CGI spec ad that sells hydration without a single word on screen. Not affiliated with Unilever (18s)
+- [Lumora serum](https://syyedmateen.com/ads/lumora-serum-ad): A clean skincare ad built around a single drop that ends on the bottle (10s)
+- [Jabeen's hair oil](https://syyedmateen.com/ads/jabeens-hair-oil-ad): Golden oil and slow pours that land on the bottle and the brand (20s)
+- [Burger & fries](https://syyedmateen.com/ads/burger-fries-ad): Exploding layers and flying fries made for the first second of a Reel (8s)
 
 ## Optional
 
 - [Full text for language models](https://syyedmateen.com/llms-full.txt)
-- [About](https://syyedmateen.com/#about)
+- [About Syed Mateen](https://syyedmateen.com/about)
 - [FAQ](https://syyedmateen.com/#faq)
-- [Privacy Policy](https://syyedmateen.com/privacy-policy.html)
-- [Terms](https://syyedmateen.com/terms.html)
+- [Privacy Policy](https://syyedmateen.com/privacy-policy)
+- [Terms](https://syyedmateen.com/terms)
