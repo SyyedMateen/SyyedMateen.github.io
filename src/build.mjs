@@ -208,7 +208,7 @@ function contactInner(heading, id) {
   return `<div class="in">
       <span class="kicker">Contact</span>
       <h2 id="h-${id}" data-scramble>${heading}</h2>
-      <p class="soft">Tell me what you need and I will get back to you. The first call is free</p>
+      <p class="soft">Tell me what you need and I will reply by email or WhatsApp. For CGI ads and content, everything runs over chat</p>
       <form class="brief" data-brief action="mailto:${EMAIL}" method="post" enctype="text/plain" novalidate>
         <fieldset class="needs"><legend>What do you need</legend>${needs.map((x, i) => `<label class="chip"><input type="radio" name="need" value="${x}"${i === 0 ? " checked" : ""}><span>${x}</span></label>`).join("")}</fieldset>
         <div class="two">
@@ -244,7 +244,8 @@ function footer(root) {
 }
 
 const isoDate = (d) => (/^\d{4}-\d{2}$/.test(d) ? d + "-01" : String(d || TODAY).slice(0, 10));
-const adVideo = (a) => ({ "@type": "VideoObject", "@id": `${SITE_URL}/${a.page}#video`, name: `${a.title} CGI ad by Syed Mateen`, description: a.text, thumbnailUrl: `${SITE_URL}/${a.posterJpg}`, contentUrl: `${SITE_URL}/${a.video}`, uploadDate: isoDate(a.date), duration: `PT${a.dur}S`, creator: { "@id": PERSON_ID }, inLanguage: "en" });
+const adName = (a) => /\b(ad|ads|reel|review|story|lookbook|billboard)\b/i.test(a.title) ? a.title : `${a.title} CGI ad`;
+const adVideo = (a) => ({ "@type": "VideoObject", "@id": `${SITE_URL}/${a.page}#video`, name: `${adName(a)} by Syed Mateen`, description: a.text, thumbnailUrl: `${SITE_URL}/${a.posterJpg}`, contentUrl: `${SITE_URL}/${a.video}`, uploadDate: isoDate(a.date), duration: `PT${a.dur}S`, creator: { "@id": PERSON_ID }, inLanguage: "en" });
 function lightbox() {
   return `<dialog id="lb" class="lb" aria-label="Viewer">
   <div class="lb-in">
@@ -327,7 +328,7 @@ const faqs = [
   ["Is Syed Mateen a freelancer or an agency?", "Both, depending on the job. Syed works as a freelance digital marketer and AI automation specialist, so you deal with him directly. Bigger projects run through Lenaar Digital, a small AI marketing agency for US clients. Unlike big AI marketing companies, you always know who is doing the work."],
   ["Do you build AI receptionists for dental offices and med spas?", "Yes. Syed builds custom AI receptionists for dental offices, med spas, clinics and other appointment-based businesses. They answer every call, book into the calendar, handle reschedules and pass anything clinical or urgent to the team. See the AI Receptionist page for details."],
   ["How long does it take to build an AI agent?", "A focused agent such as a booking line or a lead follow up flow usually takes one to two weeks, including testing with your real calendar, CRM and inbox."],
-  ["How do I hire Syed Mateen?", `Email ${EMAIL} or message Syed on LinkedIn with the problem you want solved. The first call is free.`]
+  ["How do I hire Syed Mateen?", `Email ${EMAIL} or message Syed on LinkedIn or Instagram with what you need. CGI ads, UGC ads and monthly content are handled fully over WhatsApp or email.`]
 ];
 
 const certHeading = () => { const iss = [...new Set(certs.map((c) => (c.issuer || "").split(" ")[0]).filter(Boolean))].slice(0, 3); return iss.length ? `Certified by ${iss.length > 1 ? iss.slice(0, -1).join(", ") + " and " + iss[iss.length - 1] : iss[0]}` : "Certifications"; };
@@ -357,7 +358,7 @@ ${header("")}
       <span class="kicker">Syed Mateen</span>
       <h1 id="h-hero" data-scramble><span class="sr">Syed Mateen, </span>AI automation that does <span class="hl">the busywork</span></h1>
       <p class="sub">Voice agents and n8n workflows that answer, book and follow up for you. Meta and Google ads that bring the leads in. CGI ads and edits that make people stop scrolling</p>
-      <div class="actions"><a class="btn solid" href="#work">See my work ${arrow}</a><a class="btn" href="#contact">Book a free call</a></div>
+      <div class="actions"><a class="btn solid" href="#work">See my work ${arrow}</a><a class="btn" href="#contact">Send a message</a></div>
       <span class="scroll"><i></i>Scroll</span>
     </div>
   </section>
@@ -699,7 +700,7 @@ const services = {
       ["Do you also edit videos?", "Yes. Think of it as hiring a short form video editor and a freelance video editor for ads in one. Short form video editing for Reels, Shorts and TikTok, with captions, sound and hooks, from your own footage or from scratch. That includes a reels editing service, TikTok video editing service, YouTube Shorts editing and video ad editing for UGC ads."],
       ["Which brands are CGI ads good for?", "Any product with a clear shape: a CGI skincare ad, CGI beauty ads and CGI cosmetics ads are the most common, followed by CGI hair care ads, CGI food ads, CGI fashion ads and CGI luxury product ads for bags and accessories. They work especially well as CGI ads for ecommerce and CGI ads for Shopify brands."],
       ["CGI ads vs UGC ads: which should I use?", "Use both. UGC ads build trust with a real person talking. CGI ads make the product itself look premium and stop the scroll. Many brands run a CGI product video as the hook and UGC as the follow-up. Both can be edited here."],
-      ["What is FOOH?", "FOOH means fake out of home: a CGI ad that shows a product appearing in a real street scene, like a giant bottle on a building. FOOH advertising is a style of CGI marketing made for social media. If you want a FOOH ad, mention it on the first call."],
+      ["What is FOOH?", "FOOH means fake out of home: a CGI ad that shows a product appearing in a real street scene, like a giant bottle on a building. FOOH advertising is a style of CGI marketing made for social media. If you want a FOOH ad, mention it in your message."],
       ["Can CGI ads run on Instagram Reels and TikTok?", "Yes. These are CGI ads for Instagram Reels and CGI ads for TikTok first, in vertical 9:16. They also work as Meta ads for skincare brands and other ecommerce products."],
       ["Can you make a product ad without a photoshoot?", "Yes. That's the point of a CGI product ad. The scenes are created digitally around clear photos of your product, so there's no studio, no crew and no shipping samples."],
       ["What kinds of products work best?", "Products with a clear shape and label: skincare and serums, hair care, cosmetics, bags and accessories, food and drinks, and small electronics like earbuds. The collection above shows each of these."],
@@ -711,7 +712,218 @@ const services = {
       sec("How it's made", "Three steps", stepList([["Brief", "The product, the audience and the one thing the first second must say"], ["Design", "Look, lighting and motion planned shot by shot around your product"], ["Finish", "Edit, sound, captions and every format you need, ready to post"]])),
       sec("UGC ads", "UGC ads that sell, not just talk", prose(`<p>UGC ads look like a real customer talking about your product, which is exactly why they convert. The difference between a UGC video that gets skipped and one that sells is the edit: a hook in the first second, tight cuts, captions for sound-off viewing, the product on screen early and a clear call to action.</p><ul class="ticks"><li><strong>UGC ad editing</strong>: your creator footage cut into several ad versions for testing</li><li><strong>UGC video ads</strong> sized for Reels, TikTok and Shorts</li><li><strong>CGI and UGC together</strong>: a CGI product shot as the hook, UGC as the proof</li></ul>`)),
       sec("What a CGI ad is", "A product ad with no shoot", prose(`<p>A CGI product ad is built digitally instead of filmed on a set. The product sits in scenes that would be slow or expensive to film: liquid splashes, floating layers, water, macro close-ups and camera moves that glide around the bottle.</p><p>For brands that sell on Instagram, TikTok and YouTube Shorts, that means a premium-looking ad without booking a studio, a crew or a photographer. It also means new versions are quick: a different background, a new colour, a seasonal cut or a different hook for testing.</p><p>Skincare and beauty brands use it most, but it works for anything with a recognisable shape: hair oil, serums, bags, earbuds, burgers. Each CGI ad example in the collection has its own page with the idea behind it and why it works.</p><p>Brands use CGI commercials the way they once used studio product video production: for launches, seasonal campaigns and always-on paid ads. The style is especially popular with US ecommerce and DTC brands selling on Instagram, TikTok and Amazon.</p>`)),
+      sec("By industry", "CGI, UGC and content for your business", linkRows([
+        ["Med spas", "Video ads for med spas", "cgi-ads-med-spa.html"],
+        ["Beauty", "CGI skincare and beauty ads", "cgi-ads-skincare.html"],
+        ["UGC", "UGC style video ads", "ugc-ads.html"],
+        ["Monthly", "Social media content plans", "social-media-content.html"],
+        ["Food", "Restaurant and food video ads", "restaurant-video-ads.html"],
+        ["FOOH", "FOOH ads (fake out of home)", "fooh-ads.html"]
+      ])),
       sec("Case study", "Behind one ad", `<div class="cases reveal"><a href="work/ponds-hydra-miracle-spec-ad.html"><span class="g">Skincare spec ad</span><b>Pond's Hydra Miracle</b><span class="go">${arrow}</span></a><a href="marketing.html"><span class="g">Paid ads</span><b>Run these ads on Meta and Google</b><span class="go">${arrow}</span></a></div>`)
+    ]
+  },
+
+  /* ----- CGI ads for med spas ----- */
+  cgiMedspa: {
+    file: "cgi-ads-med-spa.html", crumb: "CGI Ads for Med Spas", parent: ["CGI Ads", "cgi-ads.html"], kicker: "Med spa ads",
+    title: "CGI & Video Ads for Med Spas | Reels That Book | Syed Mateen",
+    desc: "CGI and UGC style video ads for med spas by Syed Mateen: Botox, filler, facial and laser treatment reels for Instagram and TikTok, made without a shoot.",
+    h1: `Video ads for <span class="hl">med spas</span> that people stop for`,
+    lede: "Treatment reels, seasonal promos and before and after style ads for Instagram and TikTok. No filming day, no patient photos needed",
+    service: "CGI and video ads for med spas", serviceType: "Video ad production", audience: "Med spas, aesthetic clinics and wellness clinics", og: "cgi-ads", cta: "Want ads like these for your med spa?",
+    answer: "Syed Mateen makes CGI and UGC style video ads for med spas and aesthetic clinics: short vertical reels for Botox, fillers, facials, laser and body treatments, seasonal promos and before and after style ads that don't need patient photos. They are made for Instagram Reels, Stories, TikTok and Meta ads, without a filming day at the clinic.",
+    vis: () => [...ads.filter((a) => /med spa/i.test(a.tag)).map((a) => a.poster), ...ads.map((a) => a.poster)].slice(0, 3), visKind: "tall",
+    faq: [
+      ["What kind of ads work for a med spa?", "Short vertical reels that show one treatment and one benefit, seasonal offers (Halloween, holidays, wedding season, summer body), UGC style talking-to-camera ads and before and after style stories. One idea per ad works better than a list of every treatment."],
+      ["Can you make before and after ads without patient photos?", "Yes. Objects and scenes can stand in for the patient, like the Halloween pumpkin ad made for Sukoon Spa, so the change is clear without showing anyone's face or body. Real before and after photos stay your call and need your patient's consent."],
+      ["Do the ads follow Meta's rules for med spa advertising?", "They are planned around Meta's health and beauty ad policies: no negative body image, no shaming language and no unrealistic claims. Final claims about results and prices are approved by you."],
+      ["Which treatments can you make ads for?", "Botox and neurotoxins, dermal fillers, lip filler, facials and HydraFacial, chemical peels, microneedling, laser hair removal, skin tightening, body contouring, IV therapy and weight loss programs."],
+      ["Do I need to film anything?", "No. Your logo, treatment list, offer and a few photos of your space are enough. If you have clips from your clinic, they can be edited in too."],
+      ["How many ads do I get each month?", "That depends on the plan. Most med spas start with a monthly set of reels and posts so there is always fresh content for ads and organic posting. See monthly social media content."],
+      ["How do we work together?", "Everything runs over WhatsApp or email: you send the brief, you get drafts to review and the final files ready to post. No calls needed."]
+    ],
+    body: () => [
+      sec("Med spa ads", "The work", `<div class="ads-grid three">${ads.filter((a) => /med spa/i.test(a.tag)).map((w) => `<div class="ad-item">${card(w, "ad")}<p>${esc(w.text)}</p><a class="link-more" href="${w.page}">Watch and details ${arrow}</a></div>`).join("")}</div>`, `<a class="link-more" href="cgi-ads.html">All CGI ads ${arrow}</a>`),
+      sec("Why video", "Med spa clients decide with their eyes", prose(`<p>People choose a med spa after seeing it on Instagram and TikTok. Most clinic accounts post the same stock photos and price graphics, so a reel with movement, a clear hook and one simple message stands out straight away.</p><p>CGI and UGC style video gives you that without a filming day: no models to book, no clinic closed for a shoot and no patient photos to worry about.</p>`)),
+      sec("What you get", "Ads built for each treatment", svcCards([
+        ["Treatment reels", "One treatment, one benefit, ten to twenty seconds, made for Reels and TikTok"],
+        ["Seasonal promos", "Halloween, holidays, Valentine's, wedding season and summer offers"],
+        ["Before and after style", "Clear results stories without showing a patient"],
+        ["UGC style ads", "Talking-to-camera ads that feel like a friend's recommendation"],
+        ["Ad versions", "Different hooks and offers of the same ad for testing"],
+        ["Every format", "Vertical 9:16 for Reels and Stories, square and 4:5 for the feed"]
+      ])),
+      sec("How it works", "From brief to posted", stepList([["Brief", "Your treatments, offer and audience, sent over WhatsApp or email"], ["Drafts", "The first versions to review, with one round of changes included"], ["Final files", "Ready to post or run as paid ads on Meta and TikTok"]])),
+      sec("Also for med spas", "Ads, content and follow-up", linkRows([
+        ["Monthly", "Social media content plans", "social-media-content.html"],
+        ["UGC", "UGC style video ads", "ugc-ads.html"],
+        ["Front desk", "AI receptionist for med spas", "ai-receptionist-med-spa.html"]
+      ]))
+    ]
+  },
+
+  /* ----- CGI ads for skincare and beauty ----- */
+  cgiSkincare: {
+    file: "cgi-ads-skincare.html", crumb: "CGI Skincare Ads", parent: ["CGI Ads", "cgi-ads.html"], kicker: "Skincare and beauty",
+    title: "CGI Skincare & Beauty Product Ads | Syed Mateen",
+    desc: "CGI product ads for skincare, beauty, hair care and cosmetics brands by Syed Mateen: serums, creams and oils in water, splash and macro scenes. No studio.",
+    h1: `CGI ads for <span class="hl">skincare and beauty</span> brands`,
+    lede: "Serums, creams, oils and cosmetics in water, splash and macro scenes that would take a full studio day to film",
+    service: "CGI product ads for skincare, beauty and hair care brands", serviceType: "CGI product ad production", audience: "Skincare, beauty, cosmetics and hair care brands", og: "cgi-ads", cta: "Want a CGI ad for your product?",
+    answer: "Syed Mateen creates CGI product ads for skincare, beauty, cosmetics and hair care brands. Serums, creams, oils and bottles are placed in scenes built digitally, like water, splashes, drops, glass and macro close-ups, from clear photos of the product. The ads are vertical for Instagram Reels, TikTok and YouTube Shorts and work as Meta ads for ecommerce and Shopify brands.",
+    vis: () => [...ads.filter((a) => /skin|hair|fooh/i.test(a.tag)).map((a) => a.poster), ...ads.map((a) => a.poster)].slice(0, 3), visKind: "tall",
+    faq: [
+      ["What is a CGI skincare ad?", "A product ad for a serum, cream or cosmetic that is created digitally instead of filmed. The product sits in scenes like water, slow drops, splashes and glass, with smooth camera moves around the bottle."],
+      ["What do you need from me?", "Clear photos of the product from the front, back and sides, a sharp photo of the label, and your brand colours. You don't need to ship the product."],
+      ["Can CGI show my real packaging?", "Yes. The ad is built around photos of your actual bottle, jar or tube, so the label, colours and shape match what customers receive."],
+      ["Which products work best?", "Anything with a clear shape and label: serums with droppers, creams in jars, oils, lip products, perfume bottles, hair care and body care."],
+      ["Can I use the ads on my Shopify store and Amazon?", "Yes. The same ad can be delivered as a vertical reel, a square product video and a short loop for product pages."],
+      ["How do we work together?", "Over WhatsApp or email. You send product photos and the idea, you review drafts and you get final files ready to post. No calls needed."]
+    ],
+    body: () => [
+      sec("Skincare and beauty", "The work", `<div class="ads-grid three">${ads.filter((a) => /skin|hair|fooh/i.test(a.tag)).map((w) => `<div class="ad-item">${card(w, "ad")}<p>${esc(w.text)}</p><a class="link-more" href="${w.page}">Watch and details ${arrow}</a></div>`).join("")}</div>`, `<a class="link-more" href="cgi-ads.html">All CGI ads ${arrow}</a>`),
+      sec("Why CGI", "A premium look without a studio day", prose(`<p>A beauty product shoot needs a studio, a set designer, lighting, liquids that behave and many takes. CGI gives you the same premium look from product photos, and new versions are quick: a new colour, a seasonal background or a different hook to test.</p><p>Skincare ads work best with one idea each. One drop, one splash, one ingredient story, then the bottle. The examples here follow that rule.</p>`)),
+      sec("Ad ideas", "Scenes that sell skincare", svcCards([
+        ["Drops and textures", "Serum drops and cream swirls in macro, for texture and feel"],
+        ["Water and splash", "Hydration stories told with water instead of words"],
+        ["Ingredient stories", "Botanicals, citrus or minerals floating around the bottle"],
+        ["FOOH moments", "The product on a billboard or a building in a real street"],
+        ["Launch teasers", "Short reveals for a new product or a new shade"],
+        ["Shop loops", "Short silent loops for Shopify and Amazon product pages"]
+      ])),
+      sec("Case study", "Behind one skincare ad", linkRows([["Spec ad", "Pond's Hydra Miracle CGI ad breakdown", "work/ponds-hydra-miracle-spec-ad.html"], ["Street ads", "FOOH ads (fake out of home)", "fooh-ads.html"]]))
+    ]
+  },
+
+  /* ----- UGC ads ----- */
+  ugc: {
+    file: "ugc-ads.html", crumb: "UGC Ads", parent: ["CGI Ads", "cgi-ads.html"], kicker: "UGC ads",
+    title: "UGC Ads & UGC Style Video Ads for Brands | Syed Mateen",
+    desc: "UGC style video ads by Syed Mateen: talking-to-camera reviews, product demos and story ads for Instagram, TikTok and Meta ads, with hooks, captions and sound.",
+    h1: `UGC ads that <span class="hl">sell</span>, not just talk`,
+    lede: "Talking-to-camera reviews, product demos and story ads that feel like a friend's recommendation, edited to stop the scroll",
+    service: "UGC style video ads and UGC ad editing", serviceType: "UGC ad production", audience: "Ecommerce brands, med spas, fitness and local businesses", og: "cgi-ads", cta: "Want UGC ads for your brand?",
+    answer: "A UGC ad (user generated content ad) is a short video that looks like a real person talking about a product on their phone, which is why it feels trustworthy and converts on Instagram, TikTok and Facebook. Syed Mateen makes UGC style video ads and edits creator footage into ads with a hook in the first second, captions for sound-off viewing, the product on screen early and a clear call to action.",
+    vis: () => [...ads.filter((a) => /ugc/i.test(a.tag)).map((a) => a.poster), ...ads.map((a) => a.poster)].slice(0, 3), visKind: "tall",
+    faq: [
+      ["What is a UGC ad?", "UGC stands for user generated content. A UGC ad is a short, phone-style video where a person talks about a product, shows it or reviews it, so it feels like a recommendation instead of an advert. Brands run them as paid ads on Meta and TikTok."],
+      ["Why do UGC ads work?", "They match what people already watch in their feed. A face, eye contact and a natural setting in the first second hold attention, and a real-sounding review builds trust faster than a polished commercial."],
+      ["What types of UGC ads do you make?", "Product reviews, unboxings, problem and solution stories, before and after, day in the life, testimonials-style ads and talking-head explainers."],
+      ["Can you edit my own creator footage?", "Yes. Send the raw clips and you get several ad versions with different hooks, captions, music and calls to action, ready for testing."],
+      ["UGC ads vs CGI ads: which is better?", "They do different jobs. UGC builds trust with a person talking; CGI makes the product look premium and stops the scroll. Many brands open with a CGI product shot as the hook and use UGC as the proof. Both are made here."],
+      ["How do we work together?", "Over WhatsApp or email: the brief, drafts and final files all happen in chat. No calls needed."]
+    ],
+    body: () => [
+      sec("UGC style ads", "The work", `<div class="ads-grid three">${ads.filter((a) => /ugc/i.test(a.tag)).map((w) => `<div class="ad-item">${card(w, "ad")}<p>${esc(w.text)}</p><a class="link-more" href="${w.page}">Watch and details ${arrow}</a></div>`).join("")}</div>`, `<a class="link-more" href="cgi-ads.html">All ads ${arrow}</a>`),
+      sec("What makes it sell", "The edit is the difference", prose(`<p>The difference between a UGC video that gets skipped and one that sells is the edit:</p><ul class="ticks"><li><strong>A hook in the first second</strong>: a question, a bold line or a visual surprise</li><li><strong>Tight cuts</strong>: no pauses, no slow intros</li><li><strong>Captions</strong> for the many people who watch with the sound off</li><li><strong>The product on screen early</strong>, not only at the end</li><li><strong>One clear call to action</strong>: shop, book or message</li></ul>`)),
+      sec("Formats", "UGC ads for every goal", svcCards([
+        ["Product review", "Product in hand and a straight answer to why it's worth it"],
+        ["Problem and solution", "The pain point first, then the product that fixes it"],
+        ["Before and after", "A clear change, told as a short story"],
+        ["Unboxing", "First impressions, packaging and the reveal"],
+        ["Day in the life", "The product inside a normal routine"],
+        ["Hook testing", "The same ad with three to five different openings"]
+      ])),
+      sec("Also", "CGI and content", linkRows([["CGI", "CGI skincare and beauty ads", "cgi-ads-skincare.html"], ["Monthly", "Social media content plans", "social-media-content.html"]]))
+    ]
+  },
+
+  /* ----- monthly social media content ----- */
+  content: {
+    file: "social-media-content.html", crumb: "Social Media Content", parent: ["CGI Ads", "cgi-ads.html"], kicker: "Monthly content",
+    title: "Monthly Social Media Content Creation: Reels & Posts | Syed Mateen",
+    desc: "Done-for-you monthly social media content by Syed Mateen: Instagram Reels, posts, CGI and UGC style videos and custom avatar reels for small businesses.",
+    h1: `Fresh <span class="hl">reels and posts</span> every month`,
+    lede: "A monthly plan of Instagram, TikTok and Facebook content made for your business: posts, reels, CGI and UGC style videos and custom avatar reels",
+    service: "Monthly social media content creation", serviceType: "Social media content creation", audience: "Small businesses: med spas, salons, restaurants, clinics and ecommerce brands", og: "cgi-ads", cta: "Want content ready every month?",
+    answer: "Syed Mateen offers done-for-you monthly social media content for small businesses: a set of Instagram and Facebook posts, Reels and TikToks each month, including CGI product videos, UGC style videos and custom avatar reels, planned around your offers and seasons. Plans are monthly, with everything delivered ready to post and handled over WhatsApp or email.",
+    vis: () => ads.slice(0, 3).map((a) => a.poster), visKind: "tall",
+    faq: [
+      ["What is included in a monthly content plan?", "A planned set of posts and Reels for the month, captions and hashtags, seasonal and offer content, and the files in every size you need. Plans differ in how many posts and videos you get and how many are custom CGI or avatar reels."],
+      ["What is a custom avatar reel?", "A reel built around a digital presenter made for your brand, so you can post talking-to-camera videos regularly without filming yourself."],
+      ["Which businesses is this for?", "Small businesses that need to post consistently but don't have time: med spas, salons, restaurants and cafés, clinics, gyms, real estate agents and ecommerce brands."],
+      ["Do you post the content for me?", "You get the content ready to post with captions. Scheduling and posting can be added to the plan."],
+      ["Can I ask for changes?", "Yes. Each month starts with a short plan you approve, and drafts include a round of changes."],
+      ["How do we work together?", "Everything runs over WhatsApp or email. No calls needed."]
+    ],
+    body: () => [
+      sec("Examples", "The kind of content you get", `<div class="ads-grid three">${ads.slice(0, 6).map((w) => `<div class="ad-item">${card(w, "ad")}<p>${esc(w.text)}</p></div>`).join("")}</div>`, `<a class="link-more" href="cgi-ads.html">See all work ${arrow}</a>`),
+      sec("Why monthly", "Posting often is the hard part", prose(`<p>Most small businesses know they should post every week and don't, because making good content takes time. A monthly plan fixes that: the month is planned around your offers and seasons, and the content arrives ready to post.</p><p>Video is what the Instagram and TikTok feeds push hardest, so every plan includes Reels, not only still posts.</p>`)),
+      sec("What's in a plan", "Content types", svcCards([
+        ["Posts", "Branded feed posts for offers, services, tips and reviews"],
+        ["Reels and TikToks", "Short vertical videos with hooks, captions and music"],
+        ["CGI product videos", "Premium product and treatment visuals without a shoot"],
+        ["UGC style videos", "Talking-to-camera reviews and stories"],
+        ["Custom avatar reels", "A digital presenter made for your brand"],
+        ["Captions", "Written captions and hashtags for every piece"]
+      ])),
+      sec("How it works", "Every month", stepList([["Plan", "A short content plan for the month, approved by you"], ["Create", "Posts and videos made and sent for review"], ["Post", "Final files and captions, ready to post"]])),
+      sec("By industry", "Made for your business", linkRows([["Med spas", "Video ads for med spas", "cgi-ads-med-spa.html"], ["Restaurants", "Food and restaurant video ads", "restaurant-video-ads.html"], ["Beauty brands", "CGI skincare and beauty ads", "cgi-ads-skincare.html"]]))
+    ]
+  },
+
+  /* ----- restaurants ----- */
+  food: {
+    file: "restaurant-video-ads.html", crumb: "Restaurant Video Ads", parent: ["CGI Ads", "cgi-ads.html"], kicker: "Food and restaurants",
+    title: "Food & Restaurant Video Ads and Reels | Syed Mateen",
+    desc: "Food video ads and Instagram Reels for restaurants, cafés and food brands by Syed Mateen: CGI food shots, menu reels and promos, made without a shoot.",
+    h1: `Food ads that make people <span class="hl">hungry</span>`,
+    lede: "Menu reels, CGI food shots and weekly specials for restaurants, cafés and food brands, made for Instagram and TikTok",
+    service: "Food and restaurant video ads", serviceType: "Food video ad production", audience: "Restaurants, cafés, food trucks and food brands", og: "cgi-ads", cta: "Want food reels for your restaurant?",
+    answer: "Syed Mateen makes food and restaurant video ads: Instagram Reels and TikToks for restaurants, cafés and food brands, including CGI food shots like exploding burgers and flying fries, menu reels, weekly specials and seasonal promos. They are made from photos of your dishes and space, without a food shoot, and can come as a monthly content plan.",
+    vis: () => [...ads.filter((a) => /food/i.test(a.tag)).map((a) => a.poster), ...ads.map((a) => a.poster)].slice(0, 3), visKind: "tall",
+    faq: [
+      ["What kind of videos work for restaurants?", "Close-up food shots with movement, a dish being made or served, menu reels, weekly specials and short videos of the space and atmosphere. People decide where to eat with their eyes."],
+      ["Do you need to film at my restaurant?", "No. Good photos of your dishes and your space are enough to build the videos. Your own clips can be edited in too."],
+      ["What is a CGI food ad?", "A food ad where the scene is built digitally: a burger that explodes into layers, fries that fly, sauce that pours in slow motion. It gets attention in the first second, which is what ads need."],
+      ["Can you make content every month?", "Yes. Restaurants usually take a monthly plan of reels and posts for specials, new dishes, events and holidays."],
+      ["Do these work for delivery apps and Google?", "Yes. Short food videos work on Instagram, TikTok and Facebook, and stills from them can be used on delivery apps and your Google Business Profile."],
+      ["How do we work together?", "Over WhatsApp or email. No calls needed."]
+    ],
+    body: () => [
+      sec("Food ads", "The work", `<div class="ads-grid three">${[...ads.filter((a) => /food/i.test(a.tag)), ...ads.filter((a) => !/food/i.test(a.tag))].slice(0, 3).map((w) => `<div class="ad-item">${card(w, "ad")}<p>${esc(w.text)}</p><a class="link-more" href="${w.page}">Watch and details ${arrow}</a></div>`).join("")}</div>`, `<a class="link-more" href="cgi-ads.html">All ads ${arrow}</a>`),
+      sec("Why video", "People eat with their eyes first", prose(`<p>Most people check a restaurant on Instagram or TikTok before they visit. A static photo of a plate gets scrolled past; a sizzling, moving, close-up reel makes them stop and save it.</p><p>CGI food shots go one step further: scenes that can't be filmed in a kitchen, made to win the first second of a Reel.</p>`)),
+      sec("What you get", "Restaurant content", svcCards([
+        ["Menu reels", "Your best dishes in short, close-up videos"],
+        ["CGI food shots", "Exploding layers, pours and splashes for ads"],
+        ["Weekly specials", "Quick promos for specials, deals and happy hour"],
+        ["Events and holidays", "Content for holidays, game days and events"],
+        ["Atmosphere", "Videos that show the space and the vibe"],
+        ["Monthly plans", "A steady flow of posts and reels every month"]
+      ])),
+      sec("Also", "Monthly content", linkRows([["Monthly", "Social media content plans", "social-media-content.html"], ["UGC", "UGC style video ads", "ugc-ads.html"]]))
+    ]
+  },
+
+  /* ----- FOOH ----- */
+  fooh: {
+    file: "fooh-ads.html", crumb: "FOOH Ads", parent: ["CGI Ads", "cgi-ads.html"], kicker: "FOOH ads",
+    title: "FOOH Ads (Fake Out of Home CGI Ads) | Syed Mateen",
+    desc: "FOOH ads by Syed Mateen: fake out of home CGI videos where your product appears on billboards, buildings and streets. Made for Reels and TikTok.",
+    h1: `FOOH ads: your product, <span class="hl">bigger than life</span>`,
+    lede: "Fake out of home CGI videos where your product steps off a billboard, takes over a building or lands in a real street",
+    service: "FOOH (fake out of home) CGI ads", serviceType: "CGI ad production", audience: "Consumer brands, launches and ecommerce brands", og: "cgi-ads", cta: "Want a FOOH ad for your launch?",
+    answer: "FOOH means fake out of home: a CGI video ad that shows a product doing something impossible in a real place, like a bottle reaching out of a street billboard or a giant product on a building. FOOH ads are made for social media, not real billboards, and are built to be shared. Syed Mateen makes FOOH ads for Instagram Reels, TikTok and YouTube Shorts from photos of your product.",
+    vis: () => [...ads.filter((a) => /fooh/i.test(a.tag)).map((a) => a.poster), ...ads.map((a) => a.poster)].slice(0, 3), visKind: "tall",
+    faq: [
+      ["What is a FOOH ad?", "FOOH stands for fake out of home. It is a CGI video that looks like real out of home advertising, like billboards, buildings and street scenes, but with something impossible happening, such as the product coming out of the screen."],
+      ["Is FOOH a real billboard?", "No. It's a video made for social media. The street is real-looking, the moment is CGI. That surprise is why people watch twice and share it."],
+      ["What products work for FOOH?", "Products with a recognisable shape and label: bottles, cans, sneakers, bags, phones, skincare and drinks."],
+      ["Where do FOOH ads perform best?", "Instagram Reels, TikTok and YouTube Shorts, both as organic posts and as paid ads. They work especially well for launches."],
+      ["What do you need from me?", "Clear photos of the product and its label, your brand colours and the idea or city you have in mind."],
+      ["How do we work together?", "Over WhatsApp or email. No calls needed."]
+    ],
+    body: () => [
+      sec("FOOH ad", "The work", `<div class="ads-grid three">${[...ads.filter((a) => /fooh/i.test(a.tag)), ...ads.filter((a) => /skin|hair/i.test(a.tag))].slice(0, 3).map((w) => `<div class="ad-item">${card(w, "ad")}<p>${esc(w.text)}</p><a class="link-more" href="${w.page}">Watch and details ${arrow}</a></div>`).join("")}</div>`, `<a class="link-more" href="cgi-ads.html">All CGI ads ${arrow}</a>`),
+      sec("Why FOOH", "The share is the point", prose(`<p>A normal ad asks for attention. A FOOH ad makes people ask "wait, is that real?", which is why they watch again, comment and send it to a friend. That makes it one of the cheapest ways to get reach for a product launch.</p>`)),
+      sec("Ideas", "FOOH scenes", svcCards([
+        ["Billboard break-out", "The product reaches out of a digital billboard"],
+        ["Giant product", "The product towers over a street or a building"],
+        ["City takeover", "Your brand colours spread across a real street"],
+        ["Shop window", "The product comes alive in a store window"]
+      ])),
+      sec("Also", "More CGI", linkRows([["Beauty", "CGI skincare and beauty ads", "cgi-ads-skincare.html"], ["All", "Every CGI ad", "cgi-ads.html"]]))
     ]
   },
 
@@ -931,7 +1143,7 @@ const services = {
 const ratioName = (w, h) => { const r = w / h; return [[9, 16], [4, 5], [3, 4], [2, 3], [1, 1], [4, 3], [16, 9], [21, 9]].reduce((b, c) => (Math.abs(c[0] / c[1] - r) < Math.abs(b[0] / b[1] - r) ? c : b)).join(":"); };
 function adPage(a) {
   const url = `${SITE_URL}/${a.page}`, others = ads.filter((o) => o !== a).slice(0, 8);
-  const h1 = `${a.title} CGI ad`;
+  const h1 = `${adName(a)}`;
   const graph = [website, person, business,
     { "@type": "WebPage", "@id": `${url}#page`, url, name: `${h1} | Syed Mateen`, description: a.text, isPartOf: { "@id": `${SITE_URL}/#website` }, primaryImageOfPage: `${SITE_URL}/${a.posterJpg}`, video: { "@id": `${url}#video` }, author: { "@id": PERSON_ID }, dateModified: TODAY },
     { ...adVideo(a), "@id": `${url}#video` },
@@ -970,7 +1182,7 @@ ${footer("../")}
 // descriptive alt text for the decorative hero images (helps image search; screen readers skip them via aria-hidden)
 const visAlt = (src) => {
   const a = ads.find((x) => x.poster === src);
-  if (a) return `${a.title} CGI ad by Syed Mateen`;
+  if (a) return `${adName(a)} by Syed Mateen`;
   return ({ "clinic-poster": "Clinic AI voice booking agent workflow", "robot-poster": "AI receptionist answering calls and messages", "onboarding-poster": "n8n onboarding agent workflow", "shorts-poster": "YouTube to Shorts automation pipeline" })[path.basename(src).replace(/\.\w+$/, "")] || "Work by Syed Mateen";
 };
 function servicePage(k) {
@@ -1122,7 +1334,7 @@ const sitemapPages = [
   { p: "/marketing.html", pr: "0.9", img: ["/assets/img/og/marketing.jpg"] },
   ...Object.values(services).filter((P) => P.parent).map((P) => ({ p: `/${P.file}`, pr: "0.8", img: [`/assets/img/og/${P.og}.jpg`] })),
   { p: "/about.html", pr: "0.7", img: ["/assets/img/syed-mateen-portrait.jpg"] },
-  ...ads.map((a) => ({ p: `/${a.page}`, pr: "0.7", img: [`/${a.posterJpg}`], v: [V(`${a.title} CGI ad by Syed Mateen`, a.text, `/${a.posterJpg}`, `/${a.video}`, a.dur)] })),
+  ...ads.map((a) => ({ p: `/${a.page}`, pr: "0.7", img: [`/${a.posterJpg}`], v: [V(`${adName(a)} by Syed Mateen`, a.text, `/${a.posterJpg}`, `/${a.video}`, a.dur)] })),
   ...cases.map((c) => ({ p: `/work/${c.slug}.html`, pr: "0.8", img: [c.image], v: [V(c.video.name, c.video.desc, c.image, c.video.mp4, parseInt(c.video.duration.replace(/\D/g, ""), 10))] })),
   { p: "/terms.html", pr: "0.2" }, { p: "/privacy-policy.html", pr: "0.2" }
 ];
@@ -1179,7 +1391,7 @@ Key facts:
 
 ## How he works
 
-1. A free first call about the problem and the tools already in use.
+1. A free first conversation about the problem, by email or WhatsApp (a call for automation projects if the client prefers).
 2. The build: the agent, workflow, campaign or ad is made and tested with the client's real tools and data.
 3. Launch and improvement: it goes live and is improved based on real calls, leads and results.
 
