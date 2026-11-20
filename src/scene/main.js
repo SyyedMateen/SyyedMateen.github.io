@@ -594,7 +594,15 @@ export const ACCENTS = {
   const camPos = new THREE.Vector3(), camLook = new THREE.Vector3(), tmp = new THREE.Vector3();
   const mouseW = new THREE.Vector3(99, 99, 0), ray = new THREE.Raycaster(), plane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);
   let mxS = 0, myS = 0;
+  let SEQ = null; // live mode: the station of each anchor in page order, so sections can be reordered without passing through other shapes
   function weights(p) {
+    if (SEQ && SEQ.length) {
+      const n = SEQ.length, f = p - Math.floor(p), j0 = Math.min(n - 1, Math.floor(p)), j1 = Math.min(n - 1, j0 + 1);
+      const e = f < 0.5 ? 4 * f * f * f : 1 - Math.pow(-2 * f + 2, 3) / 2;
+      for (let i = 0; i < 6; i++) W6[i] = 0;
+      W6[SEQ[j0]] += 1 - e; W6[SEQ[j1]] += e;
+      return SEQ[j0] === SEQ[j1] ? 0 : 4 * e * (1 - e);
+    }
     for (let i = 0; i < 6; i++) W6[i] = Math.max(0, 1 - Math.abs(p - i));
     // ease each blend so shapes hold longer and transition faster
     const f = p - Math.floor(p), i0 = Math.min(5, Math.floor(p)), i1 = Math.min(5, i0 + 1);
@@ -604,7 +612,7 @@ export const ACCENTS = {
     return 4 * e * (1 - e); // turbulence: 1 at the middle of a transition
   }
   function draw(time, dt, prog, mx, my, mouse) {
-    prog = Math.min(5, Math.max(0, prog));
+    prog = Math.min(SEQ && SEQ.length ? SEQ.length - 1 : 5, Math.max(0, prog));
     const turb = weights(prog);
     PU.uW.value = W6.slice(); PU.uTime.value = time; PU.uTurb.value = reduce ? 0 : turb;
     colA.lerp(tgtA, Math.min(1, dt * 3)); colB.lerp(tgtB, Math.min(1, dt * 3));
@@ -683,6 +691,7 @@ export const ACCENTS = {
   function refresh() {
     lastStation = document.querySelector('[data-station="5"]');
     anchors = Array.prototype.map.call(document.querySelectorAll("[data-station]"), (el) => ({ el, v: parseFloat(el.getAttribute("data-station")) }));
+    SEQ = anchors.length ? anchors.map((a) => Math.round(a.v)) : null;
     covers = Array.prototype.slice.call(document.querySelectorAll("[data-cover]"));
     lbox = document.getElementById("lb");
     if (!anchors.length) { root.classList.remove("stage-on"); screens.forEach((scr) => { if (scr.userData.video) scr.userData.video.pause(); }); }
@@ -693,9 +702,10 @@ export const ACCENTS = {
   function targetIdx() {
     const mid = innerHeight * 0.5;
     const cs = anchors.map((a) => { const r = a.el.getBoundingClientRect(); return { c: r.top + Math.min(r.height, innerHeight) / 2 - mid, v: a.v }; });
-    if (!cs.length || cs[0].c >= 0) return cs.length ? cs[0].v : 0;
-    for (let i = 0; i < cs.length - 1; i++) if (cs[i].c <= 0 && cs[i + 1].c >= 0) { const k = -cs[i].c / (cs[i + 1].c - cs[i].c); return cs[i].v + (cs[i + 1].v - cs[i].v) * k; }
-    return cs[cs.length - 1].v;
+    // returns a position along the anchors in page order (0 … n-1); weights() maps it to the stations in SEQ
+    if (!cs.length || cs[0].c >= 0) return 0;
+    for (let i = 0; i < cs.length - 1; i++) if (cs[i].c <= 0 && cs[i + 1].c >= 0) { const k = -cs[i].c / (cs[i + 1].c - cs[i].c); return i + k; }
+    return cs.length - 1;
   }
   function covered() { for (const c of covers) { const r = c.getBoundingClientRect(); if (r.top <= 0 && r.bottom >= innerHeight) return true; } return false; }
   let mx = 0, my = 0;

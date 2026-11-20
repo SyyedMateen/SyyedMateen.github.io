@@ -311,9 +311,9 @@ async function go(url, push) {
     if (push) history.pushState({ sm: 1 }, "", url);
     // body: keep the 3D canvas and the toast, replace everything else
     const keepStage = d.getElementById("stage");
-    Array.from(d.body.children).forEach((el) => { if (el !== keepStage && el !== toastEl) el.remove(); });
+    Array.from(d.body.children).forEach((el) => { if (el !== keepStage && el !== toastEl && !el.hasAttribute("data-keep")) el.remove(); });
     const frag = d.createDocumentFragment();
-    Array.from(doc.body.children).forEach((el) => { if (el.tagName === "SCRIPT") return; if (el.id === "stage" && keepStage) return; frag.appendChild(d.importNode(el, true)); });
+    Array.from(doc.body.children).forEach((el) => { if (el.tagName === "SCRIPT") return; if (el.id === "stage" && keepStage) return; if (el.hasAttribute("data-keep") && el.id && d.getElementById(el.id)) return; frag.appendChild(d.importNode(el, true)); });
     d.body.appendChild(frag);
     if (lenis) { lenis.start(); lenis.resize(); }
     const hash = new URL(url, location.href).hash, target = hash && d.getElementById(decodeURIComponent(hash.slice(1)));
