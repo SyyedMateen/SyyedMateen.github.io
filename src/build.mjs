@@ -6,6 +6,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { collectAds, collectCertificates, videoShape } from "./media.mjs";
+import guides from "./guides.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = path.join(ROOT, "dist");
@@ -612,6 +613,7 @@ const situations = (rows) => `<div class="table-wrap reveal"><table><thead><tr><
 const workGrid = (idx) => `<div class="grid"><div class="row">${idx.map((i) => card(work[i], "tile")).join("\n        ")}</div></div>`;
 const toolChips = (list) => `<ul class="chips reveal">${list.map((t) => `<li>${t}</li>`).join("")}</ul>`;
 const services = {
+  ...guides({ sec, prose, svcCards, stepList, linkRows, card, esc, arrow, ads }),
   agents: {
     file: "ai-agents.html", crumb: "AI Automation", kicker: "Main focus",
     title: "AI Automation Expert & AI Agent Developer | Syed Mateen",
