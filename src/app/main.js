@@ -152,7 +152,7 @@ d.addEventListener("input", (e) => { const f = e.target.closest && e.target.clos
 d.addEventListener("submit", (e) => {
   const f = e.target.closest("[data-brief]"); if (!f) return;
   e.preventDefault();
-  const to = (f.getAttribute("action") || "").replace(/^mailto:/, "");
+  const to = f.dataset.to || (f.getAttribute("action") || "").replace(/^mailto:/, "");
   const v = (n) => (f.elements[n] && f.elements[n].value || "").trim();
   const need = (f.querySelector("input[name=need]:checked") || {}).value || "A project";
   let bad = null;
