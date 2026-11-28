@@ -1113,7 +1113,7 @@ const services = {
     file: "n8n-expert.html", crumb: "n8n Expert", parent: ["AI Automation", "ai-agents.html"], kicker: "n8n developer",
     title: "Hire an n8n Expert: Workflows & AI Agents | Syed Mateen",
     desc: "Syed Mateen is an n8n developer building production workflows and AI agents: ElevenLabs voice agents, HubSpot syncs, lead follow-up and content pipelines.",
-    h1: `n8n workflows and AI agents, <span class="hl">built and tested</span>`,
+    h1: `Hire an n8n expert for workflows and <span class="hl">AI agents</span>`,
     lede: "Voice agents, lead follow-up, CRM syncs and content pipelines in n8n, with the logic and guardrails that keep them running when real data gets messy",
     service: "n8n workflow and AI agent development", serviceType: "n8n development", og: "ai-agents", cta: "Have a workflow in mind?",
     answer: "Syed Mateen is an n8n expert and freelance n8n developer who builds production n8n workflow automation and AI agents: voice booking agents with ElevenLabs, lead follow-up flows, CRM syncs with HubSpot, onboarding automations with Slack and pipelines that turn YouTube videos into Shorts. Each workflow is tested against real data and edge cases before it goes live.",

@@ -3,14 +3,17 @@ export default ({ sec, prose, svcCards, stepList, linkRows, card, esc, arrow, ad
   /* ----- guide: what is a CGI ad ----- */
   whatCgi: {
     file: "what-is-a-cgi-ad.html", crumb: "What Is a CGI Ad?", parent: ["CGI Ads", "cgi-ads.html"], kicker: "Guide",
-    title: "What Is a CGI Ad? Examples, How It's Made & When to Use One",
-    desc: "What a CGI ad is, how CGI product ads are made without a photoshoot, real examples, what they're good for and when a brand should use one. A plain-English guide.",
-    h1: `What is a <span class="hl">CGI ad</span>?`,
-    lede: "A plain-English guide to CGI product ads: what they are, how they're made, real examples and when they make sense for your brand",
+    title: "What Is CGI Advertising? CGI Ads in Marketing, With Examples",
+    desc: "What CGI advertising is, how CGI is used in marketing, photo-real CGI ad examples, how CGI product ads are made without a photoshoot and when a brand should use one.",
+    h1: `What is <span class="hl">CGI advertising</span>?`,
+    lede: "A plain-English guide to CGI ads and CGI in marketing: what they are, how they're made, real examples and when they make sense for your brand",
     service: "CGI product ad production", serviceType: "CGI ad production", audience: "Brands and small businesses selling on Instagram, TikTok and Amazon", og: "cgi-ads", cta: "Want a CGI ad for your product?",
-    answer: "A CGI ad (computer-generated imagery ad) is a video or image ad where the product and the scene are created digitally instead of filmed with a camera. The product can float, splash through water, sit on a building or move in ways that would be expensive or impossible to shoot. Brands use CGI ads on Instagram Reels, TikTok and YouTube Shorts because they stop the scroll and can be made from photos of the product, without a studio, a crew or shipping the product.",
+    answer: "CGI advertising means ads made with computer-generated imagery instead of a camera. A CGI ad is a video or image ad where the product and the scene are created digitally instead of filmed with a camera. The product can float, splash through water, sit on a building or move in ways that would be expensive or impossible to shoot. Brands use CGI ads on Instagram Reels, TikTok and YouTube Shorts because they stop the scroll and can be made from photos of the product, without a studio, a crew or shipping the product.",
     vis: () => ads.slice(0, 3).map((a) => a.poster), visKind: "tall",
     faq: [
+      ["What is CGI in marketing?", "CGI in marketing is the use of computer-generated imagery for product videos, social ads, launch films and product page visuals. Brands use it to show products in ways a camera can't, like floating, splashing or appearing on a real street, without booking a shoot."],
+      ["What are examples of CGI marketing?", "Common examples are FOOH (fake out of home) ads where a product appears on a real building or billboard, skincare bottles splashing through water, food that explodes into flying layers, and tech products that assemble in mid-air. Every example in the CGI ads collection on this site has its own page."],
+      ["What is photo-real CGI advertising?", "Photo-real CGI is computer-generated imagery made to look like it was filmed. Lighting, reflections and textures are matched to real life, so viewers see a premium product video and not an animation."],
       ["What does CGI stand for?", "CGI stands for computer-generated imagery: pictures and video created digitally instead of filmed with a camera."],
       ["Is a CGI ad the same as a 3D ad?", "Mostly. Most CGI ads are built from 3D scenes, but a CGI ad can also mix real footage with digital elements, like a real street with a giant product on a billboard."],
       ["What's an example of a CGI ad?", "A skincare serum floating through water while drops splash around it, a burger that explodes into flying layers, or a bottle reaching out of a street billboard (a FOOH ad). Examples are in the CGI ads collection on this site."],
