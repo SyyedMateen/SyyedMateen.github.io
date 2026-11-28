@@ -211,7 +211,7 @@ function contactInner(heading, id) {
       <span class="kicker">Contact</span>
       <h2 id="h-${id}" data-scramble>${heading}</h2>
       <p class="soft">Tell me what you need and I will reply by email or WhatsApp. For CGI ads and content, everything runs over chat</p>
-      <form class="brief" data-brief action="mailto:${EMAIL}" method="post" enctype="text/plain" novalidate>
+      <form class="brief" data-brief data-to="${EMAIL}" novalidate>
         <fieldset class="needs"><legend>What do you need</legend>${needs.map((x, i) => `<label class="chip"><input type="radio" name="need" value="${x}"${i === 0 ? " checked" : ""}><span>${x}</span></label>`).join("")}</fieldset>
         <div class="two">
           <label class="field" for="bn${n}"><span>Your name</span><input id="bn${n}" name="name" autocomplete="name" required></label>
